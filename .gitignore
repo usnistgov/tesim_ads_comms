@@ -1,6 +1,8 @@
 # Twincat Specific Excludes
 _CompileInfo
 *.tclrs
+*tsproj.bak
+*~u
 
 # Visual Studio Excludes
 
