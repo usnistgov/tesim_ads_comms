@@ -3,6 +3,7 @@ _CompileInfo
 *.tclrs
 *tsproj.bak
 *~u
+*_boot.tizip
 
 # Visual Studio Excludes
 
