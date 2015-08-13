@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <DUT Name="XMEAS_IO_IDX" Id="{2d343dda-bda4-4698-b1c7-4879b7f318ae}">
+    <Declaration><![CDATA[TYPE XMEAS_IO_IDX :
+	( 
+	P_REACTOR		:=1,
+	L_REACTOR		:=2,
+	T_REACTOR		:=3,
+	L_SEPARATOR		:=4,
+	L_STRIPPER		:=5
+	);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

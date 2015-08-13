@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.4">
+	<Project ProjectGUID="{2AC3A1DD-C8F7-452D-9815-DD16658FC135}" Target64Bit="true">
+		<Plc>
+			<Project GUID="{F8138B1C-35B3-4D4D-9D42-C49DC6B5BD4B}" Name="mb_reader" PrjFilePath="mb_reader\mb_reader.plcproj" TmcFilePath="mb_reader\mb_reader.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e">
+				<Instance Id="#x01010010" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
+					<Name>mb_reader Instance</Name>
+					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+				</Instance>
+			</Project>
+		</Plc>
+	</Project>
+</TcSmProject>

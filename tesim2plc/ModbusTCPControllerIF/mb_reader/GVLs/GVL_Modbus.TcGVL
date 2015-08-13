@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <GVL Name="GVL_Modbus" Id="{e76de713-a008-427e-b2ea-985e751f6dc8}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	
+	mb_Preactor:	LREAL	:= 0.0;
+	mb_Treactor:	LREAL	:= 0.0;
+
+END_VAR
+
+]]></Declaration>
+  </GVL>
+</TcPlcObject>
