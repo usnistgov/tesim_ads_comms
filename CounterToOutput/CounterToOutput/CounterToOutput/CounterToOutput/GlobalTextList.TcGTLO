@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36" FileSignature="06e966452c801608bbbf444c0ab7516ced377f0b5fcd6767cea238be15352a7a626941d7c18da94c34842c672f0a4e48095539e60726d9ff0cf8d26587c5540709440395bcb667214edde5ae369cd0a7759ddcfb733ee818a1a07b7cda06fb41102091aa7761f5ff95df5951d37bdafc158d9c92f3d485c5b01ed363b6030f8e3b25dd0191235574c02b52e1490b91fa752a26ac4009673135f04d6911d6edd8e2ee0c7e0c1d2da2743027d6e05605943729edb4948cc047f6a5d04b4e40a898e23a84d68b7726e1113b63074bcf59ac11d559da7ef5c55c9e515e12f37cc8a800ed24f6970a3acc249cc090bdd0c75667bd2dd06893b90e3d9869c6215f0060">
+  <GlobalTextList Name="GlobalTextList" Id="{aec895bc-e807-49c5-998b-ecc6a7bceb1c}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="GlobalTextListObject">
+          <l n="TextList" t="ArrayList" />
+          <l n="Languages" t="ArrayList" />
+          <v n="GuidInit">{4aa54db9-6c21-4157-8c8c-9c7781e5c0b9}</v>
+          <v n="GuidReInit">{85ba8aac-5e8d-419b-9922-dd1b740df24e}</v>
+          <v n="GuidExitX">{35a863fd-73d9-48b8-be03-d22ee956d19a}</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="GlobalTextListObject">{63784cbb-9ba0-45e6-9d69-babf3f040511}</Type>
+        <Type n="Guid">System.Guid</Type>
+      </TypeList>
+    </XmlArchive>
+  </GlobalTextList>
+</TcPlcObject>

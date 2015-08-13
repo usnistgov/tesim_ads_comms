@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="stMain" Id="{209e7332-f57a-4ce8-887e-f94efce2de36}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM stMain	
+VAR
+
+	
+	OUT_VAL:	INT := 0;	
+	
+	T1:	TON;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+T1(IN:=(T1.Q=FALSE),PT:=T#1.0S,);
+
+IF T1.Q THEN
+	
+G_IO.MBS_XMEAS[1]:=G_IO.XMEAS[7];
+G_IO.MBS_XMEAS[2]:=G_IO.XMEAS[8];
+
+	AOUT[1]		:= OUT_VAL;
+	AOUT[2]		:= OUT_VAL;
+	AOUT[3]		:= OUT_VAL;
+	AOUT[4]		:= OUT_VAL;
+	AOUT[5]		:= OUT_VAL;
+	AOUT[6]		:= OUT_VAL;
+	AOUT[7]		:= OUT_VAL;
+	AOUT[8]		:= OUT_VAL;
+	
+	OUT_VAL := OUT_VAL + 1;
+	
+	IF (OUT_VAL < 0) THEN
+		OUT_VAL := 0;
+	END_IF
+	
+END_IF
+
+
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
