@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "tesim2plc", "tesim2plc\tesim2plc.tsproj", "{4DC05C63-337A-4DD3-9F8F-25D177FB7253}"
 EndProject
+Project("{FD9F1D59-E000-42F3-8744-88DE1BE93C06}") = "sensor_monitor", "sensor_monitor\sensor_monitor.tcmproj", "{0A0D94F7-1A43-4400-A59C-353703472E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|TwinCAT CE7 (ARMV7) = Debug|TwinCAT CE7 (ARMV7)
@@ -37,6 +39,12 @@ Global
 		{05A7A4ED-AD11-4DAB-93AC-00324A56A0F4}.Release|TwinCAT RT (x64).Build.0 = Release|TwinCAT RT (x64)
 		{05A7A4ED-AD11-4DAB-93AC-00324A56A0F4}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT RT (x86)
 		{05A7A4ED-AD11-4DAB-93AC-00324A56A0F4}.Release|TwinCAT RT (x86).Build.0 = Release|TwinCAT RT (x86)
+		{0A0D94F7-1A43-4400-A59C-353703472E3A}.Debug|TwinCAT CE7 (ARMV7).ActiveCfg = Debug|TwinCAT CE7 (ARMV7)
+		{0A0D94F7-1A43-4400-A59C-353703472E3A}.Debug|TwinCAT RT (x64).ActiveCfg = Debug|TwinCAT RT (x64)
+		{0A0D94F7-1A43-4400-A59C-353703472E3A}.Debug|TwinCAT RT (x86).ActiveCfg = Debug|TwinCAT RT (x86)
+		{0A0D94F7-1A43-4400-A59C-353703472E3A}.Release|TwinCAT CE7 (ARMV7).ActiveCfg = Release|TwinCAT CE7 (ARMV7)
+		{0A0D94F7-1A43-4400-A59C-353703472E3A}.Release|TwinCAT RT (x64).ActiveCfg = Release|TwinCAT RT (x64)
+		{0A0D94F7-1A43-4400-A59C-353703472E3A}.Release|TwinCAT RT (x86).ActiveCfg = Release|TwinCAT RT (x86)
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
