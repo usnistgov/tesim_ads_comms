@@ -3,7 +3,9 @@ _CompileInfo
 *.tclrs
 *tsproj.bak
 *~u
+*.tizip
 *_boot.tizip
+*.compiled-library
 
 # Visual Studio Excludes
 
@@ -223,3 +225,4 @@ FakesAssemblies/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
+

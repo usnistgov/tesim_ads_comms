@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="VISU_MAIN" Id="{7ffaf36a-4f37-4f56-ae7f-d03799febce6}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM VISU_MAIN
+VAR
+	XMEAS_PurgeAnalyzer		:	ARRAY[1..8] OF REAL;
+	XMEAS_FeedAnalyzer		:	ARRAY[1..6] OF REAL;
+	XMEAS_ProductAnalyzer	:	ARRAY[1..5] OF REAL;
+	i: INT := 0;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[FOR i :=1 TO 8 DO
+	XMEAS_PurgeAnalyzer[i] := G_IO.XMEAS[i+28];
+END_FOR
+
+FOR i :=1 TO 6 DO
+	XMEAS_FeedAnalyzer[i] := G_IO.XMEAS[i+22];
+END_FOR
+
+FOR i :=1 TO 5 DO
+	XMEAS_ProductAnalyzer[i] := G_IO.XMEAS[i+36];
+END_FOR]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

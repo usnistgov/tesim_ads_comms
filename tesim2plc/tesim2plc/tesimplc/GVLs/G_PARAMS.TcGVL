@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <GVL Name="G_PARAMS" Id="{3b9a06b5-e024-4474-8f53-bae8a479db56}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	IOUT_WD_RANGE	:	INT		:=32767;
+	VOUT_WD_RANGE	:	INT		:=32767;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
