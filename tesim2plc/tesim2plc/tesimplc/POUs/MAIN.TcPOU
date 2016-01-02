@@ -8,6 +8,7 @@ fbReadMB : FB_ReadModbus;
 fbMbToVal1: FB_mb_to_val;
 fbMbToVal2: FB_mb_to_val;
 inputInfo : ARRAY[0..1] OF MODBUS_DATA_MAP :=  [ (_ipAddress := '192.168.1.101', _startAddress:= 0), (_ipAddress := '192.168.1.101', _startAddress:= 12) ];
+//inputInfo : ARRAY[0..1] OF MODBUS_DATA_MAP :=  [ (_ipAddress := '192.168.254.253', _startAddress:= 6), (_ipAddress := '192.168.254.253', _startAddress:= 15) ];
  
 END_VAR]]></Declaration>
     <Implementation>
@@ -37,9 +38,11 @@ G_IO.MBS_XMEAS_RAW[1] := fbReadMB.outputData[0];
 G_IO.MBS_XMEAS_RAW[2] := fbReadMB.outputData[1];
 
 fbMbToVal1(xi:=G_IO.MBS_XMEAS_RAW[1], i_hi:=20, cal_dc_offset:=G_IO.CAL_XMEAS[1], y_h:=3000.0);
+//fbMbToVal1(xi:=G_IO.MBS_XMEAS_RAW[1], i_hi:=10, cal_dc_offset:=G_IO.CAL_XMEAS[1], y_h:=3000.0);
 G_IO.MBS_XMEAS[1]:=fbMbToVal1.y;
 
 fbMbToVal2(xi:=G_IO.MBS_XMEAS_RAW[2], i_hi:=20, cal_dc_offset:=G_IO.CAL_XMEAS[2], y_h:=100.0);
+//fbMbToVal2(xi:=G_IO.MBS_XMEAS_RAW[2], i_hi:=10, cal_dc_offset:=G_IO.CAL_XMEAS[2], y_h:=100.0);
 G_IO.MBS_XMEAS[2]:=fbMbToVal2.y;
 
 //
