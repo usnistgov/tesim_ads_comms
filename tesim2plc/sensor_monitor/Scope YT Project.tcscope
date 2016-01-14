@@ -4,12 +4,12 @@
   <Title>Scope YT Project</Title>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="97332cdc-477f-498a-a8da-59f3e238ae5a" LastFocused="130844063838972922" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="070367cf-8fd1-4131-9ead-fee5b057831f" LastFocused="130972819528159991" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
-      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="e3627557-a720-4c2a-9af0-d310b5d3d828" Collapsed="0" SelectedControl="97332cdc-477f-498a-a8da-59f3e238ae5a"&gt;
+      &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="9cbee6f9-7caf-42b7-b451-221e58738fb3" Collapsed="0" SelectedControl="070367cf-8fd1-4131-9ead-fee5b057831f"&gt;
         &lt;Controls&gt;
-          &lt;Control Guid="97332cdc-477f-498a-a8da-59f3e238ae5a" /&gt;
+          &lt;Control Guid="070367cf-8fd1-4131-9ead-fee5b057831f" /&gt;
         &lt;/Controls&gt;
       &lt;/ControlLayoutSystem&gt;
     &lt;/SplitLayoutSystem&gt;
@@ -24,22 +24,23 @@
     <Comment></Comment>
     <ScopeStopAutoSave>
       <UseAutoSave>false</UseAutoSave>
-      <AutoSavePath></AutoSavePath>
+      <AutoSavePath>
+      </AutoSavePath>
       <FileNameMask>{SCOPE}_AutoSave_{HH_mm_ss}</FileNameMask>
     </ScopeStopAutoSave>
     <RestartRecord>false</RestartRecord>
   </Operating>
   <Charts>
     <ScopeChartSerializable>
-      <Name>Chart</Name>
-      <GUID>97332cdc-477f-498a-a8da-59f3e238ae5a</GUID>
+      <Name>Reactor</Name>
+      <GUID>070367cf-8fd1-4131-9ead-fee5b057831f</GUID>
       <Style>
         <BackgroundColorValue>-1118482</BackgroundColorValue>
         <BorderColorValue>-1973016</BorderColorValue>
         <IsSmooth>false</IsSmooth>
         <SmoothTime>100</SmoothTime>
         <YZoom>true</YZoom>
-        <StackedYAxes>false</StackedYAxes>
+        <StackedYAxes>true</StackedYAxes>
         <Legend>false</Legend>
         <VisibleToolstrip>true</VisibleToolstrip>
         <VisibleTimestrip>true</VisibleTimestrip>
@@ -51,11 +52,11 @@
           <Width>16</Width>
           <Height>16</Height>
         </ButtonSize>
-        <ToolStripFontSize>0</ToolStripFontSize>
-        <TimeStripFontSize>0</TimeStripFontSize>
+        <ToolStripFontSize>8.25</ToolStripFontSize>
+        <TimeStripFontSize>8.25</TimeStripFontSize>
         <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton</EnabledButtons>
         <EnabledTimeLabels>StartTimeLabel Splitter1 EndTimeLabel Splitter2 PositionLabel Splitter3 AbsTimeLabel Splitter4 DateLabel</EnabledTimeLabels>
-        <ShowName>false</ShowName>
+        <ShowName>true</ShowName>
         <VisibleOverview>false</VisibleOverview>
         <DataPointToolTip>true</DataPointToolTip>
       </Style>
@@ -75,7 +76,7 @@
       </XAxis>
       <YAxes>
         <ScopeYAxisSerializable>
-          <Caption>Axis</Caption>
+          <Caption>Reactor Pressure</Caption>
           <Name>Axis</Name>
           <Style>
             <Enabled>true</Enabled>
@@ -85,7 +86,7 @@
             <LineWidth>1</LineWidth>
             <AutoScale>true</AutoScale>
             <AxisMin>0</AxisMin>
-            <AxisMax>0</AxisMax>
+            <AxisMax>3000</AxisMax>
             <ScaleFactor>0</ScaleFactor>
             <ShowCursorValue>true</ShowCursorValue>
             <GridColorValue>-13676721</GridColorValue>
@@ -94,7 +95,7 @@
             <SubDivisions>5</SubDivisions>
             <Logarithmic>false</Logarithmic>
             <Comment></Comment>
-            <ShowName>false</ShowName>
+            <ShowName>true</ShowName>
             <Precision>6</Precision>
           </Style>
           <Channels>
@@ -104,7 +105,7 @@
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546528</IndexOffset>
+                <IndexOffset>546704</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[1]</SymbolName>
@@ -123,7 +124,7 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-65536</ColorValue>
+                <ColorValue>-16776961</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
                 <LineWidth>1</LineWidth>
@@ -132,7 +133,7 @@
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-65536</MarkColorValue>
+                <MarkColorValue>-16776961</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
@@ -156,7 +157,7 @@
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546248</IndexOffset>
+                <IndexOffset>546416</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>G_IO.XMEAS[7]</SymbolName>
@@ -175,7 +176,7 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-65281</ColorValue>
+                <ColorValue>-32768</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
                 <LineWidth>1</LineWidth>
@@ -184,12 +185,12 @@
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-65281</MarkColorValue>
-                <MarkSize>3</MarkSize>
+                <MarkColorValue>-29696</MarkColorValue>
+                <MarkSize>1</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
                 <Comment></Comment>
-                <AutoMarks>false</AutoMarks>
+                <AutoMarks>true</AutoMarks>
                 <XOffset>0</XOffset>
                 <XScaleFactor>1</XScaleFactor>
                 <XBitMask>1152921504606846975</XBitMask>
@@ -203,10 +204,10 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <SortPriority>0</SortPriority>
+          <SortPriority>-1</SortPriority>
         </ScopeYAxisSerializable>
         <ScopeYAxisSerializable>
-          <Caption>Axis(1)</Caption>
+          <Caption>Reactor Level</Caption>
           <Name>Axis(1)</Name>
           <Style>
             <Enabled>true</Enabled>
@@ -215,8 +216,8 @@
             <Ticks>10</Ticks>
             <LineWidth>1</LineWidth>
             <AutoScale>true</AutoScale>
-            <AxisMin>-1</AxisMin>
-            <AxisMax>1</AxisMax>
+            <AxisMin>0</AxisMin>
+            <AxisMax>100</AxisMax>
             <ScaleFactor>0</ScaleFactor>
             <ShowCursorValue>true</ShowCursorValue>
             <GridColorValue>-13676721</GridColorValue>
@@ -225,7 +226,7 @@
             <SubDivisions>5</SubDivisions>
             <Logarithmic>false</Logarithmic>
             <Comment></Comment>
-            <ShowName>false</ShowName>
+            <ShowName>true</ShowName>
             <Precision>6</Precision>
           </Style>
           <Channels>
@@ -235,7 +236,7 @@
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546532</IndexOffset>
+                <IndexOffset>546708</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[2]</SymbolName>
@@ -254,7 +255,7 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-8355840</ColorValue>
+                <ColorValue>-16776961</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
                 <LineWidth>1</LineWidth>
@@ -263,7 +264,7 @@
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-8355840</MarkColorValue>
+                <MarkColorValue>-16776961</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
@@ -287,7 +288,7 @@
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546256</IndexOffset>
+                <IndexOffset>546424</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>G_IO.XMEAS[8]</SymbolName>
@@ -306,16 +307,16 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-16711681</ColorValue>
+                <ColorValue>-32768</ColorValue>
                 <SolidLine>true</SolidLine>
-                <Marks>false</Marks>
+                <Marks>true</Marks>
                 <LineWidth>1</LineWidth>
                 <Antialias>true</Antialias>
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-16711681</MarkColorValue>
+                <MarkColorValue>-32768</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
@@ -357,5 +358,5 @@
     <TriggerGroups />
   </TriggerModule>
   <SortPriority>-1</SortPriority>
-  <ViewDetailLevel>Default</ViewDetailLevel>
+  <ViewDetailLevel>Extended</ViewDetailLevel>
 </ScopeViewSerializable>

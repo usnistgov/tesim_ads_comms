@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="adc_to_float_pv" Id="{d8bea1e0-e369-4414-bffa-3400a28a10d5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION adc_to_float_pv : LREAL
+VAR_INPUT
+	i			: LREAL;
+	pv_max		: LREAL;
+	pv_min		: LREAL;
+	i_max		: LREAL;
+	i_min		: LREAL;
+END_VAR
+VAR
+	m			: LREAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+m := (pv_max-pv_min)/(i_max-i_min);
+
+adc_to_float_pv	:=	m*(i-i_min) + pv_min;
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

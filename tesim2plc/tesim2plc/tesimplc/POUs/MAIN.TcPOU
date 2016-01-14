@@ -4,46 +4,45 @@
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 
-fbReadMB : FB_ReadModbus;
-fbMbToVal1: FB_mb_to_val;
-fbMbToVal2: FB_mb_to_val;
-inputInfo : ARRAY[0..1] OF MODBUS_DATA_MAP :=  [ (_ipAddress := '192.168.1.101', _startAddress:= 0), (_ipAddress := '192.168.1.101', _startAddress:= 12) ];
-//inputInfo : ARRAY[0..1] OF MODBUS_DATA_MAP :=  [ (_ipAddress := '192.168.254.253', _startAddress:= 6), (_ipAddress := '192.168.254.253', _startAddress:= 15) ];
+	fbReadMB : FB_ReadModbus;
+	fbMbToVal1: FB_mb_to_val;
+	fbMbToVal2: FB_mb_to_val;
+	inputInfo : ARRAY[0..1] OF MODBUS_DATA_MAP :=  [ (_ipAddress := '192.168.1.101', _startAddress:= 0), (_ipAddress := '192.168.1.101', _startAddress:= 12) ];
+	//inputInfo : ARRAY[0..1] OF MODBUS_DATA_MAP :=  [ (_ipAddress := '192.168.254.253', _startAddress:= 6), (_ipAddress := '192.168.254.253', _startAddress:= 15) ];
  
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[
 // read and scale XMEAS values to analog current output module EL4028
 // data comes from the simulator to the analog output modules
-XMEAS_IO_IOUT[XMEAS_IO_IDX.P_REACTOR]	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.P_REACTOR]/3000.0));
-XMEAS_IO_IOUT[XMEAS_IO_IDX.L_REACTOR] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.L_REACTOR]/100.0));
-//XMEAS_IO_IOUT[XMEAS_IO_IDX.T_REACTOR] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.T_REACTOR]/175.0));
-//XMEAS_IO_IOUT[XMEAS_IO_IDX.L_SEPARATOR] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.L_SEPARATOR]/100.0));
-//XMEAS_IO_IOUT[XMEAS_IO_IDX.L_STRIPPER] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.L_STRIPPER]/100.0));
+XMEAS_IO_IOUT[XMEAS_IO_IDX.P_REACTOR]	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.P_REACTOR],pv_max:=3000.0,pv_min:=0.0,dac_max:=32767, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.L_REACTOR] 	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.L_REACTOR],pv_max:=100.0,pv_min:=0.0,dac_max:=32767, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.T_REACTOR] 	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.T_REACTOR],pv_max:=300.0,pv_min:=0.0,dac_max:=32767, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.L_STRIPPER] 	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.L_STRIPPER],pv_max:=100.0,pv_min:=0.0,dac_max:=32767, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.L_SEPARATOR] := pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.L_SEPARATOR],pv_max:=100.0,pv_min:=0.0,dac_max:=32767, dac_min:=0);
 
-// read and scale XMEAS values to analog voltage output module EL4008
-XMEAS_IO_VOUT[XMEAS_IO_IDX.P_REACTOR]	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.P_REACTOR]/3000.0));
-XMEAS_IO_VOUT[XMEAS_IO_IDX.L_REACTOR] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.L_REACTOR]/100.0));
-//XMEAS_IO_VOUT[XMEAS_IO_IDX.T_REACTOR] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.T_REACTOR]/175.0));
-//XMEAS_IO_VOUT[XMEAS_IO_IDX.L_SEPARATOR] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.L_SEPARATOR]/100.0));
-//XMEAS_IO_VOUT[XMEAS_IO_IDX.L_STRIPPER] 	:= LREAL_TO_INT(G_PARAMS.IOUT_WD_RANGE*(XMEAS[XMEAS_IDX.L_STRIPPER]/100.0));
-
+XMEAS_IO_VOUT[XMEAS_IO_IDX.P_REACTOR]	:= XMEAS_IO_IOUT[XMEAS_IO_IDX.P_REACTOR];
+XMEAS_IO_VOUT[XMEAS_IO_IDX.L_REACTOR]	:= XMEAS_IO_IOUT[XMEAS_IO_IDX.L_REACTOR];
+XMEAS_IO_VOUT[XMEAS_IO_IDX.T_REACTOR]	:= XMEAS_IO_IOUT[XMEAS_IO_IDX.T_REACTOR];
+XMEAS_IO_VOUT[XMEAS_IO_IDX.L_STRIPPER]	:= XMEAS_IO_IOUT[XMEAS_IO_IDX.L_STRIPPER];
+XMEAS_IO_VOUT[XMEAS_IO_IDX.L_SEPARATOR]	:= XMEAS_IO_IOUT[XMEAS_IO_IDX.L_SEPARATOR];
 
 //
 // BEGIN MODBUS POLLING SEGMENT from the GATEWAY
 //
 fbReadMB(inputData := inputInfo );
 
-G_IO.MBS_XMEAS_RAW[1] := fbReadMB.outputData[0];
-G_IO.MBS_XMEAS_RAW[2] := fbReadMB.outputData[1];
+G_IO.MBS_XMEAS_RAW[1] := fbReadMB.outputData[0] + MBS_XMEAS_CAL_OFFSET[1];
+G_IO.MBS_XMEAS_RAW[2] := fbReadMB.outputData[1] + MBS_XMEAS_CAL_OFFSET[2];
 
-fbMbToVal1(xi:=G_IO.MBS_XMEAS_RAW[1], i_hi:=20, cal_dc_offset:=G_IO.CAL_XMEAS[1], y_h:=3000.0);
-//fbMbToVal1(xi:=G_IO.MBS_XMEAS_RAW[1], i_hi:=10, cal_dc_offset:=G_IO.CAL_XMEAS[1], y_h:=3000.0);
-G_IO.MBS_XMEAS[1]:=fbMbToVal1.y;
+//fbMbToVal1(xi:=G_IO.MBS_XMEAS_RAW[1], i_hi:=20, cal_dc_offset:=G_IO.CAL_XMEAS[1], y_h:=3000.0);
+//G_IO.MBS_XMEAS[1]:=fbMbToVal1.y;
+G_IO.MBS_XMEAS[1]	:=	adc_to_float_pv(G_IO.MBS_XMEAS_RAW[1],pv_max:=3000.0, pv_min:=0.0, i_max:=20.0, i_min:=4.0);
+G_IO.MBS_XMEAS[2]	:=	adc_to_float_pv(G_IO.MBS_XMEAS_RAW[2],pv_max:=100.0, pv_min:=0.0, i_max:=20.0, i_min:=4.0);
 
-fbMbToVal2(xi:=G_IO.MBS_XMEAS_RAW[2], i_hi:=20, cal_dc_offset:=G_IO.CAL_XMEAS[2], y_h:=100.0);
+//fbMbToVal2(xi:=G_IO.MBS_XMEAS_RAW[2], i_hi:=20, cal_dc_offset:=G_IO.CAL_XMEAS[2], y_h:=100.0);
 //fbMbToVal2(xi:=G_IO.MBS_XMEAS_RAW[2], i_hi:=10, cal_dc_offset:=G_IO.CAL_XMEAS[2], y_h:=100.0);
-G_IO.MBS_XMEAS[2]:=fbMbToVal2.y;
+//G_IO.MBS_XMEAS[2]:=fbMbToVal2.y;
 
 //
 // END MODEBUS POLLING SEGMENT

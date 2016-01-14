@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="pv_float_to_dac" Id="{27287405-a677-4f65-93c1-109ed01550ed}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION pv_float_to_dac : INT
+VAR_INPUT
+	pv			: LREAL;
+	pv_max		: LREAL;
+	pv_min		: LREAL;
+	dac_max		: LREAL;
+	dac_min		: LREAL;
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+pv_float_to_dac := LREAL_TO_INT((dac_max-dac_min)/(pv_max-pv_min)*(pv-pv_min)+dac_min);
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

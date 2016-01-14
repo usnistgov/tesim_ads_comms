@@ -14,8 +14,7 @@ VAR_GLOBAL
 	
 	MBS_XMEAS_RAW				:	ARRAY[1..2] OF REAL;
 	MBS_XMEAS					:	ARRAY[1..2] OF REAL;
-	CAL_XMEAS					:	ARRAY[1..2] OF REAL := [ 1.64, 1.42 ];
-	//CAL_XMEAS					:	ARRAY[1..2] OF REAL := [ 0.0, 0.0 ];
+	MBS_XMEAS_CAL_OFFSET		:	ARRAY[1..2] OF REAL := [ -1.4, -1.55 ];
 	
 END_VAR]]></Declaration>
   </GVL>

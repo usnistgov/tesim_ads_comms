@@ -4,9 +4,7 @@
     <Declaration><![CDATA[FUNCTION_BLOCK FB_mb_to_val
 VAR_INPUT
 	xi: REAL:=0;
-	//i_hi: REAL:=20.0;
-	i_hi: REAL:=10.0;
-	cal_dc_offset: REAL :=0;
+	i_hi: REAL:=20.0;
 	y_h: REAL:= 0.0;
 END_VAR
 
@@ -21,8 +19,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[
 
-xi_cal := xi - cal_dc_offset;
-y:=y_h*xi_cal/i_hi;
+y:=y_h*xi/i_hi;
 IF y>y_h THEN
 	y:=y_h;
 ELSIF y < 0 THEN

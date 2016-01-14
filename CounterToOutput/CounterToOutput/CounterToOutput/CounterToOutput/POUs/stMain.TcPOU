@@ -5,7 +5,7 @@
 VAR
 
 	
-	OUT_VAL:	INT := 0;	
+	OUT_VAL:	REAL := 0;	
 	
 	T1:	TON;
 END_VAR]]></Declaration>
@@ -14,22 +14,19 @@ END_VAR]]></Declaration>
 T1(IN:=(T1.Q=FALSE),PT:=T#1.0S,);
 
 IF T1.Q THEN
-	
-G_IO.MBS_XMEAS[1]:=G_IO.XMEAS[7];
-G_IO.MBS_XMEAS[2]:=G_IO.XMEAS[8];
 
-	AOUT[1]		:= OUT_VAL;
-	AOUT[2]		:= OUT_VAL;
-	AOUT[3]		:= OUT_VAL;
-	AOUT[4]		:= OUT_VAL;
-	AOUT[5]		:= OUT_VAL;
-	AOUT[6]		:= OUT_VAL;
-	AOUT[7]		:= OUT_VAL;
-	AOUT[8]		:= OUT_VAL;
+	AOUT[1]		:= REAL_TO_INT(OUT_VAL);
+	AOUT[2]		:= REAL_TO_INT(4*OUT_VAL);
+	AOUT[3]		:= REAL_TO_INT(OUT_VAL);
+	AOUT[4]		:= REAL_TO_INT(OUT_VAL);
+	AOUT[5]		:= REAL_TO_INT(OUT_VAL);
+	AOUT[6]		:= REAL_TO_INT(OUT_VAL);
+	AOUT[7]		:= REAL_TO_INT(OUT_VAL);
+	AOUT[8]		:= REAL_TO_INT(OUT_VAL);
 	
-	OUT_VAL := OUT_VAL + 1;
+	OUT_VAL := OUT_VAL + 100.0;
 	
-	IF (OUT_VAL < 0) THEN
+	IF (OUT_VAL > 32768.0/8.0) THEN
 		OUT_VAL := 0;
 	END_IF
 	
