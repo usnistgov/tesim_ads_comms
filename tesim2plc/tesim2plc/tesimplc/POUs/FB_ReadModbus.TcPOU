@@ -4,7 +4,7 @@
     <Declaration><![CDATA[FUNCTION_BLOCK FB_ReadModbus
 VAR_INPUT
 inputData : ARRAY[0..1] OF MODBUS_DATA_MAP;
-intervalToSampleData : TIME := T#5S; //modbus update rate (lower rate = more disk usage) default : 5 seconds
+intervalToSampleData : TIME := T#1S; //modbus update rate (lower rate = more disk usage) default : 5 seconds
 fileName: STRING := 'data';//changinng this will change the file otherwise it will overwrite the data : default 'data'
 END_VAR
 VAR_OUTPUT
