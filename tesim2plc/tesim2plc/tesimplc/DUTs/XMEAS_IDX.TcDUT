@@ -3,11 +3,14 @@
   <DUT Name="XMEAS_IDX" Id="{16949e3b-de22-450d-b647-b9a776509c36}">
     <Declaration><![CDATA[TYPE XMEAS_IDX:	
 	( 
-	P_REACTOR		:=7,
-	L_REACTOR		:=8,
-	T_REACTOR		:=9,
-	L_SEPARATOR		:=12,
-	L_STRIPPER		:=15
+		A_FLOW			:=1,
+		D_FLOW			:=2,
+		E_FLOW			:=3,
+		P_REACTOR		:=7,
+		L_REACTOR		:=8,
+		T_REACTOR		:=9,
+		L_SEPARATOR		:=12,
+		L_STRIPPER		:=15
 	);
 END_TYPE]]></Declaration>
   </DUT>

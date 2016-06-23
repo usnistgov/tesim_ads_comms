@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <DUT Name="XMEAS_MBS_IDX" Id="{ce87c558-2c19-4bb3-9db1-e0b419cf6aa1}">
+    <Declaration><![CDATA[TYPE XMEAS_MBS_IDX :
+(
+	A_FLOW			:=1,
+	D_FLOW			:=2,
+	E_FLOW			:=3,
+	P_REACTOR		:=4
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

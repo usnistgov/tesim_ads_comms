@@ -26,6 +26,10 @@
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
+    <Compile Include="DUTs\XMEAS_MBS_IDX.TcDUT">
+      <SubType>Code</SubType>
+      <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
+    </Compile>
     <Compile Include="GlobalTextList.TcGTLO">
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
@@ -42,8 +46,9 @@
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
-    <Compile Include="PlcTask.TcTTO">
+    <Compile Include="MainTask.TcTTO">
       <SubType>Code</SubType>
+      <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
     <Compile Include="POUs\adc_to_float_pv.TcPOU">
       <SubType>Code</SubType>

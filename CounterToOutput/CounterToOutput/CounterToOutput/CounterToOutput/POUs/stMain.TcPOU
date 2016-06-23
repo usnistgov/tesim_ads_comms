@@ -4,7 +4,6 @@
     <Declaration><![CDATA[PROGRAM stMain	
 VAR
 
-	
 	OUT_VAL:	REAL := 0;	
 	
 	T1:	TON;
@@ -17,12 +16,6 @@ IF T1.Q THEN
 
 	AOUT[1]		:= REAL_TO_INT(OUT_VAL);
 	AOUT[2]		:= REAL_TO_INT(4*OUT_VAL);
-	AOUT[3]		:= REAL_TO_INT(OUT_VAL);
-	AOUT[4]		:= REAL_TO_INT(OUT_VAL);
-	AOUT[5]		:= REAL_TO_INT(OUT_VAL);
-	AOUT[6]		:= REAL_TO_INT(OUT_VAL);
-	AOUT[7]		:= REAL_TO_INT(OUT_VAL);
-	AOUT[8]		:= REAL_TO_INT(OUT_VAL);
 	
 	OUT_VAL := OUT_VAL + 100.0;
 	

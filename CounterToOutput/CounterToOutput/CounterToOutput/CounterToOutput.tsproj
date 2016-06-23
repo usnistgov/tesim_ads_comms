@@ -9,7 +9,7 @@
 	</ImageDatas>
 	<Project ProjectGUID="{D36C26C2-5674-40AE-B847-4EC8F340A7E2}" TargetNetId="5.20.215.224.1.1">
 		<System>
-			<Licenses>
+			<Licenses IgnoreProjectLicenses="true">
 				<Target BkhfOrder="VE2177962">
 					<ManualSelect>{96F8FBEB-48D6-4061-A973-35866BF21BE0}</ManualSelect>
 				</Target>
@@ -25,17 +25,24 @@
 				<Instance Id="#x01010010" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
 					<Name>CounterToOutput Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<Vars VarGrpType="2">
-						<Name>PlcTask Outputs</Name>
-						<Var>
-							<Name>G_IO.AOUT</Name>
-							<Type>ARRAY [1..8] OF INT</Type>
-						</Var>
-					</Vars>
 					<UnrestoredVarLinks ImportTime="2015-07-09T13:06:17">
 						<OwnerA Name="InputDst" Prefix="TIPC^CounterToOutput^CounterToOutput Instance" Type="1">
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL3058)">
 								<Link VarA="ldrMain.AIN1" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 1^Value"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<UnrestoredVarLinks ImportTime="2016-04-15T11:19:00">
+						<OwnerA Name="OutputSrc" Prefix="TIPC^CounterToOutput^CounterToOutput Instance" Type="2">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL4028)">
+								<Link VarA="G_IO.AOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output"/>
+								<Link VarA="G_IO.AOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output"/>
+								<Link VarA="G_IO.AOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output"/>
+								<Link VarA="G_IO.AOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output"/>
+								<Link VarA="G_IO.AOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output"/>
+								<Link VarA="G_IO.AOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output"/>
+								<Link VarA="G_IO.AOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output"/>
+								<Link VarA="G_IO.AOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output"/>
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
@@ -1343,19 +1350,4 @@ Bit1: Value bigger/equal Limit2]]>
 			</Device>
 		</Io>
 	</Project>
-	<Mappings>
-		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
-		<OwnerA Name="TIPC^CounterToOutput^CounterToOutput Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL4028)">
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[5]" VarB="AO Outputs Channel 5^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[6]" VarB="AO Outputs Channel 6^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[7]" VarB="AO Outputs Channel 7^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.AOUT[8]" VarB="AO Outputs Channel 8^Analog output"/>
-			</OwnerB>
-		</OwnerA>
-	</Mappings>
 </TcSmProject>

@@ -3,7 +3,7 @@
   <GVL Name="G_IO" Id="{5c9be23e-5154-4405-95ca-9dd299cf237d}">
     <Declaration><![CDATA[VAR_GLOBAL
 	
-	AOUT AT %Q*	:	ARRAY[1..8] OF INT;
+	AOUT AT %Q*	:	ARRAY[1..2] OF INT;
 	
 	XMEAS:	ARRAY[1..41] OF LREAL;
 	MBS_XMEAS:	ARRAY[1..2] OF REAL;

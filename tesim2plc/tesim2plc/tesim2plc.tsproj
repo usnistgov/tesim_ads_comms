@@ -10,8 +10,8 @@
 	<Project ProjectGUID="{4DC05C63-337A-4DD3-9F8F-25D177FB7253}" TargetNetId="5.20.215.224.1.1">
 		<System>
 			<Tasks>
-				<Task Id="2" Priority="20" CycleTime="100000" AmsPort="350">
-					<Name>PlcTask</Name>
+				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="350">
+					<Name>MainTask</Name>
 				</Task>
 			</Tasks>
 		</System>
@@ -21,7 +21,7 @@
 					<Name>tesimplc Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="2">
-						<Name>PlcTask Outputs</Name>
+						<Name>MainTask Outputs</Name>
 						<Var>
 							<Name>G_IO.XMEAS_IO_IOUT</Name>
 							<Type>ARRAY [1..8] OF INT</Type>
@@ -37,6 +37,30 @@
 								<Link VarA="G_IO.XMEAS[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output"/>
 								<Link VarA="G_IO.XMEAS[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output"/>
 								<Link VarA="G_IO.XMEAS[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<UnrestoredVarLinks ImportTime="2016-06-22T17:24:33">
+						<OwnerA Name="OutputSrc" Prefix="TIPC^tesimplc^tesimplc Instance" Type="2">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 13 (EL4008)">
+								<Link VarA="G_IO.XMEAS_IO_VOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output" RestoreInfo="NotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 9 (EL4028)">
+								<Link VarA="G_IO.XMEAS_IO_IOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output" RestoreInfo="NotFound"/>
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
@@ -74,14 +98,14 @@
 				<Image Id="1" AddrType="9" ImageType="3">
 					<Name>Image</Name>
 				</Image>
-				<Box BoxType="9099" Id="7">
-					<Name>Term 7 (EK1200)</Name>
+				<Box BoxType="9099" Id="1">
+					<Name>Term 1 (EK1200)</Name>
 					<ImageId>1000</ImageId>
 					<EtherCAT PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04b02c52" RevisionNo="#x00001388" InfoDataState="false" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1200-5000 EtherCAT Power supply (2A E-Bus)" Desc="EK1200" PortABoxInfo="#x00ffffff"/>
-					<Box BoxType="9099" Id="8">
-						<Name>Term 8 (EL3058)</Name>
+					<Box BoxType="9099" Id="2">
+						<Name>Term 2 (EL3058)</Name>
 						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0bf23052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3058 8Ch. Ana. Input 4-20mA" Desc="EL3058" PortABoxInfo="#x01000007">
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0bf23052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3058 8Ch. Ana. Input 4-20mA" Desc="EL3058" PortABoxInfo="#x01000001">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -595,10 +619,10 @@ Bit1: Value bigger/equal Limit2]]>
 							<CoeProfile ProfileNo="19665801"/>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="9">
-						<Name>Term 9 (EL4028)</Name>
+					<Box BoxType="9099" Id="3">
+						<Name>Term 3 (EL4028)</Name>
 						<ImageId>1002</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fbc3052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4028 8Ch. Ana. Output 4-20mA, 12bit" Desc="EL4028" PortABoxInfo="#x01000008">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fbc3052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4028 8Ch. Ana. Output 4-20mA, 12bit" Desc="EL4028" PortABoxInfo="#x01000002">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001110002400010003000000000000001000001124010000</SyncMan>
@@ -658,10 +682,10 @@ Bit1: Value bigger/equal Limit2]]>
 							<CoeProfile ProfileNo="26219401"/>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="10">
-						<Name>Term 10 (EL1808)</Name>
+					<Box BoxType="9099" Id="4">
+						<Name>Term 4 (EL1808)</Name>
 						<ImageId>7</ImageId>
-						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07103052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1808 8Ch. Dig. Input 24V, 3ms" Desc="EL1808" PortABoxInfo="#x01000009">
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x07103052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1808 8Ch. Dig. Input 24V, 3ms" Desc="EL1808" PortABoxInfo="#x01000003">
 							<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
 							<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
 							<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
@@ -706,10 +730,10 @@ Bit1: Value bigger/equal Limit2]]>
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="11">
-						<Name>Term 11 (EL2808)</Name>
+					<Box BoxType="9099" Id="5">
+						<Name>Term 5 (EL2808)</Name>
 						<ImageId>1003</ImageId>
-						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0af83052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2808 8Ch. Dig. Output 24V, 0.5A" Desc="EL2808" PortABoxInfo="#x0100000a">
+						<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x0af83052" RevisionNo="#x00110000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2808 8Ch. Dig. Output 24V, 0.5A" Desc="EL2808" PortABoxInfo="#x01000004">
 							<SyncMan>000f01004400010003000000010001000100000f44090000</SyncMan>
 							<Fmmu>0000000000000000000f00020100000001000000000000000000000000000000</Fmmu>
 							<Pdo Name="Channel 1" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
@@ -754,10 +778,10 @@ Bit1: Value bigger/equal Limit2]]>
 							</Pdo>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="12">
-						<Name>Term 12 (EL3068)</Name>
+					<Box BoxType="9099" Id="6">
+						<Name>Term 6 (EL3068)</Name>
 						<ImageId>1001</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0bfc3052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3068 8Ch. Ana. Input 0-10V" Desc="EL3068" PortABoxInfo="#x0100000b">
+						<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0bfc3052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3068 8Ch. Ana. Input 0-10V" Desc="EL3068" PortABoxInfo="#x01000005">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
@@ -1271,10 +1295,10 @@ Bit1: Value bigger/equal Limit2]]>
 							<CoeProfile ProfileNo="19665801"/>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="13">
-						<Name>Term 13 (EL4008)</Name>
+					<Box BoxType="9099" Id="7">
+						<Name>Term 7 (EL4008)</Name>
 						<ImageId>1002</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fa83052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4008 8Ch. Ana. Output 0-10V, 12bit" Desc="EL4008" PortABoxInfo="#x0100000c">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fa83052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4008 8Ch. Ana. Output 0-10V, 12bit" Desc="EL4008" PortABoxInfo="#x01000006">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001110002400010003000000000000001000001124010000</SyncMan>
@@ -1334,10 +1358,10 @@ Bit1: Value bigger/equal Limit2]]>
 							<CoeProfile ProfileNo="26219401"/>
 						</EtherCAT>
 					</Box>
-					<Box BoxType="9099" Id="14">
-						<Name>Term 14 (EL9011)</Name>
+					<Box BoxType="9099" Id="8">
+						<Name>Term 8 (EL9011)</Name>
 						<ImageId>1004</ImageId>
-						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x0100000d"/>
+						<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23333050" InfoDataState="false" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL9011 End Terminal" Desc="EL9011" PortABoxInfo="#x01000007"/>
 					</Box>
 				</Box>
 				<EtherCAT/>
@@ -1345,27 +1369,16 @@ Bit1: Value bigger/equal Limit2]]>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
 		<OwnerA Name="TIPC^tesimplc^tesimplc Instance">
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 13 (EL4008)">
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[5]" VarB="AO Outputs Channel 5^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[6]" VarB="AO Outputs Channel 6^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[7]" VarB="AO Outputs Channel 7^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_VOUT[8]" VarB="AO Outputs Channel 8^Analog output"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 9 (EL4028)">
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[5]" VarB="AO Outputs Channel 5^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[6]" VarB="AO Outputs Channel 6^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[7]" VarB="AO Outputs Channel 7^Analog output"/>
-				<Link VarA="PlcTask Outputs^G_IO.XMEAS_IO_IOUT[8]" VarB="AO Outputs Channel 8^Analog output"/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL4008)">
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[5]" VarB="AO Outputs Channel 5^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[6]" VarB="AO Outputs Channel 6^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[7]" VarB="AO Outputs Channel 7^Analog output"/>
+				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[8]" VarB="AO Outputs Channel 8^Analog output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

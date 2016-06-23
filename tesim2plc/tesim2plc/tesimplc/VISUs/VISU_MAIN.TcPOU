@@ -7,6 +7,20 @@ VAR
 	XMEAS_FeedAnalyzer		:	ARRAY[1..6] OF REAL;
 	XMEAS_ProductAnalyzer	:	ARRAY[1..5] OF REAL;
 	i: INT := 0;	
+	
+XMV_STRINGS					:	ARRAY[1..12] OF WSTRING := [
+									"D feed flow",
+									"E feed flow", 
+									"A feed flow",
+									"A and C feed flow",
+									"Compressor recycle valve",
+									"Purpc valve",
+									"Separator pot liquid flow",
+									"Stripper liquid flow",
+									"Stripper steam flow",
+									"Reactor cooling water flow",
+									"Condensor cooling water flow",
+									"Agitator speed"];	
 END_VAR
 ]]></Declaration>
     <Implementation>

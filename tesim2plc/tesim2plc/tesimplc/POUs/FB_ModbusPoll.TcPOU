@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.38">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
   <POU Name="FB_ModbusPoll" Id="{5c9fc36d-805a-483b-9b35-a817f443a172}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_ModbusPoll
 
@@ -28,11 +28,12 @@ fbReadRegs.nUnitID := 16#FF; //255
 fbReadRegs.nQuantity := 3; //3 words
 fbReadRegs.tTimeout := T#5S; //30 sec timout
 fbReadRegs.nMBAddr := startAddr;
-fbReadRegs.cbLength := 6;//nq*2
+fbReadRegs.cbLength := 6;//nQuantity*2
 fbReadRegs.pDestAddr := ADR(arr); //the pointer to the array
 
 //the rising edge of the input negate the tick to create  a rising input of change :)
-fbReadRegs.bExecute := (bModbusTick := NOT bModbusTick); 
+fbReadRegs.bExecute := (bModbusTick := NOT bModbusTick);
+//fbReadRegs.bExecute := (bModbusTick := TRUE); 
 
 //uppercase(convert first number to hex + convert second number to hex)
 dataStr := F_TOUCase(CONCAT(WORD_TO_HEXSTR(arr[1],4,TRUE),WORD_TO_HEXSTR(arr[2],4,TRUE))); 

@@ -4,6 +4,19 @@
     <Declaration><![CDATA[VAR_GLOBAL
 	IOUT_WD_RANGE	:	INT		:=32767;
 	VOUT_WD_RANGE	:	INT		:=32767;
+	
+	A_FLOW_MAX 		:	LREAL	:=10.0;
+	D_FLOW_MAX		:	LREAL	:=10000.0;
+	E_FLOW_MAX		:	LREAL	:=10000.0;
+	P_REACTOR_MAX	:	LREAL	:=3000.0;
+	
+	A_FLOW_MIN 		:	LREAL	:=0.0;
+	D_FLOW_MIN		:	LREAL	:=0.0;
+	E_FLOW_MIN		:	LREAL	:=0.0;
+	P_REACTOR_MIN	:	LREAL	:=0.0;
+	
+	AOUT_MAX		:	LREAL	:=10.0;
+	AOUT_MIN		:	LREAL	:=0.0;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>

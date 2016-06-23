@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.38">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
   <POU Name="HexStringToReal" Id="{c66e73db-67a1-43dd-8dc0-d951b42e247b}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK HexStringToReal
 VAR_INPUT
@@ -19,6 +19,10 @@ i :INT :=0;
 ar : ARRAY[0..23] OF STRING;
 significand : REAL;
 decVal : REAL ;
+
+mySExponent:INT;
+myEVal:REAL;
+myOut:REAL;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -70,7 +74,7 @@ binStr := RIGHT(binStr,32);
 //gets rid of the sign bit bc i am assuming that it is always positive
 binStr := DELETE(binStr,1,1);
 
-//convert the first 8 bits to get the exponent value and subtract 27
+//convert the first 8 bits to get the exponent value and subtract 127
 sExponent := STRING_TO_INT(CONCAT('2#',LEFT(binStr,8))) - 127;
 
 //get remaining 23 mantissa bits
@@ -90,7 +94,7 @@ END_FOR
 //get the significand by multiplying current bit by decVal then halve the decVal
 FOR i:= 1 TO 23 BY 1 DO
 	significand := significand + (STRING_TO_INT(ar[i])*decVal);
-	decVal := decVal/2;
+	decVal := decVal/2.0;
 END_FOR
 
 //manually generate the power of 2
@@ -98,10 +102,14 @@ expVal := 2;
 FOR i:= 0 TO sExponent-2 BY 1 DO
 	expVal := 2*expVal;
 END_FOR
+mySExponent := sExponent;
+myEVal:=EXPT(2.0,mySExponent);
+out := (significand +1) * (myEVal);
 
+// This was Rushad's implementation which did not work for very small values
 //make the output equal to the fp number which is calculated by multiplying
 //the exponent by the significand + 1
-out := (significand +1) * (expVal);
+//out := (significand +1) * (expVal);
 RETURN;
 ]]></ST>
     </Implementation>
