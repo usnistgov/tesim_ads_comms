@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScopeViewSerializable>
   <Version>1.0.0.4</Version>
-  <Title>Scope YT Project</Title>
+  <Title>Scope YT PVs</Title>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="65d18af0-933c-485a-9f83-00eac16afefd" LastFocused="130973464207913024" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="070367cf-8fd1-4131-9ead-fee5b057831f" LastFocused="130973464300352267" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="3bad1780-5bed-453c-97c8-7cee3896d2ce" LastFocused="130973464000902325" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="65d18af0-933c-485a-9f83-00eac16afefd" LastFocused="131148993801811127" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="070367cf-8fd1-4131-9ead-fee5b057831f" LastFocused="131153372727398763" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="3bad1780-5bed-453c-97c8-7cee3896d2ce" LastFocused="131148993508091758" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="6f805bd9-d153-451a-819c-333251cdb92f" LastFocused="131152332569450690" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="9cbee6f9-7caf-42b7-b451-221e58738fb3" DocumentIndexInWindowGroup="3" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="9cbee6f9-7caf-42b7-b451-221e58738fb3" Collapsed="0" SelectedControl="070367cf-8fd1-4131-9ead-fee5b057831f"&gt;
@@ -14,6 +15,7 @@
           &lt;Control Guid="070367cf-8fd1-4131-9ead-fee5b057831f" /&gt;
           &lt;Control Guid="3bad1780-5bed-453c-97c8-7cee3896d2ce" /&gt;
           &lt;Control Guid="65d18af0-933c-485a-9f83-00eac16afefd" /&gt;
+          &lt;Control Guid="6f805bd9-d153-451a-819c-333251cdb92f" /&gt;
         &lt;/Controls&gt;
       &lt;/ControlLayoutSystem&gt;
     &lt;/SplitLayoutSystem&gt;
@@ -36,7 +38,7 @@
   </Operating>
   <Charts>
     <ScopeChartSerializable>
-      <Name>Reactor</Name>
+      <Name>Measured Process Variables</Name>
       <GUID>070367cf-8fd1-4131-9ead-fee5b057831f</GUID>
       <Style>
         <BackgroundColorValue>-1118482</BackgroundColorValue>
@@ -80,8 +82,8 @@
       </XAxis>
       <YAxes>
         <ScopeYAxisSerializable>
-          <Caption>Reactor Press. (kPa)</Caption>
-          <Name>Axis</Name>
+          <Caption>A Flow (kmps)</Caption>
+          <Name>Axis_Aflow</Name>
           <Style>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
@@ -90,7 +92,7 @@
             <LineWidth>1</LineWidth>
             <AutoScale>true</AutoScale>
             <AxisMin>0</AxisMin>
-            <AxisMax>3000</AxisMax>
+            <AxisMax>100</AxisMax>
             <ScaleFactor>0</ScaleFactor>
             <ShowCursorValue>true</ShowCursorValue>
             <GridColorValue>-13676721</GridColorValue>
@@ -104,15 +106,15 @@
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <Name>MBS_XMEAS[1]</Name>
+              <Name>XMEAS[1]</Name>
               <IdentHandle>1</IdentHandle>
               <Acquisition>
-                <DataType>REAL32</DataType>
+                <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546704</IndexOffset>
+                <IndexOffset>550856</IndexOffset>
                 <TargetPort>851</TargetPort>
-                <VariableSize>4</VariableSize>
-                <SymbolName>G_IO.MBS_XMEAS[1]</SymbolName>
+                <VariableSize>8</VariableSize>
+                <SymbolName>G_IO.XMEAS[1]</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
@@ -128,16 +130,16 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-16776961</ColorValue>
+                <ColorValue>-32768</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
-                <LineWidth>1</LineWidth>
+                <LineWidth>3</LineWidth>
                 <Antialias>true</Antialias>
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-16776961</MarkColorValue>
+                <MarkColorValue>-32768</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
@@ -156,8 +158,505 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <Name>XMEAS[7]</Name>
+              <Name>MBS_XMEAS[1]</Name>
               <IdentHandle>2</IdentHandle>
+              <Acquisition>
+                <DataType>REAL32</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>551200</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>4</VariableSize>
+                <SymbolName>G_IO.MBS_XMEAS[1]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16777024</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>1</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16777024</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+            <ScopeChannelSerializable>
+              <Name>cal_mva_mbs[1]</Name>
+              <IdentHandle>3</IdentHandle>
+              <Acquisition>
+                <DataType>REAL64</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>565608</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>8</VariableSize>
+                <SymbolName>MAIN.cal_mva_mbs[1]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16711936</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>1</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16711936</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+          </Channels>
+          <SortPriority>1</SortPriority>
+        </ScopeYAxisSerializable>
+        <ScopeYAxisSerializable>
+          <Caption>D Feed</Caption>
+          <Name>Axis_Dflow</Name>
+          <Style>
+            <Enabled>true</Enabled>
+            <ColorValue>-13676721</ColorValue>
+            <UseGrid>true</UseGrid>
+            <Ticks>10</Ticks>
+            <LineWidth>1</LineWidth>
+            <AutoScale>true</AutoScale>
+            <AxisMin>-1</AxisMin>
+            <AxisMax>1</AxisMax>
+            <ScaleFactor>0</ScaleFactor>
+            <ShowCursorValue>true</ShowCursorValue>
+            <GridColorValue>-13676721</GridColorValue>
+            <GridLineWidth>1</GridLineWidth>
+            <UseSubGrid>false</UseSubGrid>
+            <SubDivisions>5</SubDivisions>
+            <Logarithmic>false</Logarithmic>
+            <Comment></Comment>
+            <ShowName>true</ShowName>
+            <Precision>6</Precision>
+          </Style>
+          <Channels>
+            <ScopeChannelSerializable>
+              <Name>XMEAS[2]</Name>
+              <IdentHandle>4</IdentHandle>
+              <Acquisition>
+                <DataType>REAL64</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>550864</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>8</VariableSize>
+                <SymbolName>G_IO.XMEAS[2]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-32768</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>3</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-32768</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+            <ScopeChannelSerializable>
+              <Name>MBS_XMEAS[2]</Name>
+              <IdentHandle>5</IdentHandle>
+              <Acquisition>
+                <DataType>REAL32</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>551204</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>4</VariableSize>
+                <SymbolName>G_IO.MBS_XMEAS[2]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16777024</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>1</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16777024</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+            <ScopeChannelSerializable>
+              <Name>cal_mva_mbs[2]</Name>
+              <IdentHandle>6</IdentHandle>
+              <Acquisition>
+                <DataType>REAL64</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>565616</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>8</VariableSize>
+                <SymbolName>MAIN.cal_mva_mbs[2]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16711936</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>1</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16711936</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+          </Channels>
+          <SortPriority>0</SortPriority>
+        </ScopeYAxisSerializable>
+        <ScopeYAxisSerializable>
+          <Caption>E Feed</Caption>
+          <Name>Axis_Eflow</Name>
+          <Style>
+            <Enabled>true</Enabled>
+            <ColorValue>-13676721</ColorValue>
+            <UseGrid>true</UseGrid>
+            <Ticks>10</Ticks>
+            <LineWidth>1</LineWidth>
+            <AutoScale>true</AutoScale>
+            <AxisMin>-1</AxisMin>
+            <AxisMax>1</AxisMax>
+            <ScaleFactor>0</ScaleFactor>
+            <ShowCursorValue>true</ShowCursorValue>
+            <GridColorValue>-13676721</GridColorValue>
+            <GridLineWidth>1</GridLineWidth>
+            <UseSubGrid>false</UseSubGrid>
+            <SubDivisions>5</SubDivisions>
+            <Logarithmic>false</Logarithmic>
+            <Comment></Comment>
+            <ShowName>true</ShowName>
+            <Precision>6</Precision>
+          </Style>
+          <Channels>
+            <ScopeChannelSerializable>
+              <Name>XMEAS[3]</Name>
+              <IdentHandle>7</IdentHandle>
+              <Acquisition>
+                <DataType>REAL64</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>550872</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>8</VariableSize>
+                <SymbolName>G_IO.XMEAS[3]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-32768</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>3</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-32768</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+            <ScopeChannelSerializable>
+              <Name>MBS_XMEAS[3]</Name>
+              <IdentHandle>8</IdentHandle>
+              <Acquisition>
+                <DataType>REAL32</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>551208</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>4</VariableSize>
+                <SymbolName>G_IO.MBS_XMEAS[3]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16777024</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>1</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16777024</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+            <ScopeChannelSerializable>
+              <Name>cal_mva_mbs[3]</Name>
+              <IdentHandle>9</IdentHandle>
+              <Acquisition>
+                <DataType>REAL64</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>565624</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>8</VariableSize>
+                <SymbolName>MAIN.cal_mva_mbs[3]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16711936</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>1</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16711936</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+          </Channels>
+          <SortPriority>1</SortPriority>
+        </ScopeYAxisSerializable>
+        <ScopeYAxisSerializable>
+          <Caption>Press. (kPa)</Caption>
+          <Name>Axis_Preact</Name>
+          <Style>
+            <Enabled>true</Enabled>
+            <ColorValue>-13676721</ColorValue>
+            <UseGrid>true</UseGrid>
+            <Ticks>10</Ticks>
+            <LineWidth>1</LineWidth>
+            <AutoScale>true</AutoScale>
+            <AxisMin>2600</AxisMin>
+            <AxisMax>3000</AxisMax>
+            <ScaleFactor>0</ScaleFactor>
+            <ShowCursorValue>true</ShowCursorValue>
+            <GridColorValue>-13676721</GridColorValue>
+            <GridLineWidth>1</GridLineWidth>
+            <UseSubGrid>false</UseSubGrid>
+            <SubDivisions>5</SubDivisions>
+            <Logarithmic>false</Logarithmic>
+            <Comment></Comment>
+            <ShowName>true</ShowName>
+            <Precision>6</Precision>
+          </Style>
+          <Channels>
+            <ScopeChannelSerializable>
+              <Name>XMEAS[7]</Name>
+              <IdentHandle>10</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -207,43 +706,16 @@
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
-          </Channels>
-          <SortPriority>-1</SortPriority>
-        </ScopeYAxisSerializable>
-        <ScopeYAxisSerializable>
-          <Caption>Reactor Level (%)</Caption>
-          <Name>Axis(1)</Name>
-          <Style>
-            <Enabled>true</Enabled>
-            <ColorValue>-13676721</ColorValue>
-            <UseGrid>true</UseGrid>
-            <Ticks>10</Ticks>
-            <LineWidth>1</LineWidth>
-            <AutoScale>true</AutoScale>
-            <AxisMin>0</AxisMin>
-            <AxisMax>100</AxisMax>
-            <ScaleFactor>0</ScaleFactor>
-            <ShowCursorValue>true</ShowCursorValue>
-            <GridColorValue>-13676721</GridColorValue>
-            <GridLineWidth>1</GridLineWidth>
-            <UseSubGrid>false</UseSubGrid>
-            <SubDivisions>5</SubDivisions>
-            <Logarithmic>false</Logarithmic>
-            <Comment></Comment>
-            <ShowName>true</ShowName>
-            <Precision>6</Precision>
-          </Style>
-          <Channels>
             <ScopeChannelSerializable>
-              <Name>MBS_XMEAS[2]</Name>
-              <IdentHandle>3</IdentHandle>
+              <Name>MBS_XMEAS[4]</Name>
+              <IdentHandle>11</IdentHandle>
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546708</IndexOffset>
+                <IndexOffset>551212</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
-                <SymbolName>G_IO.MBS_XMEAS[2]</SymbolName>
+                <SymbolName>G_IO.MBS_XMEAS[4]</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
@@ -259,7 +731,7 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-16776961</ColorValue>
+                <ColorValue>-16777024</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
                 <LineWidth>1</LineWidth>
@@ -268,7 +740,7 @@
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-16776961</MarkColorValue>
+                <MarkColorValue>-16777024</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
@@ -287,15 +759,15 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <Name>XMEAS[8]</Name>
-              <IdentHandle>4</IdentHandle>
+              <Name>cal_mva_mbs[4]</Name>
+              <IdentHandle>12</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>546424</IndexOffset>
+                <IndexOffset>565632</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
-                <SymbolName>G_IO.XMEAS[8]</SymbolName>
+                <SymbolName>MAIN.cal_mva_mbs[4]</SymbolName>
                 <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
@@ -311,16 +783,16 @@
                 <ContextMask>0</ContextMask>
               </Acquisition>
               <Style>
-                <ColorValue>-32768</ColorValue>
+                <ColorValue>-16711936</ColorValue>
                 <SolidLine>true</SolidLine>
-                <Marks>true</Marks>
+                <Marks>false</Marks>
                 <LineWidth>1</LineWidth>
                 <Antialias>true</Antialias>
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
                 <Visible>true</Visible>
-                <MarkColorValue>-32768</MarkColorValue>
+                <MarkColorValue>-16711936</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
                 <ScaleFactor>1</ScaleFactor>
@@ -339,7 +811,7 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <SortPriority>-1</SortPriority>
+          <SortPriority>0</SortPriority>
         </ScopeYAxisSerializable>
       </YAxes>
       <XYAxes />
@@ -352,7 +824,7 @@
         <DeltaValues>false</DeltaValues>
       </CursorModule>
       <Operating>
-        <DisplayWidth>140000000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
@@ -411,14 +883,14 @@
             <Ticks>10</Ticks>
             <LineWidth>1</LineWidth>
             <AutoScale>true</AutoScale>
-            <AxisMin>-1</AxisMin>
-            <AxisMax>1</AxisMax>
+            <AxisMin>0</AxisMin>
+            <AxisMax>100</AxisMax>
             <ScaleFactor>0</ScaleFactor>
             <ShowCursorValue>true</ShowCursorValue>
             <GridColorValue>-13676721</GridColorValue>
             <GridLineWidth>1</GridLineWidth>
-            <UseSubGrid>false</UseSubGrid>
-            <SubDivisions>5</SubDivisions>
+            <UseSubGrid>true</UseSubGrid>
+            <SubDivisions>10</SubDivisions>
             <Logarithmic>false</Logarithmic>
             <Comment></Comment>
             <ShowName>true</ShowName>
@@ -427,7 +899,7 @@
           <Channels>
             <ScopeChannelSerializable>
               <Name>Stripper</Name>
-              <IdentHandle>5</IdentHandle>
+              <IdentHandle>13</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -479,7 +951,7 @@
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
               <Name>Separator</Name>
-              <IdentHandle>6</IdentHandle>
+              <IdentHandle>14</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -505,7 +977,7 @@
                 <ColorValue>-5952982</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
-                <LineWidth>1</LineWidth>
+                <LineWidth>2</LineWidth>
                 <Antialias>true</Antialias>
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
@@ -531,7 +1003,7 @@
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
               <Name>Reactor</Name>
-              <IdentHandle>7</IdentHandle>
+              <IdentHandle>15</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -557,7 +1029,7 @@
                 <ColorValue>-9728477</ColorValue>
                 <SolidLine>true</SolidLine>
                 <Marks>false</Marks>
-                <LineWidth>1</LineWidth>
+                <LineWidth>3</LineWidth>
                 <Antialias>true</Antialias>
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
@@ -582,7 +1054,7 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <SortPriority>-1</SortPriority>
+          <SortPriority>0</SortPriority>
         </ScopeYAxisSerializable>
       </YAxes>
       <XYAxes />
@@ -670,7 +1142,7 @@
           <Channels>
             <ScopeChannelSerializable>
               <Name>XMEAS[9]</Name>
-              <IdentHandle>8</IdentHandle>
+              <IdentHandle>16</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -722,7 +1194,7 @@
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
               <Name>XMEAS[11]</Name>
-              <IdentHandle>9</IdentHandle>
+              <IdentHandle>17</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -774,7 +1246,7 @@
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
               <Name>XMEAS[18]</Name>
-              <IdentHandle>10</IdentHandle>
+              <IdentHandle>18</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -826,7 +1298,7 @@
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
               <Name>XMEAS[21]</Name>
-              <IdentHandle>11</IdentHandle>
+              <IdentHandle>19</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -878,7 +1350,7 @@
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
               <Name>XMEAS[22]</Name>
-              <IdentHandle>12</IdentHandle>
+              <IdentHandle>20</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
@@ -929,7 +1401,198 @@
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
           </Channels>
-          <SortPriority>-1</SortPriority>
+          <SortPriority>0</SortPriority>
+        </ScopeYAxisSerializable>
+      </YAxes>
+      <XYAxes />
+      <CursorModule>
+        <Cursors />
+        <ShowSelectedOnly>false</ShowSelectedOnly>
+        <AbsTimeVisible>true</AbsTimeVisible>
+        <RecordTimeVisible>true</RecordTimeVisible>
+        <ChartTimeVisible>true</ChartTimeVisible>
+        <DeltaValues>false</DeltaValues>
+      </CursorModule>
+      <Operating>
+        <DisplayWidth>100000000</DisplayWidth>
+      </Operating>
+      <ChartType>XT</ChartType>
+      <SortPriority>-1</SortPriority>
+    </ScopeChartSerializable>
+    <ScopeChartSerializable>
+      <Name>Reactor Pressure</Name>
+      <GUID>6f805bd9-d153-451a-819c-333251cdb92f</GUID>
+      <Style>
+        <BackgroundColorValue>-1118482</BackgroundColorValue>
+        <BorderColorValue>-1973016</BorderColorValue>
+        <IsSmooth>false</IsSmooth>
+        <SmoothTime>100</SmoothTime>
+        <YZoom>true</YZoom>
+        <StackedYAxes>false</StackedYAxes>
+        <Legend>false</Legend>
+        <VisibleToolstrip>true</VisibleToolstrip>
+        <VisibleTimestrip>true</VisibleTimestrip>
+        <BaseTime>100000000</BaseTime>
+        <Comment></Comment>
+        <ScaleOnZoom>true</ScaleOnZoom>
+        <AutoStartOnRecord>true</AutoStartOnRecord>
+        <ButtonSize>
+          <Width>16</Width>
+          <Height>16</Height>
+        </ButtonSize>
+        <ToolStripFontSize>8.25</ToolStripFontSize>
+        <TimeStripFontSize>8.25</TimeStripFontSize>
+        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton</EnabledButtons>
+        <EnabledTimeLabels>StartTimeLabel Splitter1 EndTimeLabel Splitter2 PositionLabel Splitter3 AbsTimeLabel Splitter4 DateLabel</EnabledTimeLabels>
+        <ShowName>false</ShowName>
+        <VisibleOverview>false</VisibleOverview>
+        <DataPointToolTip>true</DataPointToolTip>
+      </Style>
+      <XAxis>
+        <Style>
+          <ColorValue>-13676721</ColorValue>
+          <UseGrid>true</UseGrid>
+          <Ticks>10</Ticks>
+          <LineWidth>1</LineWidth>
+          <GridColorValue>-13676721</GridColorValue>
+          <GridLineWidth>1</GridLineWidth>
+          <UseSubGrid>false</UseSubGrid>
+          <SubDivisions>5</SubDivisions>
+          <Comment></Comment>
+        </Style>
+        <SortPriority>-1</SortPriority>
+      </XAxis>
+      <YAxes>
+        <ScopeYAxisSerializable>
+          <Caption>Reactor Pressure (kPa)</Caption>
+          <Name>Axis</Name>
+          <Style>
+            <Enabled>true</Enabled>
+            <ColorValue>-13676721</ColorValue>
+            <UseGrid>true</UseGrid>
+            <Ticks>10</Ticks>
+            <LineWidth>1</LineWidth>
+            <AutoScale>true</AutoScale>
+            <AxisMin>1500</AxisMin>
+            <AxisMax>3000</AxisMax>
+            <ScaleFactor>0</ScaleFactor>
+            <ShowCursorValue>true</ShowCursorValue>
+            <GridColorValue>-13676721</GridColorValue>
+            <GridLineWidth>1</GridLineWidth>
+            <UseSubGrid>false</UseSubGrid>
+            <SubDivisions>5</SubDivisions>
+            <Logarithmic>false</Logarithmic>
+            <Comment></Comment>
+            <ShowName>true</ShowName>
+            <Precision>6</Precision>
+          </Style>
+          <Channels>
+            <ScopeChannelSerializable>
+              <Name>XMEAS[7]</Name>
+              <IdentHandle>21</IdentHandle>
+              <Acquisition>
+                <DataType>REAL64</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>550904</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>8</VariableSize>
+                <SymbolName>G_IO.XMEAS[7]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-32768</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>3</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-32768</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+            <ScopeChannelSerializable>
+              <Name>MBS_XMEAS[4]</Name>
+              <IdentHandle>22</IdentHandle>
+              <Acquisition>
+                <DataType>REAL32</DataType>
+                <IndexGroup>16448</IndexGroup>
+                <IndexOffset>551212</IndexOffset>
+                <TargetPort>851</TargetPort>
+                <VariableSize>4</VariableSize>
+                <SymbolName>G_IO.MBS_XMEAS[4]</SymbolName>
+                <SymbolComment></SymbolComment>
+                <IsSymbolBased>true</IsSymbolBased>
+                <FileHandle>0</FileHandle>
+                <UseLocalServer>true</UseLocalServer>
+                <AmsNetIdString>5.20.215.224.1.1</AmsNetIdString>
+                <SampleTime>100000</SampleTime>
+                <Disabled>false</Disabled>
+                <Oversample>0</Oversample>
+                <UseTaskSampletime>true</UseTaskSampletime>
+                <ForceOversampling>false</ForceOversampling>
+                <IsArray>false</IsArray>
+                <ArrayLength>0</ArrayLength>
+                <ContextMask>0</ContextMask>
+              </Acquisition>
+              <Style>
+                <ColorValue>-16776961</ColorValue>
+                <SolidLine>true</SolidLine>
+                <Marks>false</Marks>
+                <LineWidth>3</LineWidth>
+                <Antialias>true</Antialias>
+                <Offset>0</Offset>
+                <BitMask>1152921504606846975</BitMask>
+                <ShowCursorValue>true</ShowCursorValue>
+                <Visible>true</Visible>
+                <MarkColorValue>-16776961</MarkColorValue>
+                <MarkSize>3</MarkSize>
+                <TimeShift>0</TimeShift>
+                <ScaleFactor>1</ScaleFactor>
+                <Comment></Comment>
+                <AutoMarks>false</AutoMarks>
+                <XOffset>0</XOffset>
+                <XScaleFactor>1</XScaleFactor>
+                <XBitMask>1152921504606846975</XBitMask>
+                <FillMode>0</FillMode>
+                <FillColorValue>838861055</FillColorValue>
+                <EndCap>false</EndCap>
+                <StartCap>false</StartCap>
+                <CapSize>3</CapSize>
+                <CapColorValue>-65536</CapColorValue>
+              </Style>
+              <SortPriority>-1</SortPriority>
+            </ScopeChannelSerializable>
+          </Channels>
+          <SortPriority>0</SortPriority>
         </ScopeYAxisSerializable>
       </YAxes>
       <XYAxes />

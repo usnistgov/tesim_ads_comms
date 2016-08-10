@@ -7,7 +7,13 @@
     <ProjectGuid>{0a0d94f7-1a43-4400-a59c-353703472e3a}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Scope YT Project.tcscope">
+    <Content Include="Scope YT PVs.tcscope">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RampTestSignal.tcscope">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scope YT DCOffsets.tcscope">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

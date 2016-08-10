@@ -15,7 +15,7 @@ VAR_GLOBAL
 	
 	MBS_XMEAS_RAW				:	ARRAY[1..4] OF REAL;
 	MBS_XMEAS					:	ARRAY[1..4] OF REAL;
-	MBS_XMEAS_CAL_OFFSET		:	ARRAY[1..4] OF REAL := [0.0, 0.0, 0.0, 0.0]; //[ -1.39, -1.55 ];
+	MBS_XMEAS_CAL_OFFSET		:	ARRAY[1..4] OF REAL := [0.0215, 0.0175, 0.0195, 0.0216];
 	
 	// manipulated values reported by tesim
 	XMV							:	ARRAY[1..12] OF LREAL;
