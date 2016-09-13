@@ -7,7 +7,13 @@ END_VAR
 
 VAR_GLOBAL
 	
-	XMEAS_IO_IOUT	AT %Q*		:	ARRAY[1..8] OF INT;
+	// for the current-based control solutions
+	XMEAS_IO_IOUT	AT %Q*		:	ARRAY[1..4] OF INT;
+	XMEAS_IO_IIN	AT %I*		:	ARRAY[1..4] OF INT;
+	XMV_IO_IOUT		AT %Q*		:	ARRAY[1..4] OF INT;
+	XMV_IO_IIN		AT %I*		:	ARRAY[1..4] OF INT;
+	
+	// for the voltage-based control solutions
 	XMEAS_IO_VOUT 	AT %Q*		:	ARRAY[1..8] OF INT;
 	
 	// xmeas reported by tesim

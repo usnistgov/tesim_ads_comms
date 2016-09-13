@@ -2,8 +2,10 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
   <GVL Name="G_PARAMS" Id="{3b9a06b5-e024-4474-8f53-bae8a479db56}">
     <Declaration><![CDATA[VAR_GLOBAL
-	IOUT_WD_RANGE	:	INT		:=32767;
-	VOUT_WD_RANGE	:	INT		:=32767;
+	IOUT_WD_MAX	:	INT		:=32767;
+	IOUT_WD_MIN	:	INT		:=0;
+	VOUT_WD_MAX	:	INT		:=32767;
+	VOUT_WD_MIN	:	INT		:=0;
 	
 	A_FLOW_MAX 		:	LREAL	:=10.0;
 	D_FLOW_MAX		:	LREAL	:=7500.0;
@@ -15,8 +17,11 @@
 	E_FLOW_MIN		:	LREAL	:=0.0;
 	P_REACTOR_MIN	:	LREAL	:=0.0;
 	
-	AOUT_MAX		:	LREAL	:=10.0;
-	AOUT_MIN		:	LREAL	:=0.0;
+	VOUT_MAX		:	LREAL	:=10.0;
+	VOUT_MIN		:	LREAL	:=0.0;
+	
+	IOUT_MAX		:	LREAL	:=20.0;
+	IOUT_MIN		:	LREAL	:=4.0;
 	
 
 END_VAR]]></Declaration>
