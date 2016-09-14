@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="MAIN_oo" Id="{dd06f3b9-f114-454f-820d-85f29a3eb792}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN_oo
+VAR
+	// specify network type
+	// 100 					: ISA110.11a iMesh calibration
+	// 101 					: ISA110.11a iMesh TESIM
+	// 102 					: ISA110.11a iMesh test signals
+	
+	// 200 					: PhoenixContact calibration
+	// 201					: PhoenixContact TESIM
+	// 202					: PhoenixContact test signals
+	NetType	:	INT := 202;
+	
+	// network interface/simulator function blocks
+	netiMeshCal				:FB_3eTI_iMesh_Cal;
+	netiMeshTESIM			:FB_3eTI_iMesh_TESIM;
+	netiMeshTestSignals		:FB_3eTI_TestSignals;
+	
+	netPCCal				:FB_PC_OneLink_Cal;
+	netPCTESIM				:FB_PC_OneLink_TESIM;
+	netPCTestSignals		:FB_PC_OneLink_TestSignals;
+
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+CASE NetType OF 
+	100:
+	netiMeshCal();
+	101:
+	netiMeshTESIM();
+	102:
+	netiMeshTestSignals();
+	
+	200:
+	netPCCal();
+	201:
+	netPCTESIM();
+	202:
+	netPCTestSignals();
+	
+END_CASE]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

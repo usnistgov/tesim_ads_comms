@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_3eTI_iMesh_Base" Id="{c24ff66a-4461-44bb-a3fd-0d65c26a2169}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_iMesh_Base
+VAR_INPUT
+	
+	// THIS IS FOR THE ISA100.11A GATEWAY
+	mbAddrs : ARRAY[0..3] OF MODBUS_DATA_MAP :=  [ 
+			(_ipAddress := '192.168.254.253', _startAddress:= 6), 
+			(_ipAddress := '192.168.254.253', _startAddress:= 18),
+			(_ipAddress := '192.168.254.253', _startAddress:= 30),
+			(_ipAddress := '192.168.254.253', _startAddress:= 42)
+		];
+		
+END_VAR
+
+VAR_OUTPUT
+END_VAR
+
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

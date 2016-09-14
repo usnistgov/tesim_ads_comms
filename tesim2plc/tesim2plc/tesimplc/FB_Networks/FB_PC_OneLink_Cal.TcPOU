@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_PC_OneLink_Cal" Id="{b3cdd0c1-f1c6-4a59-a992-429c66a6cb69}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_PC_OneLink_Cal EXTENDS FB_PC_OneLink_TestSignals
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+// call the base class to query test signal values
+SUPER^();
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

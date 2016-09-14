@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <DUT Name="XMV_IO_IDX" Id="{4603388b-04f6-4e50-9bad-089d615ad4d1}">
+    <Declaration><![CDATA[TYPE XMV_IO_IDX :
+(
+	A_FLOW_VALVE			:=1,
+	D_FLOW_VALVE			:=2,
+	E_FLOW_VALVE			:=3,
+	REACTOR_CWFV			:=4
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

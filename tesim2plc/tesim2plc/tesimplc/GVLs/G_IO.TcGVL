@@ -16,15 +16,22 @@ VAR_GLOBAL
 	// for the voltage-based control solutions
 	XMEAS_IO_VOUT 	AT %Q*		:	ARRAY[1..8] OF INT;
 	
-	// xmeas reported by tesim
+	// XMEAS reported by tesim
 	XMEAS						:	ARRAY[1..41] OF LREAL;
 	
+	// XMEAS seen by the network
 	MBS_XMEAS_RAW				:	ARRAY[1..4] OF REAL;
 	MBS_XMEAS					:	ARRAY[1..4] OF REAL;
 	MBS_XMEAS_CAL_OFFSET		:	ARRAY[1..4] OF REAL := [0.0215, 0.0175, 0.0195, 0.0216];
-	
-	// manipulated values reported by tesim
+
+	// XMV values reported by tesim
 	XMV							:	ARRAY[1..12] OF LREAL;
+	
+	// XMV seen by the network
+	NET_XMV_RAW						:	ARRAY[1..4] OF LREAL;
+	NET_XMV							:	ARRAY[1..4] OF LREAL;
+	
+	// setpoints
 	PROD_RATE					:	LREAL;
 	P_REACTOR					:	LREAL;
 	L_REACTOR					:	LREAL;

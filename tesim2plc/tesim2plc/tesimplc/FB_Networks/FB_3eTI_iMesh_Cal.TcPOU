@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_3eTI_iMesh_Cal" Id="{7e050b20-176b-4587-847f-3701dacad419}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_iMesh_Cal EXTENDS FB_3eTI_TestSignals
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+		//common calibration variables
+	cal_tm 			:	TIME := T#20S;
+	cal_tm_task 	:	TIME := T#100MS;
+	cal_emode : E_CTRL_MODE := eCTRL_MODE_ACTIVE;
+	cal_override	: BOOL	:= TRUE;
+	cal_pv_mbs: ARRAY[1..4] OF LREAL := [0.0,0.0,0.0,0.0];
+	cal_pv: ARRAY[1..4] OF LREAL := [0.0,0.0,0.0,0.0];
+		
+	// moving average
+	cal_mva_work:	ARRAY[1..4] OF ARRAY[1..cal_mva_nWorkArray_SIZEOF] OF LREAL;
+	cal_mva_st	:   ARRAY[1..4] OF ST_CTRL_MOVING_AVERAGE_PARAMS := [
+		(	tTaskCycleTime:=cal_tm_task, 
+			tCtrlCycleTime:=cal_tm,
+			nSamplesToFilter:=cal_mva_nSamplesToFilter,
+			nWorkArray_SIZEOF:=cal_mva_nWorkArray_SIZEOF),
+		(	tTaskCycleTime:=cal_tm_task, 
+			tCtrlCycleTime:=cal_tm,
+			nSamplesToFilter:=cal_mva_nSamplesToFilter,
+			nWorkArray_SIZEOF:=cal_mva_nWorkArray_SIZEOF),
+		(	tTaskCycleTime:=cal_tm_task, 
+			tCtrlCycleTime:=cal_tm,
+			nSamplesToFilter:=cal_mva_nSamplesToFilter,
+			nWorkArray_SIZEOF:=cal_mva_nWorkArray_SIZEOF),
+		(	tTaskCycleTime:=cal_tm_task, 
+			tCtrlCycleTime:=cal_tm,
+			nSamplesToFilter:=cal_mva_nSamplesToFilter,
+			nWorkArray_SIZEOF:=cal_mva_nWorkArray_SIZEOF)
+	];
+	fb_cal_mva	:	ARRAY[1..4] OF FB_CTRL_MOVING_AVERAGE := [ 
+		(eMode:=cal_emode), 
+		(eMode:=cal_emode), 
+		(eMode:=cal_emode), 
+		(eMode:=cal_emode)];
+	cal_mva_mbs :	ARRAY[1..4] OF LREAL;
+
+	// more common cal vars		
+	cal_10v_dcoffset: ARRAY[1..4] OF LREAL;
+	cal_ii: INT;
+	cal_diff: ARRAY[1..4] OF LREAL;
+	cal_frac: ARRAY[1..4] OF LREAL;
+	
+END_VAR
+VAR CONSTANT
+	cal_mva_nSamplesToFilter : UINT := 40;
+	cal_mva_nWorkArray_SIZEOF: UINT := 400;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+// call the base class to query test signal values
+SUPER^();
+
+// CALIBRATION SECTION
+IF cal_override THEN
+	FOR cal_ii := 1 TO 4 DO
+		CASE cal_ii OF
+			1:
+			G_IO.XMEAS[XMEAS_IDX.A_FLOW]:=0.5;
+			2:
+			G_IO.XMEAS[XMEAS_IDX.D_FLOW] := 1500;
+			3:
+			G_IO.XMEAS[XMEAS_IDX.E_FLOW] := 1500;
+			4:
+			G_IO.XMEAS[XMEAS_IDX.P_REACTOR] := 2500;
+		END_CASE
+	END_FOR
+END_IF
+IF cal_emode=eCTRL_MODE_ACTIVE THEN
+	FOR cal_ii := 1 TO 4 DO
+		CASE cal_ii OF
+			1:
+			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW];
+			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.A_FLOW];
+			2:
+			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW];
+			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.D_FLOW];
+			3:
+			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW];
+			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.E_FLOW];
+			4:
+			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.P_REACTOR];
+			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.P_REACTOR];
+		END_CASE
+	
+		// calculate moving average
+		cal_mva_st[cal_ii].pWorkArray_ADR	:= ADR(cal_mva_work[cal_ii]);
+		fb_cal_mva[cal_ii].fIn := cal_pv_mbs[cal_ii];
+		fb_cal_mva[cal_ii](stParams:=cal_mva_st[cal_ii], eMode:=cal_emode);
+		cal_mva_mbs[cal_ii] := fb_cal_mva[cal_ii].fOut;	
+		
+		// calculate dc offset
+		IF ABS(cal_pv[cal_ii]) > 0.0 THEN
+			cal_diff[cal_ii]:=cal_mva_mbs[cal_ii]-cal_pv[cal_ii];
+			cal_frac[cal_ii]:=cal_diff[cal_ii]/cal_pv[cal_ii];
+			cal_10v_dcoffset[cal_ii] := 10.0*cal_frac[cal_ii];
+		END_IF
+		
+	END_FOR	
+END_IF
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

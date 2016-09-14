@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
-  <POU Name="MAIN" Id="{a635b5c6-3da2-47b6-922c-5d54bc332cb7}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM MAIN
+  <POU Name="MAIN_wsn" Id="{a635b5c6-3da2-47b6-922c-5d54bc332cb7}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN_wsn
 VAR
 
 	fbReadMB : FB_ReadModbus;

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_PC_OneLink_TestSignals" Id="{830d475b-c2d2-428d-8524-f4719c757bfe}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_PC_OneLink_TestSignals EXTENDS FB_PC_OneLink_Base
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+	// XMEAS RANGES
+	A_FLOW_MAX 		:=100.0;
+	D_FLOW_MAX		:=100.0;
+	E_FLOW_MAX		:=100.0;
+	P_REACTOR_MAX	:=100.0;
+	
+	A_FLOW_MIN 		:=0.0;
+	D_FLOW_MIN		:=0.0;
+	E_FLOW_MIN		:=0.0;
+	P_REACTOR_MIN	:=0.0;
+	
+	// XMV RANGES
+	A_FLOW_VALVE_MAX	:=100.0;
+	D_FLOW_VALVE_MAX	:=100.0;
+	E_FLOW_VALVE_MAX	:=100.0;
+	REACTOR_CWFV_MAX	:=100.0;
+	
+	A_FLOW_VALVE_MIN			:=0.0;
+	D_FLOW_VALVE_MIN			:=0.0;
+	E_FLOW_VALVE_MIN			:=0.0;
+	REACTOR_CWFV_MIN			:=0.0;
+
+SUPER^();
+(*
+//
+// BEGIN PRODUCE THE DATA
+//
+// XMEAS values will come from the external TESIM program using ADS
+
+
+//
+// WRITE SIGNALS to OUTPUTS
+//
+// CURRENT LOOPS for XMEAS Transmitters
+XMEAS_IO_IOUT[XMEAS_IO_IDX.A_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.A_FLOW],		pv_max:=G_PARAMS.A_FLOW_MAX, pv_min:=G_PARAMS.A_FLOW_MIN, dac_max:=IOUT_WD_MAX, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.D_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.D_FLOW],		pv_max:=G_PARAMS.D_FLOW_MAX, pv_min:=G_PARAMS.D_FLOW_MIN, dac_max:=IOUT_WD_MAX, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.E_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.E_FLOW],		pv_max:=G_PARAMS.E_FLOW_MAX, pv_min:=G_PARAMS.E_FLOW_MIN, dac_max:=IOUT_WD_MAX, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.P_REACTOR]	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.P_REACTOR],	pv_max:=G_PARAMS.P_REACTOR_MAX, pv_min:=G_PARAMS.P_REACTOR_MIN, dac_max:=IOUT_WD_MAX, dac_min:=0);
+
+// CURRENT LOOPS for XMV Transmitters
+XMV_IO_IOUT[XMV_IO_IDX.A_FLOW_VALVE]		:= pv_float_to_dac(pv:=XMEAS[XMV_IDX.A_FLOW_VALVE],		pv_max:=G_PARAMS.A_FLOW_VALVE_MAX, pv_min:=G_PARAMS.A_FLOW_VALVE_MAX, dac_max:=IOUT_WD_MAX, dac_min:=0);
+XMV_IO_IOUT[XMV_IO_IDX.D_FLOW_VALVE]		:= pv_float_to_dac(pv:=XMEAS[XMV_IDX.D_FLOW_VALVE],		pv_max:=G_PARAMS.D_FLOW_VALVE_MAX, pv_min:=G_PARAMS.D_FLOW_VALVE_MAX, dac_max:=IOUT_WD_MAX, dac_min:=0);
+XMV_IO_IOUT[XMV_IO_IDX.E_FLOW_VALVE]		:= pv_float_to_dac(pv:=XMEAS[XMV_IDX.E_FLOW_VALVE],		pv_max:=G_PARAMS.E_FLOW_VALVE_MAX, pv_min:=G_PARAMS.E_FLOW_VALVE_MAX, dac_max:=IOUT_WD_MAX, dac_min:=0);
+XMV_IO_IOUT[XMV_IO_IDX.REACTOR_CWFV]	:= pv_float_to_dac(pv:=XMEAS[XMV_IDX.REACTOR_CWFV],	pv_max:=G_PARAMS.REACTOR_CWFV_MAX, pv_min:=G_PARAMS.REACTOR_CWFV_MIN, dac_max:=IOUT_WD_MAX, dac_min:=0);
+
+//
+// READ SIGNALS from INPUTS
+//
+// CURRENT LOOPS for XMEAS Receivers
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.XMEAS_IO_IIN[XMEAS_MBS_IDX.A_FLOW],		pv_max:=G_PARAMS.A_FLOW_MAX, 		pv_min:=G_PARAMS.A_FLOW_MIN, 	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.XMEAS_IO_IIN[XMEAS_MBS_IDX.D_FLOW],		pv_max:=G_PARAMS.D_FLOW_MAX, 		pv_min:=G_PARAMS.D_FLOW_MIN, 	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.XMEAS_IO_IIN[XMEAS_MBS_IDX.E_FLOW],		pv_max:=G_PARAMS.E_FLOW_MAX, 		pv_min:=G_PARAMS.E_FLOW_MIN, 	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.P_REACTOR]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.XMEAS_IO_IIN[XMEAS_MBS_IDX.P_REACTOR],	pv_max:=G_PARAMS.P_REACTOR_MAX, 	pv_min:=G_PARAMS.P_REACTOR_MIN, i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+
+// CURRENT LOOPS for XMV Receivers
+G_IO.NET_XMV[XMV_IO_IDX.A_FLOW_VALVE]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.NET_XMV_RAW[XMV_IO_IDX.A_FLOW_VALVE],		pv_max:=G_PARAMS.A_FLOW_VALVE_MAX, 		pv_min:=G_PARAMS.A_FLOW_VALVE_MIN,	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+G_IO.NET_XMV[XMV_IO_IDX.D_FLOW_VALVE]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.NET_XMV_RAW[XMV_IO_IDX.D_FLOW_VALVE],		pv_max:=G_PARAMS.D_FLOW_VALVE_MAX, 		pv_min:=G_PARAMS.D_FLOW_VALVE_MIN,	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+G_IO.NET_XMV[XMV_IO_IDX.E_FLOW_VALVE]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.NET_XMV_RAW[XMV_IO_IDX.E_FLOW_VALVE],		pv_max:=G_PARAMS.E_FLOW_VALVE_MAX, 		pv_min:=G_PARAMS.E_FLOW_VALVE_MIN,	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+G_IO.NET_XMV[XMV_IO_IDX.REACTOR_CWFV]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.NET_XMV_RAW[XMV_IO_IDX.REACTOR_CWFV],		pv_max:=G_PARAMS.REACTOR_CWFV_MAX, 		pv_min:=G_PARAMS.REACTOR_CWFV_MIN,	i_max:=G_PARAMS.IOUT_MAX, i_min:=G_PARAMS.IOUT_MIN));
+*)
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
