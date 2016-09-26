@@ -7,11 +7,6 @@
 		D_FLOW			:=2,
 		E_FLOW			:=3,
 		P_REACTOR		:=4
-		(*P_REACTOR		:=1,
-		L_REACTOR		:=2,
-		T_REACTOR		:=3,
-		L_SEPARATOR		:=4,
-		L_STRIPPER		:=5*)
 	);
 END_TYPE
 ]]></Declaration>
