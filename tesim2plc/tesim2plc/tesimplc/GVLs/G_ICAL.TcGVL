@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <GVL Name="G_ICAL" Id="{935515b6-9958-46e8-93f4-1544d0ed3c39}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	
+	// represents the net DC offset compensation multiplier
+	XMEAS_ILOOP_CAL	: ARRAY[1..4] OF LREAL	:= 
+				[
+					// XMEAS tx-rx path
+					1.0, // A flow
+					1.0, // D flow
+					1.0, // E flow
+					1.0  // Reactor pressure
+				];		
+				
+	XMV_ILOOP_CAL	: ARRAY[1..4] OF LREAL	:= 
+				[
+					// XMV tx-rx path
+					1.0015, 	// D valve
+					1.00025, 	// E valve
+					1.00235, 	// A valve
+					1.0015	 	// RCW Valve
+				];					
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

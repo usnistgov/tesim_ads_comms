@@ -3,15 +3,6 @@
   <POU Name="MAIN_oo" Id="{dd06f3b9-f114-454f-820d-85f29a3eb792}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN_oo
 VAR
-	// specify network type
-	// 100 					: ISA110.11a iMesh calibration
-	// 101 					: ISA110.11a iMesh TESIM
-	// 102 					: ISA110.11a iMesh test signals
-	
-	// 200 					: PhoenixContact calibration
-	// 201					: PhoenixContact TESIM
-	// 202					: PhoenixContact test signals
-	NetType	:	INT := 202;
 	
 	// network interface/simulator function blocks
 	netiMeshCal				:FB_3eTI_iMesh_Cal;
@@ -22,13 +13,14 @@ VAR
 	netPCTESIM				:FB_PC_OneLink_TESIM;
 	netPCTestSignals		:FB_PC_OneLink_TestSignals;
 
+	netNoNet				:FB_NoNet;
 	
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
 
-CASE NetType OF 
+CASE NET_TYPE OF 
 	100:
 	netiMeshCal();
 	101:
@@ -42,6 +34,8 @@ CASE NetType OF
 	netPCTESIM();
 	202:
 	netPCTestSignals();
+ELSE
+	netnoNet();
 	
 END_CASE]]></ST>
     </Implementation>

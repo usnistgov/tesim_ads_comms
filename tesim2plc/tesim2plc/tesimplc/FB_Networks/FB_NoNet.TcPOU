@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36" FileSignature="18dc26aafc590c8bab2ee63325e0d934b98dbdce53d71684a34021ba79b046d49042fc01c25d4e4aba70d0e32a28c299d20b78c77b6992974625750e46ad029e50e8d2ba61c617a4195bf0bd9b517b80aae713ff9951735b2820eec399cacf6445962c3575d9eb4b5667f664de675387b7e8a0f56d74ab35d4f5796187bc1c3f99020b52d4a91041e85a73e2b7521b4b5317b1564baac80b59c2468b2bd898ff593cbb8aad182fbe7bb73d72831180f1a5103d97c29eb18246708375ff98b21b8ec8180647eb05c08dc3d491e602942a2022575f4ff084577e9beafb21f0ff720ceb7cfff6728a23520321608a59e37e87c646ca268a608d80efeb3d5347549a">
+  <POU Name="FB_NoNet" Id="{31b9d237-ce64-4f6d-b9e1-c64e2c4e62d4}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_NoNet
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

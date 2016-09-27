@@ -7,6 +7,16 @@ END_VAR
 
 VAR_GLOBAL
 	
+	// specify network type
+	// 100 					: ISA110.11a iMesh calibration
+	// 101 					: ISA110.11a iMesh TESIM
+	// 102 					: ISA110.11a iMesh test signals
+	
+	// 200 					: PhoenixContact calibration
+	// 201					: PhoenixContact TESIM
+	// 202					: PhoenixContact test signals
+	NET_TYPE				:	DINT := 0;
+	
 	// for the current-based control solutions
 	XMEAS_IO_IOUT	AT %Q*		:	ARRAY[1..4] OF INT;
 	XMEAS_IO_IIN	AT %I*		:	ARRAY[1..4] OF INT;
@@ -28,8 +38,8 @@ VAR_GLOBAL
 	XMV							:	ARRAY[1..12] OF LREAL;
 	
 	// XMV seen by the network
-	NET_XMV_RAW						:	ARRAY[1..4] OF LREAL;
-	NET_XMV							:	ARRAY[1..4] OF LREAL;
+	//NET_XMV_RAW						:	ARRAY[1..4] OF LREAL;
+	NET_XMV							:	ARRAY[1..4] OF REAL;
 	
 	// setpoints
 	PROD_RATE					:	LREAL;

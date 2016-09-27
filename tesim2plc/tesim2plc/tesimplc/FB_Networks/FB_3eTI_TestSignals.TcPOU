@@ -7,7 +7,6 @@ END_VAR
 VAR_OUTPUT
 END_VAR
 VAR
-	fbReadMB : FB_ReadModbus;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -22,6 +21,10 @@ G_PARAMS.D_FLOW_MIN			:=0.0;
 G_PARAMS.E_FLOW_MIN			:=0.0;
 G_PARAMS.P_REACTOR_MIN		:=0.0;
 
+// execute the signal conversion
+SUPER^();
+
+(*
 //
 // BEGIN PRODUCE THE DATA
 //
@@ -55,7 +58,7 @@ G_IO.MBS_XMEAS[XMEAS_MBS_IDX.P_REACTOR]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.MB
 //
 // END MODBUS POLLING SEGMENT from the GATEWAY
 //
-]]></ST>
+*)]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

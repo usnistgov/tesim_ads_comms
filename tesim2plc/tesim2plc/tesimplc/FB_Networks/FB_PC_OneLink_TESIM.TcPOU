@@ -10,7 +10,16 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[
+      <ST><![CDATA[G_PARAMS.A_FLOW_MAX 		:=1.0;
+G_PARAMS.D_FLOW_MAX			:=10000.0;
+G_PARAMS.E_FLOW_MAX			:=10000.0;
+G_PARAMS.P_REACTOR_MAX		:=3000.0;
+
+G_PARAMS.A_FLOW_MIN 		:=0.0;
+G_PARAMS.D_FLOW_MIN			:=0.0;
+G_PARAMS.E_FLOW_MIN			:=0.0;
+G_PARAMS.P_REACTOR_MIN		:=0.0;
+
 SUPER^();
 (*
 //
