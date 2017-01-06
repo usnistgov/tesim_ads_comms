@@ -20,7 +20,7 @@
             <v n="FileTransferMode">true</v>
             <v n="VisuStyle">"Default, 3.1.2.0 (Beckhoff Automation GmbH)"</v>
             <v n="MaxNumOfClients">100</v>
-            <n n="Language" />
+            <v n="Language">"en"</v>
             <v n="NumpadDialog">"VisuDialogs.Numpad"</v>
             <v n="KeypadDialog">"VisuDialogs.Keypad"</v>
             <v n="InputWithLimitsDialog">"VisuDialogs.TextinputWithLimits"</v>
@@ -34,10 +34,10 @@
             <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
               <v>FB_Init</v>
               <v>6c7c2125-de20-44fb-88ee-0b021275a783</v>
-              <v>FB_Exit</v>
-              <v>bccd4064-b981-4c3c-bc28-dfd0c4e450d8</v>
               <v>FB_Reinit</v>
               <v>a22e49f0-2926-46a2-be3a-84f1e4d54c39</v>
+              <v>FB_Exit</v>
+              <v>bccd4064-b981-4c3c-bc28-dfd0c4e450d8</v>
             </d>
             <v n="FbName">"__VisuInitInstantiation_Fb"</v>
             <v n="FbGuid">{8fbd0e2a-97ee-4f03-9946-7131581efcb0}</v>
@@ -455,34 +455,34 @@
             <d n="FbMethods" t="CaseInsensitiveHashtable" ckt="String" cvt="Guid">
               <v>ExecuteLooseCapture</v>
               <v>d9114086-9bc6-4a5a-a368-c4bfa948010b</v>
+              <v>ExecuteMouseUp</v>
+              <v>80602627-98d6-4951-822e-275a58b77007</v>
               <v>Init</v>
               <v>cd852b19-cb0a-4a60-b5b0-c85ff60b2f31</v>
               <v>FB_Exit</v>
               <v>9156ea8b-8b78-4285-8a07-5377935c58ec</v>
               <v>ExecuteMouseDblClick</v>
               <v>02ee2d9f-327a-4514-8bb5-839683d35a85</v>
-              <v>ExecuteMouseDown</v>
-              <v>05bb0bb6-d2c5-4896-8c25-eaba2c606c9a</v>
-              <v>ExecuteMouseUp</v>
-              <v>80602627-98d6-4951-822e-275a58b77007</v>
-              <v>ExecuteMouseEnter</v>
-              <v>f3ef6b79-3e8a-4d1e-a824-1dcdcba5102a</v>
-              <v>FB_Reinit</v>
-              <v>82275314-a9d6-4ef2-9481-793d2f55aa2c</v>
               <v>GetElementInfo</v>
               <v>e5f04ec2-2c5a-4eb0-bf91-85adb3fd0ffe</v>
-              <v>abstrGetDefaultCursor</v>
-              <v>02f2315c-705a-459d-8daa-86152baf3c1c</v>
+              <v>ExecuteMouseDown</v>
+              <v>05bb0bb6-d2c5-4896-8c25-eaba2c606c9a</v>
+              <v>FB_Reinit</v>
+              <v>82275314-a9d6-4ef2-9481-793d2f55aa2c</v>
+              <v>Initialize</v>
+              <v>7fcd0fa9-92e1-4961-ba35-0603863539c5</v>
+              <v>ExecuteMouseMove</v>
+              <v>42c90b54-a0cd-49d0-9cfd-420fdb82130a</v>
               <v>ExecuteDialogClosed</v>
               <v>8670cf89-ee9f-4df6-8d10-2038e46029da</v>
               <v>ExecuteKeyUp</v>
               <v>395177e5-206a-4080-86b6-247d9c21efaf</v>
               <v>ExecuteKeyDown</v>
               <v>012e4151-e61e-4971-8b3b-7be704afb140</v>
-              <v>ExecuteMouseMove</v>
-              <v>42c90b54-a0cd-49d0-9cfd-420fdb82130a</v>
-              <v>Initialize</v>
-              <v>7fcd0fa9-92e1-4961-ba35-0603863539c5</v>
+              <v>abstrGetDefaultCursor</v>
+              <v>02f2315c-705a-459d-8daa-86152baf3c1c</v>
+              <v>ExecuteMouseEnter</v>
+              <v>f3ef6b79-3e8a-4d1e-a824-1dcdcba5102a</v>
               <v>ExecuteMouseLeave</v>
               <v>a72c473b-9453-4233-8345-39994af9f5a5</v>
               <v>FB_Init</v>
@@ -493,7 +493,19 @@
             <v n="FbName">"NotImportant"</v>
             <v n="FbGuid">{ed3ff5b1-8c62-492a-8384-109e9f08ffb7}</v>
           </o>
-          <n n="InstantiationStorage" />
+          <o n="InstantiationStorage" t="VisualizationInstantiationStorage">
+            <a n="Data" et="VisualizationInstantiationExplicitEntry" />
+            <o n="Ids" t="IdCalculationHelper">
+              <v n="IdMin">549756862464L</v>
+              <v n="IdMax">618475290623L</v>
+              <v n="Id">549756862464L</v>
+              <v n="IdMask">618474242048L</v>
+              <v n="IdStep">1048576L</v>
+            </o>
+            <o n="DefaultHandling" t="VisualizationClientReferencesSet">
+              <d2 n="Data" />
+            </o>
+          </o>
           <n n="VisuUserManagement" />
           <v n="UseLocalUserMgmt">true</v>
           <v n="UseUserMgmtInPlc">true</v>
@@ -542,14 +554,48 @@
         <Type n="GenericFbDescription">{40d6dd8d-dfd0-493a-8e29-c9a35e1e6539}</Type>
         <Type n="Guid">System.Guid</Type>
         <Type n="HotkeyConfiguration">{6b108d46-58af-4e41-a3f4-174d8f160cc4}</Type>
+        <Type n="IdCalculationHelper">{2e25ebe8-bd76-4922-82a8-9e4b7ca5f741}</Type>
         <Type n="Int32">System.Int32</Type>
         <Type n="Int64">System.Int64</Type>
         <Type n="String">System.String</Type>
         <Type n="VisualClientSizeMode">{c37fe731-4f69-4d98-82fe-4f9aefbe200d}</Type>
+        <Type n="VisualizationClientReferencesSet">{f348a7f0-9602-490e-8c1b-295c0602e7a6}</Type>
+        <Type n="VisualizationInstantiationExplicitEntry">{28102c5e-89a3-48b7-8c0c-c747111b6ab8}</Type>
+        <Type n="VisualizationInstantiationStorage">{c09fe9ce-40ed-4120-834d-355161aee99b}</Type>
         <Type n="VisualizationTargetProperties">{997fedbb-1888-4256-b61c-2933d8056bfd}</Type>
         <Type n="VisualManagerObject">{4d3fdb8f-ab50-4c35-9d3a-d4bb9bb9a628}</Type>
         <Type n="VisualManagerViewSettings">{ec9b2ec6-92a2-4856-be72-7866fb274c64}</Type>
       </TypeList>
     </XmlArchive>
+    <TargetVisu Name="TargetVisualization" Id="{5779ae96-d315-403f-9325-c45cd5822d9f}">
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="TargetVisualizationObject">
+            <o n="ViewSettings" t="TargetVisualizationViewSettings">
+              <v n="StartVisu">"TankView"</v>
+              <n n="HtmFileName" />
+              <v n="UpdateRate">200</v>
+              <v n="CommBufferSize">50000</v>
+              <v n="BestFit">true</v>
+              <v n="ClientSizeMode" t="VisualClientSizeMode">AutoDetect</v>
+              <v n="ClientSizeX">2000</v>
+              <v n="ClientSizeY">2000</v>
+              <v n="Antialiasing">true</v>
+              <v n="ClientOperationType" t="eDefaultInputSetting">Keyboard</v>
+              <v n="ScaleTypeIsotropic">true</v>
+            </o>
+          </o>
+        </Data>
+        <TypeList>
+          <Type n="Boolean">System.Boolean</Type>
+          <Type n="eDefaultInputSetting">{bd122c9a-5824-461f-8b56-d89816d314bf}</Type>
+          <Type n="Int32">System.Int32</Type>
+          <Type n="String">System.String</Type>
+          <Type n="TargetVisualizationObject">{bc63f5fa-d286-4786-994e-7b27e4f97bd5}</Type>
+          <Type n="TargetVisualizationViewSettings">{cb5403ec-4e3b-4965-9be8-913e6068f7cb}</Type>
+          <Type n="VisualClientSizeMode">{c37fe731-4f69-4d98-82fe-4f9aefbe200d}</Type>
+        </TypeList>
+      </XmlArchive>
+    </TargetVisu>
   </VisuManager>
 </TcPlcObject>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_LFSR" Id="{4395f24d-b04c-45a0-87ef-cc963768934d}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_LFSR
+
+
+VAR_INPUT
+	gen_poly		: USINT := 2#10111000;
+	ck_period		: TIME	:= T#5S;
+END_VAR
+
+VAR_OUTPUT
+	out		:	USINT 	:= 	0;
+	err		:	BOOL	:=	FALSE;
+	epoch	:	USINT	:=	0;
+END_VAR
+
+VAR
+	lfsr			: USINT := 16#11;  	// intial state of the LFSR
+	lsb				: USINT := 0;		// output bit
+	ck				: TON;
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+ck(IN:=NOT(ck.Q), PT:=ck_period);
+IF ck.Q THEN
+	// compute the next bit
+	out := lfsr AND 16#1;
+	lfsr:= SHR(lfsr,1);
+	IF USINT_TO_BOOL(out) THEN
+		lfsr := lfsr XOR gen_poly;
+	END_IF
+	// rest the timer
+	ck.IN := TRUE; 
+	epoch := epoch + 1;
+END_IF
+
+
+(*uint16_t start_state = 0xACE1u;  /* ANY nonzero start state will work. */
+uint16_t lfsr = start_state;
+unsigned period = 0;
+
+    do
+    {
+        unsigned lsb = lfsr & 1;   /* Get LSB (i.e., the output bit). */
+        lfsr >>= 1;                /* Shift register */
+        if (lsb) {                 /* If the output bit is 1, apply toggle mask. */
+            lfsr ^= 0xB400u;
+        }
+        ++period;
+    } while (lfsr != start_state);
+
+    return 0;
+}
+
+/* This: */
+        if (lsb) {
+            lfsr ^= 0xB400u;
+        }
+/* can also be written as: */
+        lfsr ^= (-lsb) & 0xB400u;
+/* which may produce more efficient code on some compilers */
+*)]]></ST>
+    </Implementation>
+    <Method Name="reset" Id="{5e363263-53c7-4265-b23d-64bbca844362}">
+      <Declaration><![CDATA[METHOD PUBLIC reset
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[lfsr:=16#11;
+out:=0;]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

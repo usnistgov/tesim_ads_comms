@@ -69,7 +69,7 @@ IF cal_override THEN
 			3:
 			G_IO.XMEAS[XMEAS_IDX.E_FLOW] := 1500;
 			4:
-			G_IO.XMEAS[XMEAS_IDX.P_REACTOR] := 2500;
+			G_IO.XMEAS[XMEAS_IDX.AC_FLOW] := 2500;
 		END_CASE
 	END_FOR
 END_IF
@@ -86,8 +86,8 @@ IF cal_emode=eCTRL_MODE_ACTIVE THEN
 			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW];
 			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.E_FLOW];
 			4:
-			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.P_REACTOR];
-			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.P_REACTOR];
+			cal_pv_mbs[cal_ii] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW];
+			cal_pv[cal_ii] := G_IO.XMEAS[XMEAS_IDX.AC_FLOW];
 		END_CASE
 	
 		// calculate moving average

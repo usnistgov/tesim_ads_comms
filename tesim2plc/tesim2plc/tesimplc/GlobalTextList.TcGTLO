@@ -11,6 +11,16 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"35"</v>
+              <v n="TextDefault">"%0.1f %"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"37"</v>
+              <v n="TextDefault">"%0.1f C"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"5"</v>
               <v n="TextDefault">"%0.3f"</v>
               <l n="LanguageTexts" t="ArrayList" />
@@ -18,6 +28,11 @@
             <o>
               <v n="TextID">"25"</v>
               <v n="TextDefault">"%0.3f %"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"36"</v>
+              <v n="TextDefault">"%0.3f C"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -63,6 +78,11 @@
             <o>
               <v n="TextID">"29"</v>
               <v n="TextDefault">"%0.3f kW"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"34"</v>
+              <v n="TextDefault">"%0.3f \%"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>

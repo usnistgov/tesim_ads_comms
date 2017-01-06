@@ -16,7 +16,7 @@ VAR
 	dataStr :STRING;
 	bModbusTick : BOOL;
 	fbReadRegs : FB_MBReadInputRegs;
-	converter : HexStringToReal;
+	converter : FB_HexStringToReal;
 	arr : ARRAY [0..2] OF WORD;
 END_VAR
 ]]></Declaration>

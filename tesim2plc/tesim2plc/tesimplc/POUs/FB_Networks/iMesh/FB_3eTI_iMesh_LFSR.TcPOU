@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_3eTI_iMesh_LFSR" Id="{5aafe73f-0233-4f32-94d6-572ac79dfbd8}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_iMesh_LFSR EXTENDS FB_3eTI_iMesh_Base
+
+VAR_INPUT
+	clock_period	: TIME := T#2S;
+END_VAR
+
+VAR_OUTPUT
+
+END_VAR
+
+VAR
+	
+	level			: LREAL := 10.0;
+	
+	lfsr			: FB_LFSR();
+	value			: LREAL :=0.0;
+	jj				: INT	:= 0;
+	lsfr: INT;
+	
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+IF G_IO.GO THEN
+		
+	G_PARAMS.A_FLOW_MAX 		:=10.0;
+	G_PARAMS.D_FLOW_MAX			:=10.0;
+	G_PARAMS.E_FLOW_MAX			:=10.0;
+	G_PARAMS.AC_FLOW_MAX		:=10.0;
+	
+	G_PARAMS.A_FLOW_MIN 		:=0.0;
+	G_PARAMS.D_FLOW_MIN			:=0.0;
+	G_PARAMS.E_FLOW_MIN			:=0.0;
+	G_PARAMS.AC_FLOW_MIN		:=0.0;
+	
+	lfsr(gen_poly:=2#10111000, ck_period:= clock_period);
+	value := level*USINT_TO_LREAL(lfsr.out);
+	
+	FOR jj := 1 TO 41 DO
+		G_IO.XMEAS[jj] := value;
+	END_FOR
+	FOR jj := 1 TO 12 DO
+		G_IO.XMV[jj] := value;
+	END_FOR
+	
+	// execute the signal conversion
+	SUPER^();
+	
+ELSE
+	lfsr.reset();
+END_IF
+
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

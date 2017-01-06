@@ -11,11 +11,15 @@ VAR_GLOBAL
 	// 100 					: ISA110.11a iMesh calibration
 	// 101 					: ISA110.11a iMesh TESIM
 	// 102 					: ISA110.11a iMesh test signals
+	// 110					: ISA100.11a iMesh PN Sequence generation
 	
 	// 200 					: PhoenixContact calibration
 	// 201					: PhoenixContact TESIM
 	// 202					: PhoenixContact test signals
+	// 210					: ISA100.11a PC OneLink PN Sequence generation
+	
 	NET_TYPE				:	DINT := 0;
+	GO						:	BOOL := false;
 	
 	// for the current-based control solutions
 	XMEAS_IO_IOUT	AT %Q*		:	ARRAY[1..4] OF INT;
@@ -28,6 +32,7 @@ VAR_GLOBAL
 	
 	// XMEAS reported by tesim
 	XMEAS						:	ARRAY[1..41] OF LREAL;
+	XMEAS_RX					:	ARRAY[1..41] OF LREAL;
 	
 	// XMEAS seen by the network
 	MBS_XMEAS_RAW				:	ARRAY[1..4] OF REAL;
@@ -36,6 +41,7 @@ VAR_GLOBAL
 
 	// XMV values reported by tesim
 	XMV							:	ARRAY[1..12] OF LREAL;
+	XMV_RX						:	ARRAY[1..12] OF LREAL;
 	
 	// XMV seen by the network
 	//NET_XMV_RAW						:	ARRAY[1..4] OF LREAL;
@@ -52,6 +58,9 @@ VAR_GLOBAL
 	
 	// disturbances as set in tesim
 	IDV							:	ARRAY[1..20] OF DINT;
+	
+	// shutdown indicator
+	SD_FLAG						: 	BOOL	:= FALSE;
 	
 END_VAR
 ]]></Declaration>

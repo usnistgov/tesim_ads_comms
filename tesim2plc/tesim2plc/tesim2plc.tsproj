@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.4">
+	<DataTypes/>
 	<ImageDatas>
 		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
@@ -17,6 +18,9 @@
 			<Tasks>
 				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="350">
 					<Name>MainTask</Name>
+				</Task>
+				<Task Id="4" Priority="30" CycleTime="1000000" AmsPort="351">
+					<Name>VISU_TASK</Name>
 				</Task>
 			</Tasks>
 		</System>
@@ -39,13 +43,6 @@
 					<Vars VarGrpType="2">
 						<Name>MainTask Outputs</Name>
 						<Var>
-							<Name>G_IO.XMEAS_IO_VOUT</Name>
-							<Comment>
-								<![CDATA[ for the voltage-based control solutions]]>
-							</Comment>
-							<Type>ARRAY [1..8] OF INT</Type>
-						</Var>
-						<Var>
 							<Name>G_IO.XMEAS_IO_IOUT</Name>
 							<Comment>
 								<![CDATA[ for the current-based control solutions]]>
@@ -55,6 +52,13 @@
 						<Var>
 							<Name>G_IO.XMV_IO_IOUT</Name>
 							<Type>ARRAY [1..4] OF INT</Type>
+						</Var>
+						<Var>
+							<Name>G_IO.XMEAS_IO_VOUT</Name>
+							<Comment>
+								<![CDATA[ for the voltage-based control solutions]]>
+							</Comment>
+							<Type>ARRAY [1..8] OF INT</Type>
 						</Var>
 					</Vars>
 					<UnrestoredVarLinks ImportTime="2015-06-26T14:22:31">
@@ -108,6 +112,67 @@
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
+				</Instance>
+			</Project>
+			<Project Name="Untitled1" AmsPort="852" FileArchiveSettings="#x000e">
+				<Instance Id="#x01010020" KeepUnrestoredLinks="2">
+					<Name>Untitled1 Instance</Name>
+					<TmcDesc GUID="{4F8AFFAA-C902-474D-9942-C4D095ABDFD3}" TcSmClass="TComPlcObjDef">
+						<Name>PLC</Name>
+						<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+						<InitSequence>P</InitSequence>
+						<Contexts>
+							<Context>
+								<Id>1</Id>
+								<Name>Default</Name>
+							</Context>
+						</Contexts>
+						<Parameters>
+							<Parameter ReadOnly="true">
+								<Name>Application Name</Name>
+								<BitSize>72</BitSize>
+								<BaseType GUID="{18071995-0000-0000-0000-000100000008}">STRING(8)</BaseType>
+								<PTCID>#x08500003</PTCID>
+							</Parameter>
+							<Parameter ReadOnly="true">
+								<Name>Project Name</Name>
+								<BitSize>80</BitSize>
+								<BaseType GUID="{18071995-0000-0000-0000-000100000009}">STRING(9)</BaseType>
+								<PTCID>#x0850000c</PTCID>
+							</Parameter>
+							<Parameter ReadOnly="true">
+								<Name>Application Port</Name>
+								<BitSize>16</BitSize>
+								<BaseType GUID="{18071995-0000-0000-0000-000000000005}">UINT</BaseType>
+								<PTCID>#x08500004</PTCID>
+							</Parameter>
+							<Parameter ReadOnly="true">
+								<Name>Auxtask Object Id</Name>
+								<BitSize>32</BitSize>
+								<BaseType GUID="{18071995-0000-0000-0000-00000000000F}">OTCID</BaseType>
+								<PTCID>#x0850000b</PTCID>
+							</Parameter>
+						</Parameters>
+						<ParentOTCID>#x08500000</ParentOTCID>
+						<ParameterValues>
+							<Value>
+								<Name>Application Name</Name>
+								<String>Port_852</String>
+							</Value>
+							<Value>
+								<Name>Project Name</Name>
+								<String>Untitled1</String>
+							</Value>
+							<Value>
+								<Name>Application Port</Name>
+								<Value>852</Value>
+							</Value>
+							<Value>
+								<Name>Auxtask Object Id</Name>
+								<Value>139460624</Value>
+							</Value>
+						</ParameterValues>
+					</TmcDesc>
 				</Instance>
 			</Project>
 		</Plc>

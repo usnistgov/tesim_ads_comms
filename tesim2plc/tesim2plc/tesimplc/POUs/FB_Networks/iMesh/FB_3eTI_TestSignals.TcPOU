@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_3eTI_TestSignals" Id="{a158caf6-1485-4984-a248-70cb0e9a003f}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_TestSignals EXTENDS FB_3eTI_iMesh_Base
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+G_PARAMS.A_FLOW_MAX 		:=10.0;
+G_PARAMS.D_FLOW_MAX			:=10.0;
+G_PARAMS.E_FLOW_MAX			:=10.0;
+G_PARAMS.AC_FLOW_MAX		:=10.0;
+
+G_PARAMS.A_FLOW_MIN 		:=0.0;
+G_PARAMS.D_FLOW_MIN			:=0.0;
+G_PARAMS.E_FLOW_MIN			:=0.0;
+G_PARAMS.AC_FLOW_MIN		:=0.0;
+
+// execute the signal conversion
+SUPER^();
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

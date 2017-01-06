@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_recursiveFilter" Id="{6bd1306e-c535-423e-a7fd-4f0093d19b74}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_recursiveFilter
+
+VAR_INPUT
+	xn	: LREAL;
+END_VAR
+
+VAR_OUTPUT
+	yn	:	LREAL;
+END_VAR
+
+VAR
+	alpha:	LREAL	:= 0.025;
+	yn_1 :	LREAL 	:= 0.0;
+	init : 	BOOL	:= TRUE;
+END_VAR	
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+IF init THEN
+	yn_1 := xn;
+	init := FALSE;
+END_IF
+yn := alpha*xn + (1-alpha)*yn_1;
+yn_1 := yn;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

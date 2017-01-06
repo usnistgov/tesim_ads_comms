@@ -10,7 +10,7 @@
     <Content Include="Scope YT PVs.tcscope">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="RampTestSignal.tcscope">
+    <Content Include="Test Signals.tcscope">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scope YT DCOffsets.tcscope">

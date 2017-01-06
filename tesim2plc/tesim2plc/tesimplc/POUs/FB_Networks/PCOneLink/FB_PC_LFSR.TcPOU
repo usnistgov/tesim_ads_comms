@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="FB_PC_LFSR" Id="{12e25653-5469-4448-9c34-94eced654a2c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_PC_LFSR EXTENDS FB_PC_OneLink_TestSignals
+
+VAR_INPUT
+END_VAR
+
+VAR_OUTPUT
+
+END_VAR
+
+VAR
+	level			: LREAL := 10.0;
+	
+	lfsr			: FB_LFSR;
+	value			: LREAL :=0.0;
+	jj				: INT	:= 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+lfsr(gen_poly:=2#10111000);
+value := level*USINT_TO_LREAL(lfsr.out);
+
+FOR jj := 1 TO 41 DO
+	G_IO.XMEAS[jj] := value;
+END_FOR
+FOR jj := 1 TO 12 DO
+	G_IO.XMV[jj] := value;
+END_FOR
+
+SUPER^();
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

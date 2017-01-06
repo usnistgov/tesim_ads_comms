@@ -8,12 +8,15 @@ VAR
 	netiMeshCal				:FB_3eTI_iMesh_Cal;
 	netiMeshTESIM			:FB_3eTI_iMesh_TESIM;
 	netiMeshTestSignals		:FB_3eTI_TestSignals;
+	netiMeshLFSR			:FB_3eTI_iMesh_LFSR;
 	
 	netPCCal				:FB_PC_OneLink_Cal;
 	netPCTESIM				:FB_PC_OneLink_TESIM;
 	netPCTestSignals		:FB_PC_OneLink_TestSignals;
+	netPC_LFSR				:FB_PC_LFSR;
 
 	netNoNet				:FB_NoNet;
+	
 	
 END_VAR
 ]]></Declaration>
@@ -27,6 +30,8 @@ CASE NET_TYPE OF
 	netiMeshTESIM();
 	102:
 	netiMeshTestSignals();
+	110:
+	netiMeshLFSR();
 	
 	200:
 	netPCCal();
@@ -34,6 +39,9 @@ CASE NET_TYPE OF
 	netPCTESIM();
 	202:
 	netPCTestSignals();
+	210:
+	netPC_LFSR();
+	
 ELSE
 	netnoNet();
 	

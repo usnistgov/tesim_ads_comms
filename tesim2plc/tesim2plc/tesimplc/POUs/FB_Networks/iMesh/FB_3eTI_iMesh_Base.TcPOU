@@ -1,31 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
-  <POU Name="FB_3eTI_TestSignals" Id="{a158caf6-1485-4984-a248-70cb0e9a003f}" SpecialFunc="None">
-    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_TestSignals EXTENDS FB_3eTI_iMesh_Base
+  <POU Name="FB_3eTI_iMesh_Base" Id="{c24ff66a-4461-44bb-a3fd-0d65c26a2169}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_iMesh_Base
 VAR_INPUT
+	
+	// THIS IS FOR THE ISA100.11A GATEWAY
+	mbAddrs : ARRAY[0..3] OF MODBUS_DATA_MAP :=  [ 
+			(_ipAddress := '192.168.254.253', _startAddress:= 6), 
+			(_ipAddress := '192.168.254.253', _startAddress:= 18),
+			(_ipAddress := '192.168.254.253', _startAddress:= 30),
+			(_ipAddress := '192.168.254.253', _startAddress:= 42)
+		];
+		
 END_VAR
+
+VAR
+	fbReadMB 	: FB_ReadModbus;
+	ii			: INT:=0;
+END_VAR
+
 VAR_OUTPUT
 END_VAR
+
 VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[
-G_PARAMS.A_FLOW_MAX 		:=10.0;
-G_PARAMS.D_FLOW_MAX			:=10.0;
-G_PARAMS.E_FLOW_MAX			:=10.0;
-G_PARAMS.P_REACTOR_MAX		:=10.0;
-
-G_PARAMS.A_FLOW_MIN 		:=0.0;
-G_PARAMS.D_FLOW_MIN			:=0.0;
-G_PARAMS.E_FLOW_MIN			:=0.0;
-G_PARAMS.P_REACTOR_MIN		:=0.0;
-
-// execute the signal conversion
-SUPER^();
-
-(*
-//
+      <ST><![CDATA[//
 // BEGIN PRODUCE THE DATA
 //
 // XMEAS values will come from the external TESIM program using ADS
@@ -34,8 +35,7 @@ SUPER^();
 XMEAS_IO_VOUT[XMEAS_IO_IDX.A_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.A_FLOW],		pv_max:=G_PARAMS.A_FLOW_MAX, pv_min:=G_PARAMS.A_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
 XMEAS_IO_VOUT[XMEAS_IO_IDX.D_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.D_FLOW],		pv_max:=G_PARAMS.D_FLOW_MAX, pv_min:=G_PARAMS.D_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
 XMEAS_IO_VOUT[XMEAS_IO_IDX.E_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.E_FLOW],		pv_max:=G_PARAMS.E_FLOW_MAX, pv_min:=G_PARAMS.E_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
-XMEAS_IO_VOUT[XMEAS_IO_IDX.P_REACTOR]	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.P_REACTOR],	pv_max:=G_PARAMS.P_REACTOR_MAX, pv_min:=G_PARAMS.P_REACTOR_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
-
+XMEAS_IO_VOUT[XMEAS_IO_IDX.AC_FLOW]	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.AC_FLOW],	pv_max:=G_PARAMS.AC_FLOW_MAX, pv_min:=G_PARAMS.AC_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
 
 //
 // BEGIN MODBUS POLLING SEGMENT from the GATEWAY
@@ -46,19 +46,27 @@ fbReadMB(addrs := mbAddrs );
 G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.A_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.A_FLOW] + MBS_XMEAS_CAL_OFFSET[1];
 G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.D_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.D_FLOW]+ MBS_XMEAS_CAL_OFFSET[2];
 G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.E_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.E_FLOW] + MBS_XMEAS_CAL_OFFSET[3];
-G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.P_REACTOR] := fbReadMB.registerValues[XMEAS_MBS_IDX.P_REACTOR] + MBS_XMEAS_CAL_OFFSET[4];
+G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.AC_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.AC_FLOW] + MBS_XMEAS_CAL_OFFSET[4];
 
 // convert raw modbus signals to process signals
 G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.A_FLOW],		pv_max:=G_PARAMS.A_FLOW_MAX, 		pv_min:=G_PARAMS.A_FLOW_MIN, 	i_max:=G_PARAMS.VOUT_MAX, i_min:=G_PARAMS.VOUT_MIN));
 G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.D_FLOW],		pv_max:=G_PARAMS.D_FLOW_MAX, 		pv_min:=G_PARAMS.D_FLOW_MIN, 	i_max:=G_PARAMS.VOUT_MAX, i_min:=G_PARAMS.VOUT_MIN));
 G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.E_FLOW],		pv_max:=G_PARAMS.E_FLOW_MAX, 		pv_min:=G_PARAMS.E_FLOW_MIN, 	i_max:=G_PARAMS.VOUT_MAX, i_min:=G_PARAMS.VOUT_MIN));
-G_IO.MBS_XMEAS[XMEAS_MBS_IDX.P_REACTOR]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.P_REACTOR],	pv_max:=G_PARAMS.P_REACTOR_MAX, 	pv_min:=G_PARAMS.P_REACTOR_MIN, i_max:=G_PARAMS.VOUT_MAX, i_min:=G_PARAMS.VOUT_MIN));
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.AC_FLOW],	pv_max:=G_PARAMS.AC_FLOW_MAX, 	pv_min:=G_PARAMS.AC_FLOW_MIN, i_max:=G_PARAMS.VOUT_MAX, i_min:=G_PARAMS.VOUT_MIN));
+
+// capture the received state of XMEAS
+FOR ii := 1 TO 41 DO
+	XMEAS_RX[ii]:=XMEAS[ii];
+END_FOR
+XMEAS_RX[XMEAS_IDX.A_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW];
+XMEAS_RX[XMEAS_IDX.D_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW];
+XMEAS_RX[XMEAS_IDX.E_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW];
+XMEAS_RX[XMEAS_IDX.AC_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW];
 
 
 //
 // END MODBUS POLLING SEGMENT from the GATEWAY
-//
-*)]]></ST>
+//]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

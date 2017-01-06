@@ -10,6 +10,7 @@ VAR_INPUT
 	dac_min		: LREAL;
 END_VAR
 VAR
+	pv_float_to_dac_old: INT := 0;
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -19,7 +20,8 @@ END_IF
 IF pv < pv_min THEN
 	pv := pv_min;
 END_IF
-pv_float_to_dac := LREAL_TO_INT((dac_max-dac_min)/(pv_max-pv_min)*(pv-pv_min)+dac_min);
+pv_float_to_dac_old := LREAL_TO_INT((dac_max-dac_min)/(pv_max-pv_min)*(pv-pv_min)+dac_min);
+pv_float_to_dac := LREAL_TO_INT(  (((dac_max-dac_min)/(pv_max-pv_min))*pv) + dac_min  );
 
 ]]></ST>
     </Implementation>

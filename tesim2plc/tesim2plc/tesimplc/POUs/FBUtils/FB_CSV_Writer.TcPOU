@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.38">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
   <POU Name="FB_CSV_Writer" Id="{de3ffce5-7103-4107-8fe5-2fdaccc4c976}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_CSV_Writer //Matt
 VAR_INPUT

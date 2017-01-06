@@ -6,6 +6,7 @@
 		A_FLOW			:=1,
 		D_FLOW			:=2,
 		E_FLOW			:=3,
+		AC_FLOW			:=4,
 		P_REACTOR		:=7,
 		L_REACTOR		:=8,
 		T_REACTOR		:=9,
