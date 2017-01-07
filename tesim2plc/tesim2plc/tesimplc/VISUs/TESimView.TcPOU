@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
-  <POU Name="VISU_MAIN" Id="{7ffaf36a-4f37-4f56-ae7f-d03799febce6}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM VISU_MAIN
+  <POU Name="TESimView" Id="{7ffaf36a-4f37-4f56-ae7f-d03799febce6}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM TESimView
 VAR
 	XMEAS_PurgeAnalyzer		:	ARRAY[1..8] OF REAL;
 	XMEAS_FeedAnalyzer		:	ARRAY[1..6] OF REAL;

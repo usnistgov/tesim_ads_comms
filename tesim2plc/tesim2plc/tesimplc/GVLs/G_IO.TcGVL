@@ -52,9 +52,13 @@ VAR_GLOBAL
 	P_REACTOR					:	LREAL;
 	L_REACTOR					:	LREAL;
 	T_REACTOR					:	LREAL;
-	PCT_G						:	LREAL;
+	PCT_G_SP					:	LREAL;
 	L_SEPARATOR					:	LREAL;
 	L_STRIPPER					:	LREAL;
+	
+	// production metrics
+	COST						:	LREAL :=0.0;
+	PctG						:	LREAL :=0.0;
 	
 	// disturbances as set in tesim
 	IDV							:	ARRAY[1..20] OF DINT;

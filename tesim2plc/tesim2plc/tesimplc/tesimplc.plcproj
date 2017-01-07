@@ -158,13 +158,19 @@
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
+      <ExcludeFromBuild>True</ExcludeFromBuild>
     </Compile>
     <Compile Include="VISUs\TankView.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>
-    <Compile Include="VISUs\VISU_MAIN.TcPOU">
+    <Compile Include="VISUs\TESimMain.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
+      <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
+    </Compile>
+    <Compile Include="VISUs\TESimView.TcPOU">
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>
     </Compile>

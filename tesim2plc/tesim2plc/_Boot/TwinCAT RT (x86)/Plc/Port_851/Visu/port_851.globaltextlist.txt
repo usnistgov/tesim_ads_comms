@@ -1,0 +1,62 @@
+Id;Default
+32;$"Setpoint$"
+58;%0.0f $$/hr
+51;%0.0f cmh
+50;%0.0f kmh
+45;%0.0f kPa
+44;%0.1f
+35;%0.1f %
+37;%0.1f C
+54;%0.1f cmh
+59;%0.1f kgph
+60;%0.1f kscmh
+5;%0.3f
+25;%0.3f %
+36;%0.3f C
+27;%0.3f cu. m/h
+28;%0.3f deg
+26;%0.3f deg C
+21;%0.3f kg/h
+22;%0.3f kPa
+24;%0.3f kPa %
+23;%0.3f kPa \%
+20;%0.3f kscmh
+29;%0.3f kW
+34;%0.3f \%
+31;%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f
+30;%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,\
+1;%G_IO.XMEAS[8]
+4;%s
+2;=G_IO.XMEAS[8]
+47;Condenser
+57;Cost
+53;Flow
+3;ggggg
+0;G_IO.XMEAS[8]
+12;LEVEL
+39;Level
+18;Name
+56;Pct G
+42;Press.
+17;PRESS. (kPa)
+13;PRESSURE
+15;PRESSURE (kPa)
+16;PRESSURE \n(kPa)
+49;Prod.
+52;Product
+55;Quality
+6;REACTOR
+38;Reactor
+9;REACTOR:
+7;SEPARATOR
+46;Separator
+10;SEPARATOR:
+33;Setpoint
+8;STRIPPER
+48;Stripper
+11;STRIPPER:
+40;Temp
+14;TEMP (C)
+41;Temp (C)
+43;Temp.
+19;Value

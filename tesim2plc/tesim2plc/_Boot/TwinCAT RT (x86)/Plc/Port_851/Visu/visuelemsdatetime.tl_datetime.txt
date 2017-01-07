@@ -1,0 +1,7 @@
+Id;Default;en;de
+TimeSelector_All;All;All;Alle
+TimeSelector_Year;y;y;j
+TimeSelector_Month;M;M;m
+TimeSelector_Week;w;w;w
+TimeSelector_Day;d;d;t
+;;;
