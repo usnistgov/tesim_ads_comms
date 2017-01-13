@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <POU Name="MAIN" Id="{00560424-10f4-4ef4-a8a6-1de5fa9b4917}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	
+	GO	: BOOL	:=	FALSE;	
+
+	pv	:	INT := 0;
+	xhat : ARRAY[1..8] OF LREAL;
+	xsum : ARRAY[1..8] OF LREAL;
+
+	ii:INT:=0;
+	jj:INT:=0;
+	kk:LREAL:=1.0;
+	
+	Tset: TON := (IN := TRUE, PT := TIME#10S, Q:=TRUE);
+	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+NRANGE:=NH/NSTEP;
+IF GO AND jj<=NRANGE THEN 
+	
+	Tset(IN:=NOT(Tset.Q));
+	
+	IF Tset.Q OR (jj=0) THEN 
+		
+		jj := jj + 1;
+		pv := jj*NSTEP;
+		
+		FOR ii := 1 TO NIO DO	
+			// set the output level
+			XOUT[ii] := pv;
+			// reset measurement counter
+			xhat[ii] := 0.0;
+			xsum[ii] := 0.0;		
+		END_FOR
+		
+		kk := 1;
+		
+	END_IF
+	
+	// take the measurements
+	IF kk > 300 THEN
+		FOR ii := 1 TO NIO DO
+			//xhat[ii] := alpha*XIN[ii] + (1-alpha)*xhat[ii];
+			xsum[ii] := xsum[ii] + XIN[ii];
+			xhat[ii] := xsum[ii]/(kk-300);
+			DELTA[ii,jj] := INT_TO_LREAL(XOUT[ii]) - xhat[ii];
+		END_FOR
+	END_IF
+	
+	// increment meas counter each scan
+	kk := kk + 1;
+
+END_IF
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

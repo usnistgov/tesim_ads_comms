@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+  <GVL Name="GVL" Id="{897988f5-2551-4961-9bde-5be3f7abfedb}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	
+	// IO Calibration parameters
+	NL:INT:=4000;
+	NH:INT:=32000;
+	NSTEP:INT:=4000;
+	NRANGE: INT;
+	
+	// IO mapping
+	NIO : INT := 8;
+	XOUT AT %Q*	:	ARRAY[1..8] OF INT :=[8(0)];
+	XIN	AT %I*	:	ARRAY[1..8] OF INT :=[8(0)];
+	
+	// calibration measurement
+	DELTA	:	ARRAY[1..8, 1..8] OF LREAL := [8(0.0), 8(0.0)];
+	
+END_VAR
+]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -7,110 +7,33 @@
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{4DC05C63-337A-4DD3-9F8F-25D177FB7253}" TargetNetId="5.20.215.224.1.1">
+	<Project ProjectGUID="{68AE089D-65EE-4629-9AE0-C8022D3D408B}" TargetNetId="5.20.215.224.1.1">
 		<System>
-			<Licenses>
-				<Target BkhfOrder="VE2276910">
-					<ManualSelect>{4989A799-AEEA-4FEE-88EF-666B99EEFB45}</ManualSelect>
-				</Target>
-			</Licenses>
 			<Tasks>
-				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="350">
-					<Name>MainTask</Name>
-				</Task>
-				<Task Id="4" Priority="30" CycleTime="1000000" AmsPort="351">
-					<Name>VISU_TASK</Name>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350">
+					<Name>PlcTask</Name>
 				</Task>
 			</Tasks>
 		</System>
 		<Plc>
-			<Project GUID="{05A7A4ED-AD11-4DAB-93AC-00324A56A0F4}" Name="tesimplc" PrjFilePath="tesimplc\tesimplc.plcproj" TmcFilePath="tesimplc\tesimplc.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e">
+			<Project GUID="{EFD7D205-2EB5-4E80-A577-5472B9D560E1}" Name="calibrateio" PrjFilePath="calibrateio\calibrateio.plcproj" TmcFilePath="calibrateio\calibrateio.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e">
 				<Instance Id="#x01010010" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2">
-					<Name>tesimplc Instance</Name>
+					<Name>calibrateio Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
-						<Name>MainTask Inputs</Name>
+						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>G_IO.XMEAS_IO_IIN</Name>
-							<Type>ARRAY [1..4] OF INT</Type>
-						</Var>
-						<Var>
-							<Name>G_IO.XMV_IO_IIN</Name>
-							<Type>ARRAY [1..4] OF INT</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2">
-						<Name>MainTask Outputs</Name>
-						<Var>
-							<Name>G_IO.XMEAS_IO_IOUT</Name>
-							<Comment>
-								<![CDATA[ for the current-based control solutions]]>
-							</Comment>
-							<Type>ARRAY [1..4] OF INT</Type>
-						</Var>
-						<Var>
-							<Name>G_IO.XMV_IO_IOUT</Name>
-							<Type>ARRAY [1..4] OF INT</Type>
-						</Var>
-						<Var>
-							<Name>G_IO.XMEAS_IO_VOUT</Name>
-							<Comment>
-								<![CDATA[ for the voltage-based control solutions]]>
-							</Comment>
+							<Name>GVL.XIN</Name>
 							<Type>ARRAY [1..8] OF INT</Type>
 						</Var>
 					</Vars>
-					<UnrestoredVarLinks ImportTime="2015-06-26T14:22:31">
-						<OwnerA Name="OutputSrc" Prefix="TIPC^tesimplc^tesimplc Instance" Type="2">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL4028)">
-								<Link VarA="G_IO.XMEAS[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output"/>
-								<Link VarA="G_IO.XMEAS[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output"/>
-								<Link VarA="G_IO.XMEAS[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output"/>
-							</OwnerB>
-						</OwnerA>
-					</UnrestoredVarLinks>
-					<UnrestoredVarLinks ImportTime="2016-06-22T17:24:33">
-						<OwnerA Name="OutputSrc" Prefix="TIPC^tesimplc^tesimplc Instance" Type="2">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 13 (EL4008)">
-								<Link VarA="G_IO.XMEAS_IO_VOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output" RestoreInfo="NotFound"/>
-							</OwnerB>
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 9 (EL4028)">
-								<Link VarA="G_IO.XMEAS_IO_IOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output" RestoreInfo="NotFound"/>
-							</OwnerB>
-						</OwnerA>
-					</UnrestoredVarLinks>
-					<UnrestoredVarLinks ImportTime="2016-09-13T17:09:51">
-						<OwnerA Name="OutputSrc" Prefix="TIPC^tesimplc^tesimplc Instance" Type="2">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL4028)">
-								<Link VarA="G_IO.XMEAS_IO_IOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output"/>
-							</OwnerB>
-						</OwnerA>
-						<OwnerA Name="InputDst" Prefix="TIPC^tesimplc^tesimplc Instance" Type="1">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL3058)">
-								<Link VarA="G_IO.XMEAS_IO_IN[5]" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 5^Value"/>
-								<Link VarA="G_IO.XMEAS_IO_IN[6]" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 6^Value"/>
-								<Link VarA="G_IO.XMEAS_IO_IN[7]" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 7^Value"/>
-								<Link VarA="G_IO.XMEAS_IO_IN[8]" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 8^Value"/>
-							</OwnerB>
-						</OwnerA>
-					</UnrestoredVarLinks>
+					<Vars VarGrpType="2">
+						<Name>PlcTask Outputs</Name>
+						<Var>
+							<Name>GVL.XOUT</Name>
+							<Type>ARRAY [1..8] OF INT</Type>
+						</Var>
+					</Vars>
 				</Instance>
 			</Project>
 		</Plc>
@@ -669,7 +592,7 @@ Bit1: Value bigger/equal Limit2]]>
 					<Box BoxType="9099" Id="3">
 						<Name>Term 3 (EL4028)</Name>
 						<ImageId>1002</ImageId>
-						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fbc3052" RevisionNo="#x00130000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4028 8Ch. Ana. Output 4-20mA, 12bit" Desc="EL4028" PortABoxInfo="#x01000002">
+						<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0fbc3052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL4028 8Ch. Ana. Output 4-20mA, 12bit" Desc="EL4028" PortABoxInfo="#x01000002">
 							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
 							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
 							<SyncMan>001110002400010003000000000000001000001124010000</SyncMan>
@@ -1416,37 +1339,27 @@ Bit1: Value bigger/equal Limit2]]>
 		</Io>
 	</Project>
 	<Mappings>
-		<MappingInfo Identifier="{00000000-0012-0101-1000-010110000403}" Id="#x03070010"/>
-		<OwnerA Name="TIPC^tesimplc^tesimplc Instance">
+		<MappingInfo Identifier="{00000000-0011-0101-1000-010110000403}" Id="#x03070010"/>
+		<OwnerA Name="TIPC^calibrateio^calibrateio Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL3058)">
-				<Link VarA="MainTask Inputs^G_IO.XMEAS_IO_IIN[1]" VarB="AI Standard Channel 1^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMEAS_IO_IIN[2]" VarB="AI Standard Channel 2^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMEAS_IO_IIN[3]" VarB="AI Standard Channel 3^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMEAS_IO_IIN[4]" VarB="AI Standard Channel 4^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMV_IO_IIN[1]" VarB="AI Standard Channel 5^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMV_IO_IIN[2]" VarB="AI Standard Channel 6^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMV_IO_IIN[3]" VarB="AI Standard Channel 7^Value"/>
-				<Link VarA="MainTask Inputs^G_IO.XMV_IO_IIN[4]" VarB="AI Standard Channel 8^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[1]" VarB="AI Standard Channel 1^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[2]" VarB="AI Standard Channel 2^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[3]" VarB="AI Standard Channel 3^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[4]" VarB="AI Standard Channel 4^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[5]" VarB="AI Standard Channel 5^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[6]" VarB="AI Standard Channel 6^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[7]" VarB="AI Standard Channel 7^Value"/>
+				<Link VarA="PlcTask Inputs^GVL.XIN[8]" VarB="AI Standard Channel 8^Value"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 3 (EL4028)">
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_IOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_IOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_IOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_IOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMV_IO_IOUT[1]" VarB="AO Outputs Channel 5^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMV_IO_IOUT[2]" VarB="AO Outputs Channel 6^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMV_IO_IOUT[3]" VarB="AO Outputs Channel 7^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMV_IO_IOUT[4]" VarB="AO Outputs Channel 8^Analog output"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 7 (EL4008)">
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[5]" VarB="AO Outputs Channel 5^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[6]" VarB="AO Outputs Channel 6^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[7]" VarB="AO Outputs Channel 7^Analog output"/>
-				<Link VarA="MainTask Outputs^G_IO.XMEAS_IO_VOUT[8]" VarB="AO Outputs Channel 8^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[1]" VarB="AO Outputs Channel 1^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[2]" VarB="AO Outputs Channel 2^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[3]" VarB="AO Outputs Channel 3^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[4]" VarB="AO Outputs Channel 4^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[5]" VarB="AO Outputs Channel 5^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[6]" VarB="AO Outputs Channel 6^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[7]" VarB="AO Outputs Channel 7^Analog output"/>
+				<Link VarA="PlcTask Outputs^GVL.XOUT[8]" VarB="AO Outputs Channel 8^Analog output"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>
