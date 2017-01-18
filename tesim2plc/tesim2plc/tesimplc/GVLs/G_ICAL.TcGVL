@@ -7,19 +7,19 @@
 	XMEAS_ILOOP_CAL	: ARRAY[1..4] OF LREAL	:= 
 				[
 					// XMEAS tx-rx path
-					0.999825, // A flow
-					0.9985, // D flow
-					1.0  , // E flow
-					1.0001  // Reactor pressure
+					-39, // A flow
+					-9, // D flow
+					8, // E flow
+					4  // Reactor pressure
 				];		
 				
 	XMV_ILOOP_CAL	: ARRAY[1..4] OF LREAL	:= 
 				[
 					// XMV tx-rx path
-					1.00025, 	// D valve
-					0.99875, 	// E valve
-					1.00125, 	// A valve
-					1.00075	 	// RCW Valve
+					-11, 	// D valve
+					-11, 	// E valve
+					15, 	// A valve
+					-1	 	// RCW Valve
 				];					
 END_VAR
 
