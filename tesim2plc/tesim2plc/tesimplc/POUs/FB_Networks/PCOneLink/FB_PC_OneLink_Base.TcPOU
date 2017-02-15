@@ -12,6 +12,7 @@ VAR
 	DFlowFilter: FB_recursiveFilter := (alpha := 0.3);
 	EFlowFilter: FB_recursiveFilter := (alpha := 0.3);
 	ACFlowFilter: FB_recursiveFilter := (alpha := 0.3);
+	ReactorPressureFilter: FB_recursiveFilter := (alpha := 0.0005);
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -41,6 +42,9 @@ AFlowFilter(xn:=G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW], yn=>G_IO.MBS_XMEAS[XMEAS_M
 DFlowFilter(xn:=G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW], yn=>G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW]);
 EFlowFilter(xn:=G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW], yn=>G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW]);
 ACFlowFilter(xn:=G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW], yn=>G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW]);
+
+// filter the reactor pressure
+ReactorPressureFilter(xn:=G_IO.XMEAS[7], yn=>G_IO.P_REACTOR_SM);
 
 // capture the received state of XMEAS
 FOR ii := 1 TO 41 DO

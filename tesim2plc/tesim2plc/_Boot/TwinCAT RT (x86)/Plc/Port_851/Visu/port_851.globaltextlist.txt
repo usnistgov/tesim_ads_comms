@@ -26,16 +26,51 @@ Id;Default
 31;%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f
 30;%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,%0.3f,\
 1;%G_IO.XMEAS[8]
+92;%i
 4;%s
+67;0
+68;1
+77;10
+78;11
+79;12
+80;13
+81;14
+82;15
+83;16
+85;17
+86;18
+87;19
+69;2
+88;20
+70;3
+71;4
+72;5
+73;6
+74;7
+75;8
+76;9
 2;=G_IO.XMEAS[8]
+61;Chemical Reactor Process,  Operating Time: %0.2f
+62;Chemical Reactor Process, Operating Time: %0.2f
+63;Chemical Reactor Process, Operating Time: %0.3f
+64;Chemical Reactor Process, Running Time: %0.3f hours
 47;Condenser
 57;Cost
+65;Disturbances
 53;Flow
 3;ggggg
 0;G_IO.XMEAS[8]
+66;IDV
+84;IDV %i
+97;IDVs
 12;LEVEL
 39;Level
+96;MODE
 18;Name
+94;NET
+89;NET TYPE
+91;NETT
+90;NETTYPE
 56;Pct G
 42;Press.
 17;PRESS. (kPa)
@@ -59,4 +94,6 @@ Id;Default
 14;TEMP (C)
 41;Temp (C)
 43;Temp.
+95;TYPE
+93;USE
 19;Value

@@ -14,16 +14,19 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[IF pv > pv_max THEN
-	pv := pv_max;
-END_IF
-IF pv < pv_min THEN
-	pv := pv_min;
-END_IF
-pv_float_to_dac_old := LREAL_TO_INT((dac_max-dac_min)/(pv_max-pv_min)*(pv-pv_min)+dac_min);
-pv_float_to_dac := LREAL_TO_INT(  (((dac_max-dac_min)/(pv_max-pv_min))*pv) + dac_min  );
+      <ST><![CDATA[IF floatisnan(pv) THEN
+	pv_float_to_dac := 0;
+ELSE
 
-]]></ST>
+	IF pv > pv_max THEN
+		pv := pv_max;
+	END_IF
+	IF pv < pv_min THEN
+		pv := pv_min;
+	END_IF
+	pv_float_to_dac := LREAL_TO_INT(  (((dac_max-dac_min)/(pv_max-pv_min))*pv) + dac_min  );
+
+END_IF]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

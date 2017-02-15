@@ -19,7 +19,11 @@ VAR_GLOBAL
 	// 210					: ISA100.11a PC OneLink PN Sequence generation
 	
 	NET_TYPE				:	DINT := 0;
-	GO						:	BOOL := false;
+	GO						:	BOOL := FALSE;
+	MODE					:	UINT := 1;
+	
+	// operating time
+	OPTIME					:	LREAL := 0.0;
 	
 	// for the current-based control solutions
 	XMEAS_IO_IOUT	AT %Q*		:	ARRAY[1..4] OF INT;
@@ -55,6 +59,9 @@ VAR_GLOBAL
 	PCT_G_SP					:	LREAL;
 	L_SEPARATOR					:	LREAL;
 	L_STRIPPER					:	LREAL;
+	
+	// filtered (smoothed) values
+	P_REACTOR_SM					:	LREAL;
 	
 	// production metrics
 	COST						:	LREAL :=0.0;
