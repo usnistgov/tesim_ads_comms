@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <POU Name="FB_PC_OneLink_TESIM" Id="{3bd205c6-e14a-4957-98ff-aed794bd8894}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_PC_OneLink_TESIM EXTENDS FB_PC_OneLink_Base
 VAR_INPUT
@@ -10,7 +10,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[G_PARAMS.A_FLOW_MAX 		:=1.0;
+      <ST><![CDATA[G_PARAMS.A_FLOW_MAX 		:=1.2;
 G_PARAMS.D_FLOW_MAX			:=10000.0;
 G_PARAMS.E_FLOW_MAX			:=10000.0;
 G_PARAMS.AC_FLOW_MAX		:=50.0;
@@ -60,5 +60,9 @@ G_IO.NET_XMV[XMV_IO_IDX.REACTOR_CWFV]	:=	LREAL_TO_REAL(adc_to_float_pv(G_IO.NET_
 *)
 ]]></ST>
     </Implementation>
+    <LineIds Name="FB_PC_OneLink_TESIM">
+      <LineId Id="3" Count="47" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <ImagePool Name="ImagePool" Id="{825dba4d-bb77-44eb-94ac-64ee695aa82c}">
     <XmlArchive>
       <Data>
         <o xml:space="preserve" t="ImagePoolObject">
-          <v n="UniqueIdGenerator">"8"</v>
+          <v n="UniqueIdGenerator">"9"</v>
           <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
             <o>
-              <v n="BitmapID">"base_diagram"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|base_diagram.PNG"</v>
-              <v n="ItemID">4</v>
-            </o>
-            <o>
               <v n="BitmapID">"tesim_color"</v>
-              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\git\tesim_ads_comms\images\tesim_color.jpg"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|E:\git\tesim_ads_comms\tesim2plc\tesim_color.jpg"</v>
               <v n="ItemID">5</v>
             </o>
             <o>

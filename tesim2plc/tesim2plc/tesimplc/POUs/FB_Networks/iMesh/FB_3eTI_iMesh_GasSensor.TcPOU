@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+  <POU Name="FB_3eTI_iMesh_GasSensor" Id="{79745510-0645-48ed-8e8c-3995314f7dfb}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_iMesh_GasSensor EXTENDS FB_3eTI_iMesh_Base
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+	A 		: LREAL := 75;
+	Tau 	: LREAL := 0.5;
+	PV		: LREAL := 0.0;
+	tk		: LREAL := 0.0;
+	deltaT	:LREAL 	:= 10E-3;
+	Pch     : LREAL := 10;
+	remk: LREAL := 0.0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+// XMEAS RANGES
+G_PARAMS.A_FLOW_MAX 	:=A;
+G_PARAMS.D_FLOW_MAX		:=A;
+G_PARAMS.E_FLOW_MAX		:=A;
+G_PARAMS.AC_FLOW_MAX	:=A;
+
+G_PARAMS.A_FLOW_MIN 	:=0.0;
+G_PARAMS.D_FLOW_MIN		:=0.0;
+G_PARAMS.E_FLOW_MIN		:=0.0;
+G_PARAMS.AC_FLOW_MIN	:=0.0;
+
+(* For built-in PV generator
+// gas influx variables
+tk := tk + deltaT;
+remk := lmod(tk,2*Pch);
+IF remk < Pch THEN
+	PV := A*(1-EXP(-Tau*remk));
+ELSE
+	PV := A*EXP(-Tau*(remk-pch));
+END_IF
+
+G_IO.XMEAS[1] := PV;
+G_IO.XMEAS[2] := PV;
+G_IO.XMEAS[3] := PV;
+G_IO.XMEAS[4] := PV;
+*)
+
+// execute the signal conversion
+SUPER^();
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_3eTI_iMesh_GasSensor">
+      <LineId Id="10" Count="2" />
+      <LineId Id="45" Count="1" />
+      <LineId Id="13" Count="1" />
+      <LineId Id="47" Count="3" />
+      <LineId Id="28" Count="1" />
+      <LineId Id="35" Count="0" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="52" Count="0" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="53" Count="2" />
+      <LineId Id="39" Count="4" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="16" Count="4" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

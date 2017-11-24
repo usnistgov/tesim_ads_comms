@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+  <POU Name="FB_Yokogawa_LFSR" Id="{750bc9b4-66c7-43cd-973e-28708321475a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Yokogawa_LFSR EXTENDS FB_Yokogawa_Base
+
+VAR_INPUT
+	clock_period	: TIME := T#2S;
+END_VAR
+
+VAR_OUTPUT
+
+END_VAR
+
+VAR
+	
+	level			: LREAL := 1.0;
+	
+	lfsr			: FB_LFSR();
+	value			: LREAL :=0.0;
+	jj				: INT	:= 0;
+	lsfr: INT;
+	
+END_VAR
+
+
+VAR CONSTANT
+	NXMEAS: INT := 4;
+	NXMV: INT := 0;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+IF G_IO.GO THEN
+		
+	G_PARAMS.A_FLOW_MAX 		:=1.0;
+	G_PARAMS.D_FLOW_MAX			:=1.0;
+	G_PARAMS.E_FLOW_MAX			:=1.0;
+	G_PARAMS.AC_FLOW_MAX		:=1.0;
+	
+	G_PARAMS.A_FLOW_MIN 		:=0.0;
+	G_PARAMS.D_FLOW_MIN			:=0.0;
+	G_PARAMS.E_FLOW_MIN			:=0.0;
+	G_PARAMS.AC_FLOW_MIN		:=0.0;
+	
+	lfsr(gen_poly:=2#10111000, ck_period:= clock_period);
+	value := level*USINT_TO_LREAL(lfsr.out);
+	
+	FOR jj := 1 TO NXMEAS DO
+		G_IO.XMEAS[jj] := value;
+	END_FOR
+	FOR jj := 1 TO NXMV DO
+		G_IO.XMV[jj] := value;
+	END_FOR
+	
+	// execute the signal conversion
+	SUPER^();
+	
+ELSE
+	lfsr.reset();
+END_IF
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Yokogawa_LFSR">
+      <LineId Id="29" Count="30" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <POU Name="FB_PC_OneLink_TestSignals" Id="{830d475b-c2d2-428d-8524-f4719c757bfe}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_PC_OneLink_TestSignals EXTENDS FB_PC_OneLink_Base
 VAR_INPUT
@@ -12,7 +12,7 @@ END_VAR
     <Implementation>
       <ST><![CDATA[
 // XMEAS RANGES
-A_FLOW_MAX 				:=10.0;
+G_PARAMS.A_FLOW_MAX 				:=10.0;
 G_PARAMS.D_FLOW_MAX		:=10.0;
 G_PARAMS.E_FLOW_MAX		:=10.0;
 G_PARAMS.P_REACTOR_MAX	:=10.0;
@@ -37,5 +37,9 @@ G_PARAMS.REACTOR_CWFV_MIN			:=0.0;
 SUPER^();
 ]]></ST>
     </Implementation>
+    <LineIds Name="FB_PC_OneLink_TestSignals">
+      <LineId Id="3" Count="24" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

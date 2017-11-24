@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+  <POU Name="FB_PC_OneLink_GasSensor" Id="{5f9f9655-a526-448d-b863-035adc563453}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_PC_OneLink_GasSensor EXTENDS FB_PC_OneLink_Base
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+// XMEAS RANGES
+G_PARAMS.A_FLOW_MAX 	:=20.0;
+G_PARAMS.D_FLOW_MAX		:=20.0;
+
+G_PARAMS.A_FLOW_MIN 	:=0.0;
+G_PARAMS.D_FLOW_MIN		:=0.0;
+
+// execute the signal conversion
+SUPER^();
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="FB_PC_OneLink_GasSensor">
+      <LineId Id="33" Count="0" />
+      <LineId Id="10" Count="2" />
+      <LineId Id="15" Count="1" />
+      <LineId Id="19" Count="0" />
+      <LineId Id="31" Count="1" />
+      <LineId Id="34" Count="1" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

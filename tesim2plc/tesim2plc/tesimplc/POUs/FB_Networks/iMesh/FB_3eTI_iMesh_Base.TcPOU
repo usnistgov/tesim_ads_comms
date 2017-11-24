@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <POU Name="FB_3eTI_iMesh_Base" Id="{c24ff66a-4461-44bb-a3fd-0d65c26a2169}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_3eTI_iMesh_Base
 VAR_INPUT
 	
 	// THIS IS FOR THE ISA100.11A GATEWAY
-	mbAddrs : ARRAY[0..3] OF MODBUS_DATA_MAP :=  [ 
+	mbAddrs : ARRAY[1..4] OF MODBUS_DATA_MAP :=  [ 
 			(_ipAddress := '192.168.254.253', _startAddress:= 6), 
 			(_ipAddress := '192.168.254.253', _startAddress:= 18),
 			(_ipAddress := '192.168.254.253', _startAddress:= 30),
@@ -40,7 +40,7 @@ XMEAS_IO_VOUT[XMEAS_IO_IDX.AC_FLOW]	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.AC_FL
 //
 // BEGIN MODBUS POLLING SEGMENT from the GATEWAY
 //
-fbReadMB(addrs := mbAddrs );
+fbReadMB(n:=4, addrs := ADR(mbAddrs) );
 
 // poll modbus registers
 G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.A_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.A_FLOW] + MBS_XMEAS_CAL_OFFSET[1];
@@ -63,10 +63,20 @@ XMEAS_RX[XMEAS_IDX.D_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW];
 XMEAS_RX[XMEAS_IDX.E_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW];
 XMEAS_RX[XMEAS_IDX.AC_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW];
 
+// capture the received state of XMV
+FOR ii := 1 TO 12 DO
+	XMV_RX[ii]:=XMV[ii];
+END_FOR
 
 //
 // END MODBUS POLLING SEGMENT from the GATEWAY
 //]]></ST>
     </Implementation>
+    <LineIds Name="FB_3eTI_iMesh_Base">
+      <LineId Id="3" Count="35" />
+      <LineId Id="66" Count="3" />
+      <LineId Id="39" Count="3" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

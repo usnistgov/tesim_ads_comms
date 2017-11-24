@@ -1,5 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4018.4">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4020.28">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{CF887A53-7490-A600-6B5D-04343BF0EA32}" IecBaseType="true" AutoDeleteType="true">ARRAY [1..4] OF INT</Name>
+			<BitSize>64</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{151D7251-619F-AE55-6E9D-9E71EAB7FC8F}" IecBaseType="true" AutoDeleteType="true">ARRAY [1..8] OF INT</Name>
+			<BitSize>128</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000006}">INT</BaseType>
+			<ArrayInfo>
+				<LBound>1</LBound>
+				<Elements>8</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<BitSize>6</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{85DC3E7A-8ADA-435B-9479-25573909A7DB}" Namespace="AX5000" TcBaseType="true">E_AX5000_P_0275_ActiveFeedbackAndMemory</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<EnumInfo>
+				<Text>
+					<![CDATA[EAX5000_P_0275_MEMORY_NONE]]>
+				</Text>
+				<Enum>0</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[EAX5000_P_0275_FEEDBACK1_MEMORY_ENCODER]]>
+				</Text>
+				<Enum>1</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[EAX5000_P_0275_FEEDBACK1_MEMORY_DRIVE]]>
+				</Text>
+				<Enum>2</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[EAX5000_P_0275_FEEDBACK2_MEMORY_ENCODER]]>
+				</Text>
+				<Enum>8</Enum>
+			</EnumInfo>
+			<EnumInfo>
+				<Text>
+					<![CDATA[EAX5000_P_0275_FEEDBACK2_MEMORY_DRIVE]]>
+				</Text>
+				<Enum>16</Enum>
+			</EnumInfo>
+			<Hides>
+				<Hide GUID="{F1A82E04-2D76-4E5D-BB15-437337214D25}"/>
+			</Hides>
+		</DataType>
+		<DataType>
+			<Name GUID="{D7D16A25-71D5-48E0-882D-56AB4D826BC2}" Namespace="AX5000" PersistentType="true">ST_AX5000_P_0275</Name>
+			<BitSize>16</BitSize>
+			<SubItem>
+				<Name>ActiveFeedbackAndMemory</Name>
+				<Type GUID="{85DC3E7A-8ADA-435B-9479-25573909A7DB}" Namespace="AX5000">E_AX5000_P_0275_ActiveFeedbackAndMemory</Type>
+				<BitSize>8</BitSize>
+				<BitOffs>0</BitOffs>
+			</SubItem>
+			<SubItem>
+				<Name>InitializationErrorBehavior</Name>
+				<Type GUID="{18071995-0000-0000-0000-000000000010}">BIT</Type>
+				<BitSize>1</BitSize>
+				<BitOffs>8</BitOffs>
+			</SubItem>
+			<Hides>
+				<Hide GUID="{0D1A14D3-018F-4F48-88A7-90B490A317B5}"/>
+				<Hide GUID="{43B3CFF1-FA94-4CC1-8B03-C73EF940373B}"/>
+				<Hide GUID="{81B09CD0-943C-4070-AA5B-0A6818251CEB}"/>
+				<Hide GUID="{B6598B95-DC2C-454C-9B12-DE628B32D897}"/>
+			</Hides>
+		</DataType>
+	</DataTypes>
 	<ImageDatas>
 		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c0ffffffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
@@ -7,12 +105,10 @@
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff0000ff0000ff0000ff0000ff0000ff0000ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
 	</ImageDatas>
-	<Project ProjectGUID="{4DC05C63-337A-4DD3-9F8F-25D177FB7253}" TargetNetId="5.20.215.224.1.1">
+	<Project ProjectGUID="{4DC05C63-337A-4DD3-9F8F-25D177FB7253}" TargetNetId="5.20.215.224.1.1" ShowHideConfigurations="#x106">
 		<System>
 			<Licenses>
-				<Target BkhfOrder="VE2276910">
-					<ManualSelect>{4989A799-AEEA-4FEE-88EF-666B99EEFB45}</ManualSelect>
-				</Target>
+				<Target BkhfOrder="VE2277173" DongleDevice="#xffffffff"/>
 			</Licenses>
 			<Tasks>
 				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="350">
@@ -32,11 +128,11 @@
 						<Name>MainTask Inputs</Name>
 						<Var>
 							<Name>G_IO.XMEAS_IO_IIN</Name>
-							<Type>ARRAY [1..4] OF INT</Type>
+							<Type GUID="{CF887A53-7490-A600-6B5D-04343BF0EA32}">ARRAY [1..4] OF INT</Type>
 						</Var>
 						<Var>
 							<Name>G_IO.XMV_IO_IIN</Name>
-							<Type>ARRAY [1..4] OF INT</Type>
+							<Type GUID="{CF887A53-7490-A600-6B5D-04343BF0EA32}">ARRAY [1..4] OF INT</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2">
@@ -46,18 +142,18 @@
 							<Comment>
 								<![CDATA[ for the current-based control solutions]]>
 							</Comment>
-							<Type>ARRAY [1..4] OF INT</Type>
+							<Type GUID="{CF887A53-7490-A600-6B5D-04343BF0EA32}">ARRAY [1..4] OF INT</Type>
 						</Var>
 						<Var>
 							<Name>G_IO.XMV_IO_IOUT</Name>
-							<Type>ARRAY [1..4] OF INT</Type>
+							<Type GUID="{CF887A53-7490-A600-6B5D-04343BF0EA32}">ARRAY [1..4] OF INT</Type>
 						</Var>
 						<Var>
 							<Name>G_IO.XMEAS_IO_VOUT</Name>
 							<Comment>
 								<![CDATA[ for the voltage-based control solutions]]>
 							</Comment>
-							<Type>ARRAY [1..8] OF INT</Type>
+							<Type GUID="{151D7251-619F-AE55-6E9D-9E71EAB7FC8F}">ARRAY [1..8] OF INT</Type>
 						</Var>
 					</Vars>
 					<UnrestoredVarLinks ImportTime="2015-06-26T14:22:31">
@@ -72,20 +168,20 @@
 					<UnrestoredVarLinks ImportTime="2016-06-22T17:24:33">
 						<OwnerA Name="OutputSrc" Prefix="TIPC^tesimplc^tesimplc Instance" Type="2">
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 13 (EL4008)">
-								<Link VarA="G_IO.XMEAS_IO_VOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_VOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_VOUT[8]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 8^Analog output" RestoreInfo="BNotFound"/>
 							</OwnerB>
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 7 (EK1200)^Term 9 (EL4028)">
-								<Link VarA="G_IO.XMEAS_IO_IOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="NotFound"/>
-								<Link VarA="G_IO.XMEAS_IO_IOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="NotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[1]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 1^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[2]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 2^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[3]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 3^Analog output" RestoreInfo="BNotFound"/>
+								<Link VarA="G_IO.XMEAS_IO_IOUT[4]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 4^Analog output" RestoreInfo="BNotFound"/>
 								<Link VarA="G_IO.XMEAS_IO_IOUT[5]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 5^Analog output" RestoreInfo="NotFound"/>
 								<Link VarA="G_IO.XMEAS_IO_IOUT[6]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 6^Analog output" RestoreInfo="NotFound"/>
 								<Link VarA="G_IO.XMEAS_IO_IOUT[7]" TypeA="INT" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AO Outputs Channel 7^Analog output" RestoreInfo="NotFound"/>
@@ -111,6 +207,10 @@
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
+					<TaskPouOids>
+						<TaskPouOid Prio="30" OTCID="#x01010011"/>
+						<TaskPouOid Prio="1" OTCID="#x01010012"/>
+					</TaskPouOids>
 				</Instance>
 			</Project>
 		</Plc>
@@ -195,10 +295,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
 									<Type>BIT</Type>
@@ -257,10 +357,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
 									<Type>BIT</Type>
@@ -319,10 +419,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
 									<Type>BIT</Type>
@@ -381,10 +481,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
 									<Type>BIT</Type>
@@ -443,10 +543,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
 									<Type>BIT</Type>
@@ -505,10 +605,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
 									<Type>BIT</Type>
@@ -567,10 +667,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
 									<Type>BIT</Type>
@@ -629,10 +729,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
 									<Type>BIT</Type>
@@ -871,10 +971,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
 									<Type>BIT</Type>
@@ -933,10 +1033,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
 									<Type>BIT</Type>
@@ -995,10 +1095,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
 									<Type>BIT</Type>
@@ -1057,10 +1157,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
 									<Type>BIT</Type>
@@ -1119,10 +1219,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
 									<Type>BIT</Type>
@@ -1181,10 +1281,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
 									<Type>BIT</Type>
@@ -1243,10 +1343,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
 									<Type>BIT</Type>
@@ -1305,10 +1405,10 @@ Bit1: Value bigger/equal Limit2]]>
 									</Comment>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..0] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__">
-									<Type>ARRAY [0..5] OF BIT</Type>
+									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
 								<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
 									<Type>BIT</Type>

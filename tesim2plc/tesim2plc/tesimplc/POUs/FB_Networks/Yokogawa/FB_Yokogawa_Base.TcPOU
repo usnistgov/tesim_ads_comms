@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
+  <POU Name="FB_Yokogawa_Base" Id="{99698d46-ee1e-4849-be0a-f948514c2337}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Yokogawa_Base
+VAR_INPUT
+	
+	// THIS IS FOR THE ISA100.11A GATEWAY
+	mbAddrs : ARRAY[0..4] OF MODBUS_DATA_MAP :=  [ 
+			(_ipAddress := '192.168.0.101', _startAddress:= 674), 
+			(_ipAddress := '192.168.0.101', _startAddress:= 677),
+			(_ipAddress := '192.168.0.101', _startAddress:= 680),
+			(_ipAddress := '192.168.0.101', _startAddress:= 683),
+			(_ipAddress := '192.168.0.101', _startAddress:= 577)
+		];
+		
+END_VAR
+
+VAR
+	fbReadMB 	: FB_ReadModbus;
+	ii			: INT:=0;
+END_VAR
+
+VAR_OUTPUT
+END_VAR
+
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[//
+// BEGIN PRODUCE THE DATA
+//
+// XMEAS values will come from the external TESIM program using ADS
+
+// VOLTAGES
+XMEAS_IO_IOUT[XMEAS_IO_IDX.A_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.A_FLOW],		pv_max:=G_PARAMS.A_FLOW_MAX, pv_min:=G_PARAMS.A_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.D_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.D_FLOW],		pv_max:=G_PARAMS.D_FLOW_MAX, pv_min:=G_PARAMS.D_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.E_FLOW]		:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.E_FLOW],		pv_max:=G_PARAMS.E_FLOW_MAX, pv_min:=G_PARAMS.E_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
+XMEAS_IO_IOUT[XMEAS_IO_IDX.AC_FLOW]	:= pv_float_to_dac(pv:=XMEAS[XMEAS_IDX.AC_FLOW],	pv_max:=G_PARAMS.AC_FLOW_MAX, pv_min:=G_PARAMS.AC_FLOW_MIN, dac_max:=VOUT_WD_MAX, dac_min:=0);
+
+//
+// BEGIN MODBUS POLLING SEGMENT from the GATEWAY
+//
+fbReadMB(n := 5, addrs := ADR(mbAddrs) );
+
+// poll modbus registers
+G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.A_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.A_FLOW] ;
+G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.D_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.D_FLOW];
+G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.E_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.E_FLOW];
+G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.AC_FLOW] := fbReadMB.registerValues[XMEAS_MBS_IDX.AC_FLOW];
+
+// convert raw modbus signals to process signals
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW]	:=	LREAL_TO_REAL(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.A_FLOW]);
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW]	:=	LREAL_TO_REAL(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.D_FLOW]);
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW]	:=	LREAL_TO_REAL(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.E_FLOW]);
+G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW]	:=	LREAL_TO_REAL(G_IO.MBS_XMEAS_RAW[XMEAS_MBS_IDX.AC_FLOW]);
+
+// capture the received state of XMEAS
+FOR ii := 1 TO 41 DO
+	XMEAS_RX[ii]:=XMEAS[ii];
+END_FOR
+XMEAS_RX[XMEAS_IDX.A_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.A_FLOW];
+XMEAS_RX[XMEAS_IDX.D_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.D_FLOW];
+XMEAS_RX[XMEAS_IDX.E_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.E_FLOW];
+XMEAS_RX[XMEAS_IDX.AC_FLOW] := G_IO.MBS_XMEAS[XMEAS_MBS_IDX.AC_FLOW];
+
+
+//
+// END MODBUS POLLING SEGMENT from the GATEWAY
+//]]></ST>
+    </Implementation>
+    <LineIds Name="FB_Yokogawa_Base">
+      <LineId Id="33" Count="36" />
+      <LineId Id="74" Count="2" />
+      <LineId Id="9" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <Visu Name="TankView" Id="{f4f04a74-56cf-403a-ae2f-59b885671ef0}">
     <XmlArchive>
       <Data>
@@ -160,158 +160,6 @@
                 <a n="LMGuids" et="Guid" />
                 <d n="SubElements" t="Hashtable" />
                 <v n="VisualElementId">106</v>
-                <l n="UserManagementAccessRights" t="ArrayList" />
-              </o>
-              <o>
-                <a n="ConfiguredComplexInputs" et="ComplexInput" />
-                <l n="Elements" t="ArrayList" />
-                <n n="VisualElementDescription" />
-                <o n="VisualElemMemberList" t="VisualElemMemberList">
-                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
-                    <o>
-                      <v n="Id">571893170L</v>
-                      <v n="Value">""</v>
-                    </o>
-                    <o>
-                      <v n="Id">2341735680L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
-                        <o>
-                          <v n="Color">-2830136</v>
-                          <v n="CanonicalName">"Element-Frame-Color"</v>
-                        </o>
-                      </l>
-                    </o>
-                    <o>
-                      <v n="Id">438423234L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
-                        <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"Element-Alarm-Frame-Color"</v>
-                        </o>
-                      </l>
-                    </o>
-                    <o>
-                      <v n="Id">2678395525L</v>
-                      <v n="Value" t="Int16">1</v>
-                    </o>
-                    <o>
-                      <v n="Id">2340015797L</v>
-                      <v n="Value">"HCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">2565699834L</v>
-                      <v n="Value">"VCENTER"</v>
-                    </o>
-                    <o>
-                      <v n="Id">1603690730L</v>
-                      <v n="Value">"Arial"</v>
-                    </o>
-                    <o>
-                      <v n="Id">4253639993L</v>
-                      <v n="Value" t="Int16">12</v>
-                    </o>
-                    <o>
-                      <v n="Id">2729990903L</v>
-                      <v n="Value">0U</v>
-                    </o>
-                    <o>
-                      <v n="Id">1213979116L</v>
-                      <v n="Value">0U</v>
-                    </o>
-                    <o>
-                      <v n="Id">3488306084L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">2812299069L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">494569607L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">1649127785L</v>
-                      <v n="Value">217</v>
-                    </o>
-                    <o>
-                      <v n="Id">357335551L</v>
-                      <v n="Value">84</v>
-                    </o>
-                    <o>
-                      <v n="Id">2422045748L</v>
-                      <v n="Value" t="Int16">1393</v>
-                    </o>
-                    <o>
-                      <v n="Id">2134141914L</v>
-                      <v n="Value" t="Int16">972</v>
-                    </o>
-                    <o>
-                      <v n="Id">1651471674L</v>
-                      <v n="Value">false</v>
-                    </o>
-                    <o>
-                      <v n="Id">3549563837L</v>
-                      <v n="Value">"ISOTROPIC"</v>
-                    </o>
-                    <o>
-                      <v n="Id">3729828405L</v>
-                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
-                        <o>
-                          <v n="FontStyle">0</v>
-                          <v n="ExplicitColor">-16777216</v>
-                          <v n="CanonicalName">"Font-Standard"</v>
-                          <v n="FontName">"Arial"</v>
-                          <v n="FontSize">12</v>
-                          <o n="NamedColor" t="NamedStyleColor">
-                            <v n="Color">-16777216</v>
-                            <v n="CanonicalName">"Font-Default-Color"</v>
-                          </o>
-                        </o>
-                      </l>
-                    </o>
-                    <o>
-                      <v n="Id">550940142L</v>
-                      <v n="Value">913</v>
-                    </o>
-                    <o>
-                      <v n="Id">1473355128L</v>
-                      <v n="Value">570</v>
-                    </o>
-                    <o>
-                      <v n="Id">493260384L</v>
-                      <v n="Value">4294967295U</v>
-                    </o>
-                    <o>
-                      <v n="Id">135947015L</v>
-                      <v n="Value">4278190080U</v>
-                    </o>
-                    <o>
-                      <v n="Id">3332245745L</v>
-                      <v n="Value">"ImagePool.tesim_color"</v>
-                    </o>
-                    <o>
-                      <v n="Id">390574330L</v>
-                      <v n="Value">""</v>
-                    </o>
-                    <o>
-                      <v n="Id">2597686782L</v>
-                      <v n="Value">true</v>
-                    </o>
-                  </l>
-                </o>
-                <v n="VisualElementName">"Image"</v>
-                <v n="VisualElementTypeName">"VisuFbElemImage"</v>
-                <v n="VisualElementIsRectangle">true</v>
-                <v n="VisualElementIdentifier">"GenElemInst_4"</v>
-                <n n="VisualElementOfflinePaintCommands" />
-                <n n="VisualElementFrameInformation" />
-                <d n="VisualElementInputActions" t="Hashtable" />
-                <v n="VisualElementIdentification">{74643564-1cd5-427c-a7f0-d3a2dda5bf25}</v>
-                <v n="VisualElementOwningObjectGuid">{f4f04a74-56cf-403a-ae2f-59b885671ef0}</v>
-                <a n="LMGuids" et="Guid" />
-                <d n="SubElements" t="Hashtable" />
-                <v n="VisualElementId">5</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
               <o>
@@ -6093,8 +5941,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -6102,8 +5950,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -6111,8 +5959,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -6146,19 +5994,19 @@
                     </o>
                     <o>
                       <v n="Id">1649127785L</v>
-                      <v n="Value">37</v>
+                      <v n="Value">36</v>
                     </o>
                     <o>
                       <v n="Id">357335551L</v>
-                      <v n="Value">88</v>
+                      <v n="Value">92</v>
                     </o>
                     <o>
                       <v n="Id">2422045748L</v>
-                      <v n="Value">127</v>
+                      <v n="Value">128</v>
                     </o>
                     <o>
                       <v n="Id">2134141914L</v>
-                      <v n="Value">30</v>
+                      <v n="Value">26</v>
                     </o>
                     <o>
                       <v n="Id">3729828405L</v>
@@ -6182,7 +6030,7 @@
                     </o>
                     <o>
                       <v n="Id">1473355128L</v>
-                      <v n="Value">103</v>
+                      <v n="Value">105</v>
                     </o>
                     <o>
                       <v n="Id">2678395525L</v>
@@ -6207,6 +6055,10 @@
                     <o>
                       <v n="Id">2880254039L</v>
                       <v n="Value">"Not(udint_to_bool(IDV[1]))"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -6251,8 +6103,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -6260,8 +6112,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -6269,8 +6121,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -6363,6 +6215,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[2]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"69"</v>
                     </o>
@@ -6405,8 +6261,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -6414,8 +6270,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -6423,8 +6279,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -6517,6 +6373,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[3]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"70"</v>
                     </o>
@@ -6559,8 +6419,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -6568,8 +6428,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -6577,8 +6437,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -6671,6 +6531,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[4]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"71"</v>
                     </o>
@@ -6713,8 +6577,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -6722,8 +6586,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -6731,8 +6595,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -6825,6 +6689,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[5]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"72"</v>
                     </o>
@@ -6867,8 +6735,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -6876,8 +6744,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -6885,8 +6753,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -6979,6 +6847,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[6]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"73"</v>
                     </o>
@@ -7021,8 +6893,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7030,8 +6902,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7039,8 +6911,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -7133,6 +7005,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[7]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"74"</v>
                     </o>
@@ -7175,8 +7051,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7184,8 +7060,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7193,8 +7069,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -7287,6 +7163,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[8]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"75"</v>
                     </o>
@@ -7329,8 +7209,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7338,8 +7218,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7347,8 +7227,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -7441,6 +7321,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[9]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"76"</v>
                     </o>
@@ -7483,8 +7367,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7492,8 +7376,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7501,8 +7385,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -7595,6 +7479,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[10]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"77"</v>
                     </o>
@@ -7637,8 +7525,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7646,8 +7534,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7655,8 +7543,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -7749,6 +7637,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[11]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"78"</v>
                     </o>
@@ -7791,8 +7683,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7800,8 +7692,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7809,8 +7701,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -7903,6 +7795,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[12]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"79"</v>
                     </o>
@@ -7945,8 +7841,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -7954,8 +7850,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -7963,8 +7859,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8057,6 +7953,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[13]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"80"</v>
                     </o>
@@ -8099,8 +7999,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -8108,8 +8008,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -8117,8 +8017,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8211,6 +8111,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[14]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"81"</v>
                     </o>
@@ -8253,8 +8157,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -8262,8 +8166,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -8271,8 +8175,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8365,6 +8269,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[15]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"82"</v>
                     </o>
@@ -8407,8 +8315,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -8416,8 +8324,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -8425,8 +8333,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8519,6 +8427,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[16]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"83"</v>
                     </o>
@@ -8561,8 +8473,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -8570,8 +8482,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -8579,8 +8491,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8673,6 +8585,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[17]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"85"</v>
                     </o>
@@ -8715,8 +8631,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -8724,8 +8640,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -8733,8 +8649,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8827,6 +8743,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[18]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"86"</v>
                     </o>
@@ -8869,8 +8789,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -8878,8 +8798,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -8887,8 +8807,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -8981,6 +8901,10 @@
                       <v n="Value">"Not(udint_to_bool(IDV[19]))"</v>
                     </o>
                     <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
                       <v n="Id">823443203L</v>
                       <v n="Value">"87"</v>
                     </o>
@@ -9023,8 +8947,8 @@
                       <v n="Id">2812299069L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-256</v>
-                          <v n="CanonicalName">"Yellow"</v>
+                          <v n="Color">-1</v>
+                          <v n="CanonicalName">"White"</v>
                         </o>
                       </l>
                     </o>
@@ -9032,8 +8956,8 @@
                       <v n="Id">135947015L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-65536</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Frame-Color"</v>
+                          <v n="Color">-16777216</v>
+                          <v n="CanonicalName">"Black"</v>
                         </o>
                       </l>
                     </o>
@@ -9041,8 +8965,8 @@
                       <v n="Id">493260384L</v>
                       <l n="Value" t="ArrayList" cet="NamedStyleColor">
                         <o>
-                          <v n="Color">-12337</v>
-                          <v n="CanonicalName">"BasicElement-Alarm-Fill-Color"</v>
+                          <v n="Color">-256</v>
+                          <v n="CanonicalName">"Yellow"</v>
                         </o>
                       </l>
                     </o>
@@ -9132,7 +9056,11 @@
                     </o>
                     <o>
                       <v n="Id">2880254039L</v>
-                      <v n="Value">"Not(udint_to_bool(IDV[20]))"</v>
+                      <v n="Value">"Not(udint_to_bool(G_IO.IDV[20]))"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1999528970L</v>
+                      <v n="Value">""</v>
                     </o>
                     <o>
                       <v n="Id">823443203L</v>
@@ -10358,16 +10286,168 @@
                 <v n="VisualElementId">170</v>
                 <l n="UserManagementAccessRights" t="ArrayList" />
               </o>
+              <o>
+                <a n="ConfiguredComplexInputs" et="ComplexInput" />
+                <l n="Elements" t="ArrayList" />
+                <n n="VisualElementDescription" />
+                <o n="VisualElemMemberList" t="VisualElemMemberList">
+                  <l n="VisualElemMemberList" t="VisualElemMemberCollection" cet="VisualElemMember">
+                    <o>
+                      <v n="Id">571893170L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2341735680L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-2830136</v>
+                          <v n="CanonicalName">"Element-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">438423234L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleColor">
+                        <o>
+                          <v n="Color">-65536</v>
+                          <v n="CanonicalName">"Element-Alarm-Frame-Color"</v>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">2678395525L</v>
+                      <v n="Value" t="Int16">1</v>
+                    </o>
+                    <o>
+                      <v n="Id">2340015797L</v>
+                      <v n="Value">"HCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">2565699834L</v>
+                      <v n="Value">"VCENTER"</v>
+                    </o>
+                    <o>
+                      <v n="Id">1603690730L</v>
+                      <v n="Value">"Arial"</v>
+                    </o>
+                    <o>
+                      <v n="Id">4253639993L</v>
+                      <v n="Value" t="Int16">12</v>
+                    </o>
+                    <o>
+                      <v n="Id">2729990903L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1213979116L</v>
+                      <v n="Value">0U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3488306084L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">2812299069L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">494569607L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">1649127785L</v>
+                      <v n="Value">217</v>
+                    </o>
+                    <o>
+                      <v n="Id">357335551L</v>
+                      <v n="Value">84</v>
+                    </o>
+                    <o>
+                      <v n="Id">2422045748L</v>
+                      <v n="Value" t="Int16">1393</v>
+                    </o>
+                    <o>
+                      <v n="Id">2134141914L</v>
+                      <v n="Value" t="Int16">972</v>
+                    </o>
+                    <o>
+                      <v n="Id">1651471674L</v>
+                      <v n="Value">false</v>
+                    </o>
+                    <o>
+                      <v n="Id">3549563837L</v>
+                      <v n="Value">"ISOTROPIC"</v>
+                    </o>
+                    <o>
+                      <v n="Id">3729828405L</v>
+                      <l n="Value" t="ArrayList" cet="NamedStyleFont">
+                        <o>
+                          <v n="FontStyle">0</v>
+                          <v n="ExplicitColor">-16777216</v>
+                          <v n="CanonicalName">"Font-Standard"</v>
+                          <v n="FontName">"Arial"</v>
+                          <v n="FontSize">12</v>
+                          <o n="NamedColor" t="NamedStyleColor">
+                            <v n="Color">-16777216</v>
+                            <v n="CanonicalName">"Font-Default-Color"</v>
+                          </o>
+                        </o>
+                      </l>
+                    </o>
+                    <o>
+                      <v n="Id">550940142L</v>
+                      <v n="Value">913</v>
+                    </o>
+                    <o>
+                      <v n="Id">1473355128L</v>
+                      <v n="Value">570</v>
+                    </o>
+                    <o>
+                      <v n="Id">493260384L</v>
+                      <v n="Value">4294967295U</v>
+                    </o>
+                    <o>
+                      <v n="Id">135947015L</v>
+                      <v n="Value">4278190080U</v>
+                    </o>
+                    <o>
+                      <v n="Id">3332245745L</v>
+                      <v n="Value">"ImagePool.tesim_color"</v>
+                    </o>
+                    <o>
+                      <v n="Id">390574330L</v>
+                      <v n="Value">""</v>
+                    </o>
+                    <o>
+                      <v n="Id">2597686782L</v>
+                      <v n="Value">true</v>
+                    </o>
+                  </l>
+                </o>
+                <v n="VisualElementName">"Image"</v>
+                <v n="VisualElementTypeName">"VisuFbElemImage"</v>
+                <v n="VisualElementIsRectangle">true</v>
+                <v n="VisualElementIdentifier">"GenElemInst_4"</v>
+                <n n="VisualElementOfflinePaintCommands" />
+                <n n="VisualElementFrameInformation" />
+                <d n="VisualElementInputActions" t="Hashtable" />
+                <v n="VisualElementIdentification">{74643564-1cd5-427c-a7f0-d3a2dda5bf25}</v>
+                <v n="VisualElementOwningObjectGuid">{f4f04a74-56cf-403a-ae2f-59b885671ef0}</v>
+                <a n="LMGuids" et="Guid" />
+                <d n="SubElements" t="Hashtable" />
+                <v n="VisualElementId">5</v>
+                <l n="UserManagementAccessRights" t="ArrayList" />
+              </o>
             </l>
             <v n="BackgroundBitmapId">""</v>
             <v n="BackgroundColor">16777215</v>
             <o n="Background" t="BackgroundSettings">
               <n n="BgGradient" />
+              <n n="BgNamedColor" />
               <v n="BgBmpId">""</v>
               <v n="BgUseBmp">false</v>
               <v n="BgColor">false</v>
               <v n="BgUseColor">16777215</v>
-              <n n="BgNamedColor" />
               <v n="BgUseGradient">false</v>
             </o>
           </o>

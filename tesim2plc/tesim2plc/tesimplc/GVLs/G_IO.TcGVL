@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <GVL Name="G_IO" Id="{02d66863-e417-4b72-99eb-de1b59a2b786}">
     <Declaration><![CDATA[VAR_GLOBAL CONSTANT
 	

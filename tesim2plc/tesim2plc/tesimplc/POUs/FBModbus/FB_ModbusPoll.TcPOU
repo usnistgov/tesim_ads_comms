@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <POU Name="FB_ModbusPoll" Id="{5c9fc36d-805a-483b-9b35-a817f443a172}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK FB_ModbusPoll
 
@@ -40,7 +40,14 @@ dataStr := F_TOUCase(CONCAT(WORD_TO_HEXSTR(arr[1],4,TRUE),WORD_TO_HEXSTR(arr[2],
 fbReadRegs();
 
 //use converter to convert last 2 words to a fp value
-converter(str := dataStr, out => value);]]></ST>
+converter(str := dataStr, out => value);
+
+]]></ST>
     </Implementation>
+    <LineIds Name="FB_ModbusPoll">
+      <LineId Id="3" Count="18" />
+      <LineId Id="43" Count="1" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

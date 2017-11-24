@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.36">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4020.12">
   <POU Name="MAIN_oo" Id="{dd06f3b9-f114-454f-820d-85f29a3eb792}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN_oo
 VAR
@@ -8,15 +8,20 @@ VAR
 	netiMeshCal				:FB_3eTI_iMesh_Cal;
 	netiMeshTESIM			:FB_3eTI_iMesh_TESIM;
 	netiMeshTestSignals		:FB_3eTI_TestSignals;
+	netiMeshGasSensor		:FB_3eTI_iMesh_GasSensor;
 	netiMeshLFSR			:FB_3eTI_iMesh_LFSR;
 	
 	netPCCal				:FB_PC_OneLink_Cal;
 	netPCTESIM				:FB_PC_OneLink_TESIM;
 	netPCTestSignals		:FB_PC_OneLink_TestSignals;
+	netPCGasSensor			:FB_PC_OneLink_GasSensor;
 	netPC_LFSR				:FB_PC_LFSR;
+	
+	// yokogawa signals
+	netYokoTestSignals		:FB_Yokogawa_TestSignals;
+	netYokoLFSR				:FB_Yokogawa_LFSR;
 
 	netNoNet				:FB_NoNet;
-	
 	
 END_VAR
 ]]></Declaration>
@@ -30,6 +35,8 @@ CASE NET_TYPE OF
 	netiMeshTESIM();
 	102:
 	netiMeshTestSignals();
+	103:
+	netiMeshGasSensor();
 	110:
 	netiMeshLFSR();
 	
@@ -39,13 +46,39 @@ CASE NET_TYPE OF
 	netPCTESIM();
 	202:
 	netPCTestSignals();
+	203:
+	netPCGasSensor();	
 	210:
 	netPC_LFSR();
+	
+	300:
+	301:
+	302:
+	netYokoTestSignals();
+	310:
+	netYokoLFSR();
+	
 	
 ELSE
 	netnoNet();
 	
 END_CASE]]></ST>
     </Implementation>
+    <LineIds Name="MAIN_oo">
+      <LineId Id="3" Count="7" />
+      <LineId Id="98" Count="0" />
+      <LineId Id="100" Count="0" />
+      <LineId Id="11" Count="8" />
+      <LineId Id="75" Count="1" />
+      <LineId Id="20" Count="1" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="52" Count="1" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="123" Count="1" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="22" Count="4" />
+      <LineId Id="2" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>
