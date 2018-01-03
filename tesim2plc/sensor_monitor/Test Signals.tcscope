@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ScopeViewSerializable>
-  <Version>1.0.0.4</Version>
+  <Version>1.0.0.6</Version>
   <Title>Test Signals</Title>
   <LayoutString>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;Layout&gt;
-  &lt;Window Guid="90ede59d-4481-4a1b-bd26-3d60a39079c0" LastFocused="131288148706572313" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="97332cdc-477f-498a-a8da-59f3e238ae5a" LastFocused="131291560012312263" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
-  &lt;Window Guid="18da9dee-eb14-417d-b859-96f973500e66" LastFocused="131288148719443600" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="90ede59d-4481-4a1b-bd26-3d60a39079c0" LastFocused="131581764168035280" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="1" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="97332cdc-477f-498a-a8da-59f3e238ae5a" LastFocused="131589696471145307" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="2" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
+  &lt;Window Guid="18da9dee-eb14-417d-b859-96f973500e66" LastFocused="131581764093107835" DockedSize="200" PopupSize="0" FloatingLocation="-1, -1" FloatingSize="550, 400" LastOpenDockSituation="Document" LastFixedDockSituation="Document" LastFixedDockLocation="Right" LastFloatingWindowGuid="00000000-0000-0000-0000-000000000000" LastDockContainerCount="0" LastDockContainerIndex="0" DockedWorkingSize="250, 400" DockedWindowGroupGuid="00000000-0000-0000-0000-000000000000" DockedIndexInWindowGroup="0" DockedSplitPath="0" DocumentWorkingSize="250, 400" DocumentWindowGroupGuid="e3627557-a720-4c2a-9af0-d310b5d3d828" DocumentIndexInWindowGroup="0" DocumentSplitPath="0" FloatingWorkingSize="250, 400" FloatingWindowGroupGuid="00000000-0000-0000-0000-000000000000" FloatingIndexInWindowGroup="0" FloatingSplitPath="0" /&gt;
   &lt;DocumentContainer Dock="5"&gt;
     &lt;SplitLayoutSystem WorkingSize="250, 400" SplitMode="0"&gt;
       &lt;ControlLayoutSystem WorkingSize="250, 400" Guid="e3627557-a720-4c2a-9af0-d310b5d3d828" Collapsed="0" SelectedControl="97332cdc-477f-498a-a8da-59f3e238ae5a"&gt;
@@ -58,11 +58,12 @@
         </ButtonSize>
         <ToolStripFontSize>0</ToolStripFontSize>
         <TimeStripFontSize>0</TimeStripFontSize>
-        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton</EnabledButtons>
+        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton Splitter6 MasterLabel</EnabledButtons>
         <EnabledTimeLabels>StartTimeLabel Splitter1 EndTimeLabel Splitter2 PositionLabel Splitter3 AbsTimeLabel Splitter4 DateLabel</EnabledTimeLabels>
         <ShowName>false</ShowName>
         <VisibleOverview>true</VisibleOverview>
         <DataPointToolTip>true</DataPointToolTip>
+        <ExtendTimeStringFormat>true</ExtendTimeStringFormat>
       </Style>
       <XAxis>
         <Style>
@@ -77,12 +78,14 @@
           <Comment></Comment>
         </Style>
         <SortPriority>-1</SortPriority>
+        <Invert>false</Invert>
       </XAxis>
       <YAxes>
         <ScopeYAxisSerializable>
           <Caption>Axis</Caption>
           <Name>Axis</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -101,6 +104,7 @@
             <Comment></Comment>
             <ShowName>false</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -109,7 +113,7 @@
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>512552</IndexOffset>
+                <IndexOffset>2003336</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>G_IO.XMEAS[1]</SymbolName>
@@ -126,6 +130,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -152,6 +157,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -161,7 +169,7 @@
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>577932</IndexOffset>
+                <IndexOffset>2004008</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[1]</SymbolName>
@@ -178,6 +186,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16728064</ColorValue>
@@ -204,6 +213,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -213,7 +225,7 @@
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>577936</IndexOffset>
+                <IndexOffset>2004012</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[2]</SymbolName>
@@ -230,6 +242,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-65536</ColorValue>
@@ -256,6 +269,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -265,7 +281,7 @@
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>577940</IndexOffset>
+                <IndexOffset>2004016</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[3]</SymbolName>
@@ -282,6 +298,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16776961</ColorValue>
@@ -308,6 +325,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -317,7 +337,7 @@
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>577944</IndexOffset>
+                <IndexOffset>2004020</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[4]</SymbolName>
@@ -334,6 +354,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-32768</ColorValue>
@@ -360,6 +381,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -375,12 +399,17 @@
         <RecordTimeVisible>true</RecordTimeVisible>
         <ChartTimeVisible>true</ChartTimeVisible>
         <DeltaValues>false</DeltaValues>
+        <HexValues>false</HexValues>
       </CursorModule>
       <Operating>
-        <DisplayWidth>814970000</DisplayWidth>
+        <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
+      <AssignedCore>-1</AssignedCore>
+      <MaxResolution>120000</MaxResolution>
+      <IsMaster>true</IsMaster>
+      <MasterChart>00000000-0000-0000-0000-000000000000</MasterChart>
     </ScopeChartSerializable>
     <ScopeChartSerializable>
       <Name>PC LFSR</Name>
@@ -405,11 +434,12 @@
         </ButtonSize>
         <ToolStripFontSize>8.25</ToolStripFontSize>
         <TimeStripFontSize>8.25</TimeStripFontSize>
-        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton</EnabledButtons>
+        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton Splitter6 MasterLabel</EnabledButtons>
         <EnabledTimeLabels>StartTimeLabel Splitter1 EndTimeLabel Splitter2 PositionLabel Splitter3 AbsTimeLabel Splitter4 DateLabel</EnabledTimeLabels>
         <ShowName>false</ShowName>
         <VisibleOverview>false</VisibleOverview>
         <DataPointToolTip>true</DataPointToolTip>
+        <ExtendTimeStringFormat>true</ExtendTimeStringFormat>
       </Style>
       <XAxis>
         <Style>
@@ -424,12 +454,14 @@
           <Comment></Comment>
         </Style>
         <SortPriority>-1</SortPriority>
+        <Invert>false</Invert>
       </XAxis>
       <YAxes>
         <ScopeYAxisSerializable>
           <Caption>PV</Caption>
           <Name>PV</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -448,6 +480,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -456,15 +489,11 @@
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540936</IndexOffset>
+                <IndexOffset>1300328</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>MAIN_oo.netPC_LFSR.value</SymbolName>
-                <SymbolComment>lfsr			: USINT := 16#11;  	// intial state of the LFSR
-	lsb				: USINT := 0;		// output bit
-	ck				: TON;
-	ck_period		: TIME	:= T#5S;
-	gen_poly		: USINT := 2#10111000;</SymbolComment>
+                <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
@@ -477,6 +506,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -503,6 +533,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -512,7 +545,7 @@
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>538768</IndexOffset>
+                <IndexOffset>2003664</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>G_IO.XMEAS_RX[1]</SymbolName>
@@ -529,6 +562,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16776961</ColorValue>
@@ -555,6 +589,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -564,7 +601,7 @@
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540440</IndexOffset>
+                <IndexOffset>2004136</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>G_IO.XMV_RX[1]</SymbolName>
@@ -581,6 +618,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-65536</ColorValue>
@@ -607,6 +645,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -617,6 +658,7 @@
           <Caption>IN</Caption>
           <Name>IN</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -635,6 +677,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -643,7 +686,7 @@
               <Acquisition>
                 <DataType>BIT</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540960</IndexOffset>
+                <IndexOffset>1300304</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>1</VariableSize>
                 <SymbolName>MAIN_oo.netPC_LFSR.lfsr.ck.IN</SymbolName>
@@ -660,6 +703,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -686,6 +730,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -696,6 +743,7 @@
           <Caption>Q</Caption>
           <Name>Q</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -714,6 +762,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -722,11 +771,11 @@
               <Acquisition>
                 <DataType>BIT</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540968</IndexOffset>
+                <IndexOffset>1300312</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>1</VariableSize>
                 <SymbolName>MAIN_oo.netPC_LFSR.lfsr.ck.Q</SymbolName>
-                <SymbolComment> is TRUE, PT seconds after IN had a rising edge </SymbolComment>
+                <SymbolComment> gets TRUE, delay time (PT) after a rising edge at IN </SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
@@ -739,6 +788,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -765,6 +815,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -775,6 +828,7 @@
           <Caption>PN</Caption>
           <Name>PN</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -793,6 +847,7 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
@@ -801,7 +856,7 @@
               <Acquisition>
                 <DataType>UINT8</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540949</IndexOffset>
+                <IndexOffset>1300292</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>1</VariableSize>
                 <SymbolName>MAIN_oo.netPC_LFSR.lfsr.out</SymbolName>
@@ -818,6 +873,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -844,6 +900,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -859,12 +918,17 @@
         <RecordTimeVisible>true</RecordTimeVisible>
         <ChartTimeVisible>true</ChartTimeVisible>
         <DeltaValues>false</DeltaValues>
+        <HexValues>false</HexValues>
       </CursorModule>
       <Operating>
         <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
+      <AssignedCore>-1</AssignedCore>
+      <MaxResolution>120000</MaxResolution>
+      <IsMaster>true</IsMaster>
+      <MasterChart>00000000-0000-0000-0000-000000000000</MasterChart>
     </ScopeChartSerializable>
     <ScopeChartSerializable>
       <Name>iMesh LFSR</Name>
@@ -889,11 +953,12 @@
         </ButtonSize>
         <ToolStripFontSize>8.25</ToolStripFontSize>
         <TimeStripFontSize>8.25</TimeStripFontSize>
-        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton</EnabledButtons>
+        <EnabledButtons>RunButton PauseButton Splitter1 DisplaywidthTextBox Splitter2 ScrollBackBig ScrollBackSmall ScrollForwardSmall ScrollForwardBig Splitter3 PositionTextBox Splitter4 UndoButton RedoButton Splitter5 CursorButton PanButton PanXYButton ZoomButton ZoomXYButton UnzoomButton ZoomOutMaxButton OverviewButton Splitter6 MasterLabel</EnabledButtons>
         <EnabledTimeLabels>StartTimeLabel Splitter1 EndTimeLabel Splitter2 PositionLabel Splitter3 AbsTimeLabel Splitter4 DateLabel</EnabledTimeLabels>
         <ShowName>false</ShowName>
         <VisibleOverview>false</VisibleOverview>
         <DataPointToolTip>true</DataPointToolTip>
+        <ExtendTimeStringFormat>true</ExtendTimeStringFormat>
       </Style>
       <XAxis>
         <Style>
@@ -908,12 +973,14 @@
           <Comment></Comment>
         </Style>
         <SortPriority>-1</SortPriority>
+        <Invert>false</Invert>
       </XAxis>
       <YAxes>
         <ScopeYAxisSerializable>
           <Caption>PV</Caption>
           <Name>PV</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -932,23 +999,20 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <Name>level</Name>
+              <Name>level(1)</Name>
               <IdentHandle>12</IdentHandle>
               <Acquisition>
                 <DataType>REAL64</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540936</IndexOffset>
+                <IndexOffset>1299016</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>8</VariableSize>
                 <SymbolName>MAIN_oo.netiMeshLFSR.value</SymbolName>
-                <SymbolComment>lfsr			: USINT := 16#11;  	// intial state of the LFSR
-	lsb				: USINT := 0;		// output bit
-	ck				: TON;
-	ck_period		: TIME	:= T#5S;
-	gen_poly		: USINT := 2#10111000;</SymbolComment>
+                <SymbolComment></SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
@@ -961,6 +1025,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -987,16 +1052,19 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <Name>MBS_XMEAS[1]</Name>
+              <Name>MBS_XMEAS[1](1)</Name>
               <IdentHandle>13</IdentHandle>
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>593912</IndexOffset>
+                <IndexOffset>2004008</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[1]</SymbolName>
@@ -1013,6 +1081,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-4419697</ColorValue>
@@ -1039,16 +1108,19 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <Name>MBS_XMEAS[2]</Name>
+              <Name>MBS_XMEAS[2](1)</Name>
               <IdentHandle>14</IdentHandle>
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>593916</IndexOffset>
+                <IndexOffset>2004012</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[2]</SymbolName>
@@ -1065,6 +1137,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16728065</ColorValue>
@@ -1075,7 +1148,7 @@
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
-                <Visible>true</Visible>
+                <Visible>false</Visible>
                 <MarkColorValue>-16728065</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
@@ -1091,16 +1164,19 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <Name>MBS_XMEAS[3]</Name>
+              <Name>MBS_XMEAS[3](1)</Name>
               <IdentHandle>15</IdentHandle>
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>593920</IndexOffset>
+                <IndexOffset>2004016</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[3]</SymbolName>
@@ -1117,6 +1193,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-8355712</ColorValue>
@@ -1127,7 +1204,7 @@
                 <Offset>0</Offset>
                 <BitMask>1152921504606846975</BitMask>
                 <ShowCursorValue>true</ShowCursorValue>
-                <Visible>true</Visible>
+                <Visible>false</Visible>
                 <MarkColorValue>-8355712</MarkColorValue>
                 <MarkSize>3</MarkSize>
                 <TimeShift>0</TimeShift>
@@ -1143,16 +1220,19 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
             <ScopeChannelSerializable>
-              <Name>MBS_XMEAS[4]</Name>
+              <Name>MBS_XMEAS[4](1)</Name>
               <IdentHandle>16</IdentHandle>
               <Acquisition>
                 <DataType>REAL32</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>593924</IndexOffset>
+                <IndexOffset>2004020</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>4</VariableSize>
                 <SymbolName>G_IO.MBS_XMEAS[4]</SymbolName>
@@ -1169,6 +1249,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-65536</ColorValue>
@@ -1195,6 +1276,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -1205,6 +1289,7 @@
           <Caption>IN</Caption>
           <Name>IN</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -1223,15 +1308,16 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <Name>IN</Name>
+              <Name>IN(1)</Name>
               <IdentHandle>17</IdentHandle>
               <Acquisition>
                 <DataType>BIT</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540960</IndexOffset>
+                <IndexOffset>1298992</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>1</VariableSize>
                 <SymbolName>MAIN_oo.netiMeshLFSR.lfsr.ck.IN</SymbolName>
@@ -1248,6 +1334,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -1274,6 +1361,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -1284,6 +1374,7 @@
           <Caption>Q</Caption>
           <Name>Q</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -1302,19 +1393,20 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <Name>Q</Name>
+              <Name>Q(1)</Name>
               <IdentHandle>18</IdentHandle>
               <Acquisition>
                 <DataType>BIT</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540968</IndexOffset>
+                <IndexOffset>1299000</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>1</VariableSize>
                 <SymbolName>MAIN_oo.netiMeshLFSR.lfsr.ck.Q</SymbolName>
-                <SymbolComment> is TRUE, PT seconds after IN had a rising edge </SymbolComment>
+                <SymbolComment> gets TRUE, delay time (PT) after a rising edge at IN </SymbolComment>
                 <IsSymbolBased>true</IsSymbolBased>
                 <FileHandle>0</FileHandle>
                 <UseLocalServer>true</UseLocalServer>
@@ -1327,6 +1419,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -1353,6 +1446,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -1363,6 +1459,7 @@
           <Caption>PN</Caption>
           <Name>PN</Name>
           <Style>
+            <Visible>true</Visible>
             <Enabled>true</Enabled>
             <ColorValue>-13676721</ColorValue>
             <UseGrid>true</UseGrid>
@@ -1381,15 +1478,16 @@
             <Comment></Comment>
             <ShowName>true</ShowName>
             <Precision>6</Precision>
+            <ScaleMode>AutoGrowOnly</ScaleMode>
           </Style>
           <Channels>
             <ScopeChannelSerializable>
-              <Name>out</Name>
+              <Name>out(1)</Name>
               <IdentHandle>19</IdentHandle>
               <Acquisition>
                 <DataType>UINT8</DataType>
                 <IndexGroup>16448</IndexGroup>
-                <IndexOffset>540949</IndexOffset>
+                <IndexOffset>1298980</IndexOffset>
                 <TargetPort>851</TargetPort>
                 <VariableSize>1</VariableSize>
                 <SymbolName>MAIN_oo.netiMeshLFSR.lfsr.out</SymbolName>
@@ -1406,6 +1504,7 @@
                 <IsArray>false</IsArray>
                 <ArrayLength>0</ArrayLength>
                 <ContextMask>0</ContextMask>
+                <TimeOffset>0</TimeOffset>
               </Acquisition>
               <Style>
                 <ColorValue>-16777216</ColorValue>
@@ -1432,6 +1531,9 @@
                 <StartCap>false</StartCap>
                 <CapSize>3</CapSize>
                 <CapColorValue>-65536</CapColorValue>
+                <SeriesType>Line</SeriesType>
+                <ShowMin>false</ShowMin>
+                <ShowMax>false</ShowMax>
               </Style>
               <SortPriority>-1</SortPriority>
             </ScopeChannelSerializable>
@@ -1447,12 +1549,17 @@
         <RecordTimeVisible>true</RecordTimeVisible>
         <ChartTimeVisible>true</ChartTimeVisible>
         <DeltaValues>false</DeltaValues>
+        <HexValues>false</HexValues>
       </CursorModule>
       <Operating>
         <DisplayWidth>100000000</DisplayWidth>
       </Operating>
       <ChartType>XT</ChartType>
       <SortPriority>-1</SortPriority>
+      <AssignedCore>-1</AssignedCore>
+      <MaxResolution>120000</MaxResolution>
+      <IsMaster>true</IsMaster>
+      <MasterChart>00000000-0000-0000-0000-000000000000</MasterChart>
     </ScopeChartSerializable>
   </Charts>
   <TriggerModule>

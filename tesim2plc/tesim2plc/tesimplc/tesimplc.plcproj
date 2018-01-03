@@ -157,6 +157,9 @@
     <Compile Include="POUs\FB_Networks\Yokogawa\FB_Yokogawa_Base.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FB_Networks\Yokogawa\FB_Yokogawa_GasSensor.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\MAIN_oo.TcPOU">
       <SubType>Code</SubType>
       <ObjectProtection>00000000-0000-0000-0000-000000000000</ObjectProtection>

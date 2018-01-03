@@ -20,6 +20,7 @@ VAR
 	// yokogawa signals
 	netYokoTestSignals		:FB_Yokogawa_TestSignals;
 	netYokoLFSR				:FB_Yokogawa_LFSR;
+	netYokoGasSensor		:FB_Yokogawa_GasSensor;
 
 	netNoNet				:FB_NoNet;
 	
@@ -55,6 +56,8 @@ CASE NET_TYPE OF
 	301:
 	302:
 	netYokoTestSignals();
+	303:
+	netYokoGasSensor();
 	310:
 	netYokoLFSR();
 	
@@ -75,6 +78,7 @@ END_CASE]]></ST>
       <LineId Id="52" Count="1" />
       <LineId Id="46" Count="0" />
       <LineId Id="51" Count="0" />
+      <LineId Id="148" Count="1" />
       <LineId Id="123" Count="1" />
       <LineId Id="47" Count="0" />
       <LineId Id="22" Count="4" />

@@ -108,7 +108,7 @@
 	<Project ProjectGUID="{4DC05C63-337A-4DD3-9F8F-25D177FB7253}" TargetNetId="5.20.215.224.1.1" ShowHideConfigurations="#x106">
 		<System>
 			<Licenses>
-				<Target BkhfOrder="VE2277173" DongleDevice="#xffffffff"/>
+				<Target BkhfOrder="VE2277173"/>
 			</Licenses>
 			<Tasks>
 				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="350">
